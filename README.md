@@ -15,13 +15,7 @@
 
 <h2>• Link para o Trelo</h2>
 Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint" target="_blank"> aqui</a> para acessar o quadro do Trello do projeto.
-<div>
-   | Sprint | Link        | Início      | Entrega     | Status |
-|--------|-------------|-------------|-------------|--------|
-| 01     | [Sprint 01](#sprint-1) | 25/03/2024  | 18/04/2024  | ✔      |
-| 02     | [Sprint 02](#sprint-2) | 22/04/2024  | 15/05/2024  |  ✔     |
-| 03     | [Sprint 03](#sprint-3) | 20/05/2024  | 12/06/2024  |  ✔     |
-</div>
+
 <div>
 ## Tecnologias
 </div>
