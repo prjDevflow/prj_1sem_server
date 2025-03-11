@@ -3,7 +3,7 @@
 <h2>Integrantes</h2>
   <ul type="square">
             <li>Lucas Cauá Soares de Paiva (P.O)</li>
-            <li>Eduardo    (Scrum master) </li>
+            <li>Eduardo da Silva Machado (Scrum master) </li>
             <li>Jederson Carvalho Macedo</li>
             <li>Matheus da Cunha Soldesi </li>
             <li>Matheus Venancio Moreira Sales </li>
@@ -12,7 +12,7 @@
         </ul>
 
 <h2>Sobre</h2>
-<p></p>
+<p> Com o intuito de desenvolver uma aplicação Web usando metodologias ágeis a FATEC DE JACAREÍ propôs aos alunos do 1° semestre do curso de Desenvolvimento de Software Multiplataforma (DSM)</p>
 
 ## Tecnologias
 <div>
