@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt">
-    <head>
-        <meta charset="UTF-8">
 <h1 align="center">Projeto ABP</h1>
-    </head>
-<h2>• Integrantes</h2>
+   <h2>• Integrantes</h2>
   <ul type="square">
             <li>Lucas Cauã Soares de Paiva (P.O)</li>
             <li>Eduardo da Silva Machado (Scrum master) </li>
@@ -29,4 +24,4 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
-</html>
+
