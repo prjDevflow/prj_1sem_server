@@ -1,4 +1,4 @@
-<h1 aligh="center">Projeto ABP</h1>
+<h1 align="center">Projeto ABP</h1>
 
 <h2>Integrantes</h2>
   <ul type="square">
