@@ -12,6 +12,15 @@
 
 <h2>• Sobre</h2>
 <p> Com o intuito de desenvolver uma aplicação Web usando metodologias ágeis a FATEC DE JACAREÍ propôs aos alunos do 1° semestre do curso de Desenvolvimento de Software Multiplataforma (DSM)</p>
+<br>
+<br>
+## SPRINTS
+
+| Sprint | Link        | Início      | Entrega     | Status |
+|--------|-------------|-------------|-------------|--------|
+| 01     | [Sprint 01](#sprint-1) | 25/03/2024  | 18/04/2024  | ✔      |
+| 02     | [Sprint 02](#sprint-2) | 22/04/2024  | 15/05/2024  |  ✔     |
+| 03     | [Sprint 03](#sprint-3) | 20/05/2024  | 12/06/2024  |  ✔     |
 
 <h2>• Link para o Trelo</h2>
 Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint" target="_blank"> aqui</a> para acessar o quadro do Trello do projeto.
@@ -27,11 +36,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 
 
-| Sprint | Link        | Início      | Entrega     | Status |
-|--------|-------------|-------------|-------------|--------|
-| 01     | [Sprint 01](#sprint-1) | 25/03/2024  | 18/04/2024  | ✔      |
-| 02     | [Sprint 02](#sprint-2) | 22/04/2024  | 15/05/2024  |  ✔     |
-| 03     | [Sprint 03](#sprint-3) | 20/05/2024  | 12/06/2024  |  ✔     |
+
 
 
 
