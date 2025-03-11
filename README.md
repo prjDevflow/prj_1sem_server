@@ -15,7 +15,7 @@
 <p> Com o intuito de desenvolver uma aplicação Web usando metodologias ágeis a FATEC DE JACAREÍ propôs aos alunos do 1° semestre do curso de Desenvolvimento de Software Multiplataforma (DSM)</p>
 
 <h2>• Link para o Trelo</h2>
-Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint" target="_blank"> aqui</a> para acessar o quadro do Trello do projeto.
+Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint" target="blank"> aqui</a> para acessar o quadro do Trello do projeto.
 
 <div>
 ## Tecnologias
