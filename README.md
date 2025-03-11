@@ -2,7 +2,7 @@
 
 <h2>Integrantes</h2>
   <ul type="square">
-            <li>Lucas Cauá Soares de Paiva (P.O)</li>
+            <li>Lucas Cauã Soares de Paiva (P.O)</li>
             <li>Eduardo da Silva Machado (Scrum master) </li>
             <li>Jederson Carvalho Macedo</li>
             <li>Matheus da Cunha Soldesi </li>
