@@ -1,6 +1,6 @@
 <h1 align="center">Projeto ABP</h1>
 
-<h2>•Integrantes</h2>
+<h2>• Integrantes</h2>
   <ul type="square">
             <li>Lucas Cauã Soares de Paiva (P.O)</li>
             <li>Eduardo da Silva Machado (Scrum master) </li>
@@ -11,7 +11,7 @@
             <li>Rafael Vitor de Medeiros Costa </li>
         </ul>
 
-<h2>•Sobre</h2>
+<h2>• Sobre</h2>
 <p> Com o intuito de desenvolver uma aplicação Web usando metodologias ágeis a FATEC DE JACAREÍ propôs aos alunos do 1° semestre do curso de Desenvolvimento de Software Multiplataforma (DSM)</p>
 
 ## Tecnologias
