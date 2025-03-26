@@ -16,13 +16,7 @@ header {
   align-items: center;
 }
 main {
-  width: 100vw;
-  height: 75vh;
-  background-color: #ffffff;
-  flex: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 85vh;
 }
 footer {
   background-color: #d40e0e;

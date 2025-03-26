@@ -19,5 +19,5 @@ function loadContentPages(event, urlPage) {
 }
 
 window.onload = function () {
-  loadContentPages(event, "pages/login.html");
+  loadContentPages(event, "pages/main.html");
 };
