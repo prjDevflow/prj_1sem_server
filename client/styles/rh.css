@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ img{
+    margin-bottom: 25px;
+    margin-right: 30px;
+ }
+  main {
+    padding: 0 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+ 
+  .corpo-rh {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    margin-top: 120px;
+    width: 100%;
+  }
+ 
+  h2 {
+    font-weight: bold;
+  }
+ 
+  .risco-azul {
+    height: 5px;
+    background-color: #72af5f;
+    margin-top: -30px;
+    width: 100%;
+  }
+ 
+  .texto-dsm {
+    text-align: justify;
+    width: 100%;
+  }
+ 
+  .barra-roxa {
+    height: 37px;
+    background-color: #72af5f;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 520px;
+    gap: 16px;
+    position: relative;
+  }
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+  }
+ 
+  .botao-menu {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 8px;
+    height: 100%;
+    border-radius: 5px;
+  }
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    left: 0;
+    background-color: #83E968;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+  }
+ 
+  .sub-botao {
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
+  .botao-menu:hover,
+  .sub-botao:hover {
+    background-color: #34821b;
+  }
