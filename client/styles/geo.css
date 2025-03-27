@@ -7,7 +7,10 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+  img{
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
   main {
     padding: 0 520px;
     display: flex;
@@ -27,11 +30,12 @@
   
   h2 {
     font-weight: bold;
+    margin-left: 30px;
   }
   
-  .risco-roxo {
+  .risco-azul {
     height: 5px;
-    background-color: #8E0EE7;
+    background-color: #1353A3;
     margin-top: -30px;
     width: 100%;
   }
@@ -43,7 +47,7 @@
   
   .barra-roxa {
     height: 37px;
-    background-color: #8E0EE7;
+    background-color: #1353A3;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -78,7 +82,7 @@
     bottom: 0;
     transform: translateY(100%);
     left: 0;
-    background-color: #c375fa;
+    background-color: #4f98f3;
     min-width: 160px;
     z-index: 1;
     border-radius: 5px;
@@ -104,5 +108,5 @@
   
   .botao-menu:hover,
   .sub-botao:hover {
-    background-color: #4d1078;
+    background-color: #04326b;
   }
