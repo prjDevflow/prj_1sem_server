@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.CorpoDSM {
+    align-items: center;
+    margin-left: 610px;
+    text-align: center;
+    display: flex;
+    margin-top: 140px;
+
+
+}
+
+.risco-azul {
+    height: 5px;
+    background-color: rgb(45, 255, 98);
+    margin: 1px 610px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 750px;
+    margin-top: 20px;
+}
+
+.TextoDSM {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 610px;
+
+    width: 750px;
+}
+
+.risco2 {
+    height: 37px;
+    background-color: rgb(45, 255, 98);
+    width: 100vw;
+}
+img{
+    margin-right: 30px;
+    
+}
+select{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border-color: transparent;
+    width: 30px;
+}
+
+form {
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 600px; 
+}
+option{
+    background-color: rgba(108, 253, 41, 0.527);
+}
