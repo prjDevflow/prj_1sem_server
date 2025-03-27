@@ -3,23 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: rgb(255, 255, 255);
   height: 100dvh;
   width: 100vw;
 }
+
 header {
-    width: 100vw;
+  width: 100vw;
   height: 70px;
-    background-color: #d40000;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    padding: 10px 20px;
+  background-color: #d40000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
 }
+
 main {
   height: 85vh;
 }
+
 footer {
   background-color: #d40e0e;
   color: white;
@@ -47,6 +51,7 @@ footer {
 .copyright {
   font-size: 14px;
 }
+
 .botaomapa {
   background-color: red;
   color: white;
@@ -56,6 +61,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -63,13 +69,16 @@ footer {
   gap: 50px;
   margin-top: 50px;
 }
+
 .courso {
   text-align: center;
 }
+
 .courso img {
   width: 100px;
   height: 100px;
 }
+
 .courso p {
   background-color: red;
   color: white;
@@ -77,11 +86,13 @@ footer {
   border-radius: 10px;
   margin-top: 10px;
 }
+
 .horario {
   font-size: 24px;
   font-weight: bold;
   margin: 20px 0;
 }
+
 .botaorh {
   background-color: red;
   color: white;
@@ -91,6 +102,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
 .botaodsm {
   background-color: red;
   color: white;
@@ -100,6 +112,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
 .botaogeo {
   background-color: red;
   color: white;

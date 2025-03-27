@@ -1,27 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}    
+}
 
 
-h2{
+h2 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
-.CorpoDSM{
+
+.CorpoDSM {
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
     margin-top: 120px;
-   
-    
+
+
 }
+
 .risco-azul {
     height: 5px;
-    background-color: rgb(204, 0, 255); 
+    background-color: rgb(204, 0, 255);
     margin: 1px 610px;
     align-items: center;
     justify-content: center;
@@ -29,15 +31,17 @@ h2{
     display: flex;
     width: 750px;
 }
-.TextoDSM{
-  text-align: justify;
-   font-family: Arial, Helvetica, sans-serif;
+
+.TextoDSM {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 20px 610px;
-    
+
     width: 750px;
 }
+
 .risco2 {
     height: 37px;
-    background-color: rgb(204, 0, 255); 
+    background-color: rgb(204, 0, 255);
     width: 100vw;
 }
