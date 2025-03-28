@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <main>
-        <!-- Conteudo principal -->
-        <div class="container">
-          <div class="courso">
-            <img src="meio-ambiente.png" alt="Meio Ambiente e Recursos Hídricos">
-            <button class="botaorh" onclick="loadContentPages(event, 'pages/rh.html')">Meio Ambiente e Recursos Hídricos</button>
-          </div>
-          <div class="courso">
-            <img src="desenvolvimento-softwares.png" alt="Desenvolvimento de Softwares Multiplataformas">
-            <button class="botaodsm" onclick="loadContentPages(event, 'pages/dsm.html')">Desenvolvimento de Softwares Multiplataformas</button>
-          </div>
-          <div class="courso">
-            <img src="geoprocessamento.png" alt="Geoprocessamento">
-            <button class="botaogeo" onclick="loadContentPages(event, 'pages/geo.html')">Geoprocessamento</button>
-          </div>
+  </head>
+  <body>
+    <section class="container">
+      <!-- Conteudo principal -->
+        <div class="cardCurso">
+          <img
+            src="/client/Imagens/imgMarh.png"
+            alt="Meio Ambiente e Recursos Hídricos"
+          />
+          <button
+            class="btnPrimary"
+            onclick="loadContentPages(event, 'pages/rh.html')"
+          >
+            Meio Ambiente e Recursos Hídricos
+          </button>
         </div>
-      </main>
-</body>
+        <div class="cardCurso">
+          <img
+            src="/client/Imagens/imgDsm.png"
+            alt="Desenvolvimento de Softwares Multiplataformas"
+          />
+          <button
+            class="btnPrimary"
+            onclick="loadContentPages(event, 'pages/dsm.html')"
+          >
+            Desenvolvimento de Softwares Multiplataformas
+          </button>
+        </div>
+        <div class="cardCurso">
+          <img src="/client/Imagens/imgGeo.png" alt="Geoprocessamento" />
+          <button
+            class="btnPrimary"
+            onclick="loadContentPages(event, 'pages/geo.html')"
+          >
+            Geoprocessamento
+          </button>
+        </div>
+    </section>
+  </body>
 </html>

@@ -1,22 +1,36 @@
+:root {
+  --padding-page: 500px;
+  --colorText: white;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 h2 {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.CorpoDSM {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.cursoSection {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px var(--padding-page);
+  gap: 30px;
+}
+.cursoTitle {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
   gap: 20px;
+  margin: -10px;
+}
+.imgCurso {
+  width: 170px;
+  height: 170px;
 }
 
 .corpo-dsm {
@@ -27,27 +41,72 @@ h2 {
   margin-top: 120px;
 }
 
-.risco-azul {
+.cursoDivider {
   height: 5px;
-  background-color: rgb(204, 0, 255);
-  margin: 1px 610px;
   align-items: center;
   justify-content: center;
   text-align: center;
   display: flex;
-  width: 750px;
+  width: 100%;
 }
 
-.TextoDSM {
+.cursoText {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 20px 610px;
-
-  width: 750px;
+  width: 100%;
 }
 
-.risco2 {
+.cursoSeparator {
   height: 37px;
-  background-color: rgb(204, 0, 255);
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--padding-page);
+  gap: 16px;
+}
+.cursoDropdown {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.btn-menu {
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--colorText);
+  cursor: pointer;
+  padding: 0px 8px;
+  height: 100%;
+  border-radius: 5px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  min-width: 160px;
+  border-radius: 4px;
+}
+.sub-btn {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--colorText);
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 12px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+
+.cursoDropdown:hover .dropdown-content {
+  display: block;
+}
+.btn-menu:hover, .sub-btn:hover {
+  background-color: blue;
+  border-radius: 4px;
 }

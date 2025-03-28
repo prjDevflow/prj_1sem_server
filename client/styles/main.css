@@ -1,119 +1,83 @@
+:root {
+  --primary-color: red;
+  --color-dsm: #8e0ee7;
+  --color-rh: #72af5f;
+  --color-Geo: #1353a3;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgb(255, 255, 255);
-  height: 100dvh;
-  width: 100vw;
+.bcgPrimary {
+  background-color: red;
+}
+.bcgDsm {
+  background-color: var(--color-dsm);
+}
+.bcgGeo {
+  background-color: var(--color-Geo);
+}
+.bcgRh {
+  background-color: var(--color-rh)
+}
+header> img {
+  height: 40px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100%;
+}
+main {
+  flex: 1;
+}
 header {
   width: 100vw;
-  height: 70px;
   background-color: #d40000;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  gap: 60px;
+  padding: 30px 20px;
 }
-
-main {
-  height: 85vh;
-}
-
 footer {
   background-color: #d40e0e;
   color: white;
   text-align: center;
   padding: 20px;
 }
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.social-icons a:hover img {
-  transform: scale(1.2);
-}
-
-.copyright {
-  font-size: 14px;
-}
-
-.botaomapa {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   gap: 50px;
   margin-top: 50px;
 }
-
-.courso {
-  text-align: center;
+.cardCurso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
 }
-
-.courso img {
-  width: 100px;
-  height: 100px;
+.cardCurso img {
+  width: 200px;
+  height: 200px;
 }
-
-.courso p {
+.cardCurso p {
   background-color: red;
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
   margin-top: 10px;
 }
-
-.horario {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.botaorh {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.botaodsm {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.botaogeo {
+.btnPrimary {
   background-color: red;
   color: white;
   padding: 10px 20px;
