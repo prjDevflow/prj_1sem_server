@@ -3,27 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(255, 255, 255);
+  height: 100dvh;
+  width: 100vw;
+}
+
 header {
-  background-color: #d40e0e;
   width: 100vw;
   height: 70px;
-  border-bottom: 1px solid #d40e0e;
-  box-sizing: border-box;
+  background-color: #d40000;
   display: flex;
-  flex: 1 70px;
-  flex-direction:row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
 }
+
 main {
   height: 85vh;
 }
+
 footer {
   background-color: #d40e0e;
   color: white;
   text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
+  padding: 20px;
 }
 
 .social-icons {
@@ -45,4 +50,75 @@ footer {
 
 .copyright {
   font-size: 14px;
+}
+
+.botaomapa {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.courso {
+  text-align: center;
+}
+
+.courso img {
+  width: 100px;
+  height: 100px;
+}
+
+.courso p {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.horario {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.botaorh {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botaodsm {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botaogeo {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }

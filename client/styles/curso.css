@@ -1,108 +1,53 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  main {
-    padding: 0 520px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .corpo-dsm {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    text-align: center;
-    margin-top: 120px;
-    width: 100%;
-  }
-  
-  h2 {
-    font-weight: bold;
-  }
-  
-  .risco-roxo {
-    height: 5px;
-    background-color: #8E0EE7;
-    margin-top: -30px;
-    width: 100%;
-  }
-  
-  .texto-dsm {
-    text-align: justify;
-    width: 100%;
-  }
-  
-  .barra-roxa {
-    height: 37px;
-    background-color: #8E0EE7;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    padding: 0 520px;
-    gap: 16px;
-    position: relative;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-  }
-  
-  .botao-menu {
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 0 8px;
-    height: 100%;
-    border-radius: 5px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(100%);
-    left: 0;
-    background-color: #c375fa;
-    min-width: 160px;
-    z-index: 1;
-    border-radius: 5px;
-  }
-  
-  .sub-botao {
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .botao-menu:hover,
-  .sub-botao:hover {
-    background-color: #4d1078;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.CorpoDSM {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.corpo-dsm {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.risco-azul {
+  height: 5px;
+  background-color: rgb(204, 0, 255);
+  margin: 1px 610px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 750px;
+}
+
+.TextoDSM {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 610px;
+
+  width: 750px;
+}
+
+.risco2 {
+  height: 37px;
+  background-color: rgb(204, 0, 255);
+  width: 100vw;
+}
