@@ -64,12 +64,48 @@ h2 {
   padding: 0 var(--padding-page);
   gap: 16px;
 }
-.cursoDropdown {
+.cursoDropdown-dsm {
   position: relative;
   display: inline-block;
   height: 100%;
 }
-.btn-menu {
+.cursoDropdown-geo {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.cursoDropdown-rh {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+.btn-menu-dsm {
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--colorText);
+  cursor: pointer;
+  padding: 0px 8px;
+  height: 100%;
+  border-radius: 5px;
+}
+.btn-menu-geo {
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--colorText);
+  cursor: pointer;
+  padding: 0px 8px;
+  height: 100%;
+  border-radius: 5px;
+}
+.btn-menu-rh {
   font-weight: bold;
   font-size: 19px;
   display: flex;
@@ -91,7 +127,29 @@ h2 {
   min-width: 160px;
   border-radius: 4px;
 }
-.sub-btn {
+.sub-btn-dsm {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--colorText);
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 12px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+.sub-btn-geo {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--colorText);
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 12px;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+}
+.sub-btn-rh {
   font-weight: bold;
   font-size: 15px;
   color: var(--colorText);
@@ -103,10 +161,30 @@ h2 {
   text-align: left;
 }
 
-.cursoDropdown:hover .dropdown-content {
+.cursoDropdown-dsm:hover .dropdown-content {
   display: block;
+  background-color: #cc33ff;
 }
-.btn-menu:hover, .sub-btn:hover {
-  background-color: blue;
+.cursoDropdown-geo:hover .dropdown-content {
+  display: block;
+  background-color: #397ed3;
+}
+.cursoDropdown-rh:hover .dropdown-content {
+  display: block;
+  background-color: #83d968;
+}
+.btn-menu-dsm:hover, .sub-btn-dsm:hover {
+  background-color: #4d1078;
   border-radius: 4px;
+  cursor: pointer;
+}
+.btn-menu-geo:hover, .sub-btn-geo:hover {
+  background-color: #04326b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-menu-rh:hover, .sub-btn-rh:hover {
+  background-color: #34821b;
+  border-radius: 4px;
+  cursor: pointer;
 }

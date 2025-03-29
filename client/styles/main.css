@@ -38,7 +38,7 @@ main {
 }
 header {
   width: 100vw;
-  background-color: #d40000;
+  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ header {
   padding: 30px 20px;
 }
 footer {
-  background-color: #d40e0e;
+  background-color: red;
   color: white;
   text-align: center;
   padding: 20px;
@@ -85,4 +85,8 @@ footer {
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
