@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../styles/maps.css" /> -->
+  </head>
+  <body>
+    <section class="andarContainer">
+      <p onclick="loadContentPages(event, 'pages/main.html')">< Voltar</p>
+      <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
+      <nav>
+        <button disabled onclick="loadContentPages(event, 'pages/mapGround.html')">
+            <img src="" alt="Voltar" />
+        </button>
+        <h1>Térreo</h1>
+        <button onclick="loadContentPages(event, 'pages/mapOne.html')">
+            <img src="" alt="Avançar" />
+        </button>
+      </nav>
+
+      <section class="map">
+        <img src="/client/Imagens/img_mapGround.png" alt="mapa do primeiro andar"></img>
+
+        <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
+        <button class="btnLdt">Lab</button>
+        <button class="btnLqa">Lab</button>
+        <button class="btnLma">Lab</button>
+        <button class="btnLaa">Lab</button>
+      </section>
+    </section>
+  </body>
+</html>
