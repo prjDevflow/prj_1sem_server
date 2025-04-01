@@ -20,9 +20,9 @@
   background-color: var(--color-Geo);
 }
 .bcgRh {
-  background-color: var(--color-rh)
+  background-color: var(--color-rh);
 }
-header> img {
+header > img {
   height: 40px;
 }
 
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 main {
