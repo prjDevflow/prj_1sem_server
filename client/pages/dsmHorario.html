@@ -5,35 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1DSM - Horário de Aulas</title>
-    <link rel="stylesheet" href="../styles/Dsm_horario.css">
+    <!-- <link rel="stylesheet" href="../styles/Dsm_horarios.css"> -->
 </head>
 
 <body>
-    <section>
-        <div class="CorpoDSM">
+    <section class="contHorarios">
+        <div class="cursoTitle">
+            <img class="imgCurso" src="/client/Imagens/imgDsm.png" />
+            <h2>Desenvolvimento de Software Multiplaforma</h2>
+        </div>
+        <div class="cursoDivider bcgDsm" style="margin-top: -10px;"></div>
 
-            <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/157/2022/11/curso03.png"
-                width="170px" height="170px" />
+        <div class="btnHome">
+            <button onclick="loadContentPages(event, 'pages/main.html')">
+                <i class="fa-solid fa-chevron-left fa-sm"></i>
+                Voltar
+            </button>
+        </div>
+        <h2>1DSM</h2>
 
-            <h2>Desenvolvimento de Software Multiplataforma</h2>
-    </section>
-    <div>
-        <div class="risco2"></div>
-
-    </div>
-
-    <main>
-
-        <div class="container">
-            <div class="Voltar">
-                <button>Voltar</button>
-                <h2>1DSM</h2> 
-            </div>
-
-
+        <section class="contTable">
             <table class="table">
                 <thead>
-                    <tr>
+                    <tr class="bcgDsm">
                         <th>Horário</th>
                         <th>18:45 às 19:35</th>
                         <th>19:35 às 20:25</th>
@@ -50,13 +44,13 @@
                         <td>Engenharia de Software I</td>
                         <td>Engenharia de Software I</td>
                         <td>Sistemas Operacionais e Redes</td>
-                    
+
                     </tr>
                     <tr>
                         <td class="dias">Terça</td>
                         <td>Modelagem de Banco de Dados</td>
                         <td>Modelagem de Banco de Dados</td>
-                        <td>Modelagem de Banco de Dados</td>                       
+                        <td>Modelagem de Banco de Dados</td>
                         <td>Design Digital</td>
                         <td>Design Digital</td>
                     </tr>
@@ -83,24 +77,30 @@
                         <td>Desenvolvimento Web I</td>
                         <td>Desenvolvimento Web I</td>
                         <td>Desenvolvimento Web I</td>
-                        <td>Modelagem de Banco de Dados</td>                       
+                        <td>Modelagem de Banco de Dados</td>
                     </tr>
                 </tbody>
             </table>
 
-            <div class="prof">Professores</div>
-            <div>Engenharia de Software I - Egydio</div>
-            <div>Sistemas Operacionais e Redes - Egydio</div>
-            <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
-            <div>Design Digital - Marcelo Sudo</div>
-            <div>Algoritmo e Lógica a de Programação: Arley</div>
-            <div>Desenvolvimento Web: Henrique Louro</div>
-            
-            <div class="button">
-                <button>Download</button>
-            </div>
-        </div>
-    </main>
+            <section>
+                <section class="professores">
+                    <h3>Professores</h3>
+                    <div>Engenharia de Software I - Egydio</div>
+                    <div>Sistemas Operacionais e Redes - Egydio</div>
+                    <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
+                    <div>Design Digital - Marcelo Sudo</div>
+                    <div>Algoritmo e Lógica a de Programação: Arley</div>
+                    <div>Desenvolvimento Web: Henrique Louro</div>
+                </section>
+                <div class="btnDiv">
+                    <a href="" class="download-btn" download>
+                        Baixar PDF
+                        <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </section>
 </body>
 
 </html>
