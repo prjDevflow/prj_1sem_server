@@ -7,26 +7,44 @@
   </head>
   <body>
     <section class="andarContainer">
-      <p onclick="loadContentPages(event, 'pages/main.html')">< Voltar</p>
+      <div class="btnHome">
+        <button onclick="loadContentPages(event, 'pages/main.html')">
+          <i class="fa-solid fa-chevron-left fa-sm"></i>
+          Voltar
+        </button>
+      </div>
       <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
       <nav>
-        <button disabled onclick="loadContentPages(event, 'pages/mapGround.html')">
-            <img src="" alt="Voltar" />
+        <button disabled onclick="loadContentPages(event, 'pages/mapOne.html')">
+          <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
         </button>
+        
         <h1>Térreo</h1>
         <button onclick="loadContentPages(event, 'pages/mapOne.html')">
-            <img src="" alt="Avançar" />
+          <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
         </button>
       </nav>
 
       <section class="map">
-        <img src="/client/Imagens/img_mapGround.png" alt="mapa do primeiro andar"></img>
+        <img src="/client/Imagens/img_mapTerreo.png" alt="mapa do primeiro andar"></img>
 
         <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
-        <button class="btnLdt">Lab</button>
-        <button class="btnLqa">Lab</button>
-        <button class="btnLma">Lab</button>
-        <button class="btnLaa">Lab</button>
+        <button style="width: 150px; bottom: 60px; right: 237px;" onclick="loadContentPages(event, '')">
+          Lab. de Química Ambiental
+          <br> 01
+        </button>
+        <button style="width: 150px; top: 60px; right: 237px;" onclick="loadContentPages(event, '')">
+          Lab. de Desenho e Topografia
+          <br> 02
+        </button>
+        <button style="width: 150px; top: 60px; right: 6px;" onclick="loadContentPages(event, '')">
+          Lab. de Análises Ambientais
+          <br> 04
+        </button>
+        <button style="width: 150px; bottom: 45px; right: 8px;" onclick="loadContentPages(event, '')">
+          Lab. de Microbiologia Ambiental
+          <br> 03
+        </button>
       </section>
     </section>
   </body>

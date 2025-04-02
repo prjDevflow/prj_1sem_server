@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 main {
@@ -58,7 +58,6 @@ footer {
   align-items: center;
   height: 100%;
   gap: 50px;
-  margin-top: 50px;
 }
 .cardCurso {
   display: flex;
@@ -90,4 +89,20 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btnHome {
+  width: 100%;
+}
+.btnHome > button {
+  color: #333;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.btnHome > button:hover {
+  color: #000;
 }
