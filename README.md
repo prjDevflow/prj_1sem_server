@@ -42,40 +42,40 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 ### REQUISITOS FUNCIONAIS
 
-| REQUISITO FUNCIONAL_ID | REQUISITOS                                                                                                 | SPRINTS |
+| REQUISITO FUNCIONAL    | REQUISITOS                                                                                                 | SPRINTS |
 |------------------------|------------------------------------------------------------------------------------------------------------|---------|
-| RF - 1                 | .                                                                                                            | #   |
-| RF - 2                 | .                                                                                                            | #   |
-| RF - 3                 | .                                                                                                            | #   |
-| RF - 4                 | .                                                                                                            | # # |
-| RF - 5                 | .                                                                                                            | #   |
-| RF - 6                 | .                                                                                                            | #   |
-| RF - 7                 | .                                                                                                            | #   |
-| RF - 8                 | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
+|                        | .                                                                                                            | #   |
 
 ### REQUISITOS NÃO FUNCIONAIS
 
-| REQUISITO NÃO_FUNCIONAL_ID | REQUISITOS                                                                                          | SPRINTS     |
+| REQUISITO NÃO FUNCIONAL    | REQUISITOS                                                                                          | SPRINTS     |
 |----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
-| RNF - 1                    | .                                                                                                            | #   |
-| RNF - 2                    | .                                                                                                            | #   |
-| RNF - 3                    | .                                                                                                            | #   |
-| RNF - 4                    | .                                                                                                            | #   |
-| RNF - 5                    | .                                                                                                            | #   |
-| RNF - 6                    | .                                                                                                            | #   |
+|                            | .                                                                                                            | #   |
+|                            | .                                                                                                            | #   |
+|                            | .                                                                                                            | #   |
+|                            | .                                                                                                            | #   |
+|                            | .                                                                                                            | #   |
+|                            | .                                                                                                            | #   |
 
 ## :page_with_curl: USER STORIES
 
 <br>
 
-| ID REFERENCIA | Instrução | Finalidade | 
+|  REFERENCIA   | Instrução | Finalidade | 
 |---------------|-----------|------------|
-| RF            | . | . |   
-| RF            | . | . |   
-| RF            | . | . |   
-| RF            | . | . |  
-| RF            | . | . |   
-| RF            | . | . |   
+|               | . | . |   
+|               | . | . |   
+|               | . | . |   
+|               | . | . |  
+|               | . | . |   
+|               | . | . |   
 
 <br>
 
