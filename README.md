@@ -22,9 +22,12 @@
 | 02     | Sprint 02 | 16/04/2025  | 15/05/2025  |  X     |
 | 03     | Sprint 03 | 16/05/2025  | 10/06/2025  |  X     |
 
+<br>
+<br>
 <h2>Link para o Trelo</h2>
 Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint" target="_blank"> <strong>aqui</strong></a> para acessar o quadro do Trello do projeto.
-
+<br>
+<br>
 
 <h2>Tecnologias</h2>
 <div>
@@ -32,7 +35,8 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
-
+<br>
+<br>
 
 <span id="backlog">
 
