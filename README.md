@@ -105,7 +105,8 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
  
 ## SPRINT 1 
 
-
+https://www.figma.com/design/H9ykp2tUglsJ3HM4xhpoqe/Untitled?node-id=0-1&t=hBgk1VTakJzf9dWQ-1
+https://www.figma.com/design/H9ykp2tUglsJ3HM4xhpoqe/Untitled?node-id=101-120&m=dev&t=hBgk1VTakJzf9dWQ-1
 
 
 
