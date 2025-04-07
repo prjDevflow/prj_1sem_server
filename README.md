@@ -38,7 +38,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <br>
 
-## :page_with_curl: Product Backlog
+## Product Backlog
 
 ### REQUISITOS FUNCIONAIS
 
@@ -64,7 +64,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 |                            | .                                                                                                            | #   |
 |                            | .                                                                                                            | #   |
 
-## :page_with_curl: USER STORIES
+## USER STORIES
 
 <br>
 
@@ -79,7 +79,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <br>
 
-## :page_with_curl: MODELO RELACIONAL
+## MODELO RELACIONAL
 
 <br>
 
@@ -89,7 +89,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <span id="sprint-1">
  
-## :page_with_curl: SPRINT 1 
+## SPRINT 1 
 
 
 
