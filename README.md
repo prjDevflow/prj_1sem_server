@@ -1,5 +1,5 @@
 <h1 align="center">Projeto ABP</h1>
-   <h2>• Integrantes</h2>
+   <h2>Integrantes</h2>
   <ul type="square">
             <li>Lucas Cauã Soares de Paiva (P.O)</li>
             <li>Eduardo da Silva Machado (Scrum master) </li>
@@ -10,7 +10,7 @@
             <li>Rafael Vitor de Medeiros Costa </li>
         </ul>
 
-<h2>• Sobre</h2>
+<h2>Sobre</h2>
 <p> Com o intuito de desenvolver uma aplicação Web usando metodologias ágeis a FATEC DE JACAREÍ propôs aos alunos do 1° semestre do curso de Desenvolvimento de Software Multiplataforma (DSM)</p>
 <br>
 <br>
@@ -22,9 +22,12 @@
 | 02     | Sprint 02 | 16/04/2025  | 15/05/2025  |  X     |
 | 03     | Sprint 03 | 16/05/2025  | 10/06/2025  |  X     |
 
-<h2>• Link para o Trelo</h2>
+<br>
+<br>
+<h2>Link para o Trelo</h2>
 Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint" target="_blank"> <strong>aqui</strong></a> para acessar o quadro do Trello do projeto.
-
+<br>
+<br>
 
 <h2>Tecnologias</h2>
 <div>
@@ -32,15 +35,20 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </div>
-
+<br>
+<br>
 
 <span id="backlog">
 
 <br>
 
-## :page_with_curl: Product Backlog
+<h2>Product Backlog</h2>
 
-### REQUISITOS FUNCIONAIS
+<br>
+
+<h2>Requisitos funcionais</h2>
+
+<br>
 
 | REQUISITO FUNCIONAL    | REQUISITOS                                                                                                 | SPRINTS |
 |------------------------|------------------------------------------------------------------------------------------------------------|---------|
@@ -53,7 +61,11 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 |                        | .                                                                                                            | #   |
 |                        | .                                                                                                            | #   |
 
-### REQUISITOS NÃO FUNCIONAIS
+<br>
+
+<h2>Requisitos não funcionais</h2> 
+
+<br>
 
 | REQUISITO NÃO FUNCIONAL    | REQUISITOS                                                                                          | SPRINTS     |
 |----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
@@ -64,7 +76,9 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 |                            | .                                                                                                            | #   |
 |                            | .                                                                                                            | #   |
 
-## :page_with_curl: USER STORIES
+<br>
+
+<h2> USER STORIES</h2>
 
 <br>
 
@@ -79,7 +93,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <br>
 
-## :page_with_curl: MODELO RELACIONAL
+<h2>Modelo relacional</h2>
 
 <br>
 
@@ -89,7 +103,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <span id="sprint-1">
  
-## :page_with_curl: SPRINT 1 
+## SPRINT 1 
 
 
 
