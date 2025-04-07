@@ -38,9 +38,13 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <br>
 
-## Product Backlog
+<h2>Product Backlog</h2>
 
-### REQUISITOS FUNCIONAIS
+<br>
+
+<h2>Requisitos funcionais</h2>
+
+<br>
 
 | REQUISITO FUNCIONAL    | REQUISITOS                                                                                                 | SPRINTS |
 |------------------------|------------------------------------------------------------------------------------------------------------|---------|
@@ -53,7 +57,11 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 |                        | .                                                                                                            | #   |
 |                        | .                                                                                                            | #   |
 
-### REQUISITOS NÃO FUNCIONAIS
+<br>
+
+<h2>Requisitos não funcionais</h2> 
+
+<br>
 
 | REQUISITO NÃO FUNCIONAL    | REQUISITOS                                                                                          | SPRINTS     |
 |----------------------------|-----------------------------------------------------------------------------------------------------|-------------|
@@ -64,7 +72,9 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 |                            | .                                                                                                            | #   |
 |                            | .                                                                                                            | #   |
 
-## USER STORIES
+<br>
+
+<h2> USER STORIES</h2>
 
 <br>
 
@@ -79,7 +89,7 @@ Clique <a href="https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049
 
 <br>
 
-## MODELO RELACIONAL
+<h2>Modelo relacional</h2>
 
 <br>
 
