@@ -6,54 +6,65 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="cabecalho">
-      <!-- Conteudo cabecalho, btn mapa interativo -->
-       <h1>Horário de Aulas</h1>
-      <button
-        class="btnPrimary"
-        onclick="loadContentPages(event, 'pages/mapGround.html')"
-      >
-        Mapa Interativo
-      </button>
+    <div class="contMain">
+      <section class="cabecalho">
+        <!-- Conteudo cabecalho, btn mapa interativo -->
+        <h1>Horário de Aulas</h1>
+        <hr />
+        <div>
+          <button
+            class="btnPrimary"
+            onclick="loadContentPages(event, 'pages/mapGround.html')"
+          >
+            Mapa Interativo
+          </button>
+          <button
+            class="btnPrimary"
+            onclick="loadContentPages(event, 'pages/mapGround.html')"
+          >
+            Mapa Interativo
+          </button>
+        </div>
       </section>
-    <section class="container">
-      <!-- Conteudo principal -->
-       
-      <div class="cardCurso">
-        <img
-          src="/client/Imagens/imgMarh.png"
-          alt="Meio Ambiente e Recursos Hídricos"
-        />
-        <button
-          class="btnPrimary"
-          onclick="loadContentPages(event, 'pages/rh.html')"
-        >
-          Meio Ambiente e Recursos<br />
-          Hídricos
-        </button>
-      </div>
-      <div class="cardCurso">
-        <img
-          src="/client/Imagens/imgDsm.png"
-          alt="Desenvolvimento de Softwares Multiplataformas"
-        />
-        <button
-          class="btnPrimary"
-          onclick="loadContentPages(event, 'pages/dsm.html')"
-        >
-          Desenvolvimento de Softwares<br />
-          Multiplataformas
-        </button>
-      </div>
-      <div class="cardCurso">
-        <img src="/client/Imagens/imgGeo.png" alt="Geoprocessamento" />
-        <button
-          class="btnPrimary"
-          onclick="loadContentPages(event, 'pages/geo.html')"
-        >
-          Geoprocessamento
-        </button>
-      </div>
-    </section>
+      <section class="container">
+        <!-- Conteudo principal -->
+
+        <div class="cardCurso">
+          <img
+            src="/client/Imagens/imgMarh.png"
+            alt="Meio Ambiente e Recursos Hídricos"
+          />
+          <button
+            class="btnPrimary widthBtn"
+            onclick="loadContentPages(event, 'pages/rh.html')"
+          >
+            Meio Ambiente e Recursos<br />
+            Hídricos
+          </button>
+        </div>
+        <div class="cardCurso">
+          <img
+            src="/client/Imagens/imgDsm.png"
+            alt="Desenvolvimento de Softwares Multiplataformas"
+          />
+          <button
+            class="btnPrimary widthBtn"
+            onclick="loadContentPages(event, 'pages/dsm.html')"
+          >
+            Desenvolvimento de Softwares<br />
+            Multiplataformas
+          </button>
+        </div>
+        <div class="cardCurso">
+          <img src="/client/Imagens/imgGeo.png" alt="Geoprocessamento" />
+          <button
+            class="btnPrimary widthBtn"
+            onclick="loadContentPages(event, 'pages/geo.html')"
+          >
+            Geoprocessamento
+          </button>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
