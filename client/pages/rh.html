@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title></title>
 </head>
-
+ 
 <body>
-  <section>
+  <section class="contCursos">
     <section class="cursoSection">
       <div class="cursoTitle">
         <img class="imgCurso" src="/client/Imagens/imgMarh.png" />
         <h2>Meio Ambiente e Recursos Hidricos</h2>
       </div>
-
+ 
       <div class="cursoDivider bcgRh"></div>
-
+ 
       <p class="cursoText">
         O Tecnólogo em Meio Ambiente e Recursos Hídricos está apto a planejar e gerenciar os aspectos ambientais de
         organizações dos mais diversos setores e segmentos; identificar, caracterizar e solucionar problemas ambientais;
         realizar a gestão racional e responsável dos recursos hidricos; promover a recuperação ambiental de áreas
         degradadas, rios e bacias hidrográficas.
       </p>
+      <div class="cursoSeparator bcgRh">
+        <div class="btnHome">
+          <button onclick="loadContentPages(event, 'pages/main.html')">
+            <i class="fa-solid fa-chevron-left fa-sm"></i>
+          </button>
+        </div>
+        <div class="cursoDropdown-rh">
+          <button class="btn-menu-rh">TURMA</button>
+          <div class="dropdown-content bcgRh">
+            <button class="sub-btn-rh">RH-1</button>
+            <button class="sub-btn-rh">RH-2</button>
+            <button class="sub-btn-rh">RH-3</button>
+            <button class="sub-btn-rh">RH-4</button>
+            <button class="sub-btn-rh">RH-5</button>
+            <button class="sub-btn-rh">RH-6</button>
+          </div>
+        </div>
+      </div>
     </section>
-    <div class="cursoSeparator bcgRh">
-      <div class="btnHome">
-        <button onclick="loadContentPages(event, 'pages/main.html')">
-          <i class="fa-solid fa-chevron-left fa-sm"></i>
-        </button>
-      </div>
-      <div class="cursoDropdown-rh">
-        <button class="btn-menu-rh">TURNO</button>
-        <div class="dropdown-content bcgRh">
-          <button class="sub-btn-rh">DIURNO</button>
-          <button class="sub-btn-rh">NOTURNO</button>
-        </div>
-      </div>
-      <div class="cursoDropdown-rh">
-        <button class="btn-menu-rh">ANDAR</button>
-        <div class="dropdown-content bcgRh">
-          <button class="sub-btn-rh">1º ANDAR</button>
-          <button class="sub-btn-rh">2º ANDAR</button>
-          <button class="sub-btn-rh">3º ANDAR</button>
-        </div>
-      </div>
-    </div>
   </section>
 </body>
-
+ 
 </html>
