@@ -136,4 +136,6 @@ footer {
   gap: 16px;
   width: 100%;
 }
-
+.social-icons > a {
+  text-decoration: none;
+}

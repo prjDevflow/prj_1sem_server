@@ -10,6 +10,12 @@
 <body>
   <section class="contCursos">
     <section class="cursoSection">
+      <div class="btnHome">
+        <button onclick="loadContentPages(event, 'pages/main.html')">
+          <i class="fa-solid fa-chevron-left fa-sm"></i>
+          Voltar
+        </button>
+      </div>
       <div class="cursoTitle">
         <img class="imgCurso" src="/client/Imagens/imgGeo.png" />
         <h2>Geoprocessamento</h2>
@@ -29,20 +35,10 @@
         transporte, de processos agrícolas, entre outras.
       </p>
       <div class="cursoSeparator bcgGeo">
-        <div class="btnHome">
-          <button onclick="loadContentPages(event, 'pages/main.html')">
-            <i class="fa-solid fa-chevron-left fa-sm"></i>
-          </button>
-        </div>
         <div class="cursoDropdown-geo">
-          <button class="btn-menu-geo">ANDAR</button>
+          <button class="btn-menu-geo">TURNO</button>
           <div class="dropdown-content bcgGeo">
-            <button class="sub-btn-geo">GEO-1</button>
-            <button class="sub-btn-geo">GEO-2</button>
-            <button class="sub-btn-geo">GEO-3</button>
-            <button class="sub-btn-geo">GEO-4</button>
-            <button class="sub-btn-geo">GEO-5</button>
-            <button class="sub-btn-geo">GEO-6</button>
+            <button class="sub-btn-geo">NOTURNO</button>
           </div>
         </div>
       </div>
