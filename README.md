@@ -7,11 +7,18 @@ Ou na versão Mobile, [aqui](https://www.figma.com/design/H9ykp2tUglsJ3HM4xhpoqe
 
 ## Sobre o Projeto
 
-A ideia do sistema é:
+A ideia do projeto é:
 
-_"Ideia principal do projeto"._
+_"Desenvolver um sistema web para que a comunidade acadêmica possa consultar os horários das aulas"._
 
-Detalhamento do projeto...
+A cada semestre, as coordenações de curso, juntamente com a secretaria acadêmica, montam os
+horários de aula e alocam as aulas nos ambientes da faculdade, como salas de aula e laboratórios. 
+Normalmente, são divulgados os horários de aula para a comunidade acadêmica por meio dos murais da
+faculdade e e-mail. No entanto, a cada alteração no horário de professores, disciplinas ou
+ambientes, é necessário refazer os informes impressos.
+
+A partir dessa problemática, surgiu a necessidade de um sistema para a consulta dos horários das aulas por
+curso, ambiente, turno (diurno e noturno) e turma.
 
 ## Colaboradores
 
@@ -26,11 +33,11 @@ Detalhamento do projeto...
 
 ## Sprints
 
-| Sprint | Início     | Entrega     | Status |
-|--------|------------|-------------|--------|
-| 01     | 18/03/2025 | 15/04/2025  |  Em andamento     |
-| 02     | 16/04/2025 | 15/05/2025  |  -     |
-| 03     | 16/05/2025 | 10/06/2025  |  -     |
+| Sprint | Início     | Entrega     | Status | Trello |
+|--------|------------|-------------|-----------------|--------|
+| 01     | 18/03/2025 | 15/04/2025  |  Em andamento   | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
+| 02     | 16/04/2025 | 15/05/2025  |  -     | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
+| 03     | 16/05/2025 | 10/06/2025  |  -     | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
 
 Para visualizar as informações das sprints do projeto, acesse o quadro do Trello [aqui](https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint).
 
@@ -58,7 +65,7 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
 
 ##  User Stories
 
-| Id Requisito | Remetente | Instrução                     | Finalidade  |
+| Id Requisito | Remetente    | Instrução                     | Finalidade  |
 |--------------|--------------|-------------------------------|-------------|
 | RF01         | 8 pts        | Protótipo das telas do Figma  | Rafael   |
  
@@ -67,9 +74,17 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
 Explicação da Sprint...
 
 ### Sprint Backlog
-| Id Requisito | Story Points | Tarefa                        | Responsável |
-|--------------|--------------|-------------------------------|-------------|
-| RF01         | 8 pts        | Protótipo das telas do Figma  | Rafael   |
+| Id Requisito  | Story Points  | Tarefa                        |
+|---------------|---------------|-------------------------------|
+| RF03          | 13 pts        | Criar modelo conceitual do banco de dados  |
+| RF04          | 3 pts         | Criar botão para exportar mapa/relatório em pdf  |
+| RF05          | 31 pts        | Criar página para consultar as aulas de cada curso  |
+| RNF01         | 13 pts        | Criar mapas interativos das salas  |
+| RNF02         | 5 pts         | Criar layout responsivo para aplicativos móveis  |
+| R01           | 13 pts        | Prototipar as telas do sistema no Figma  |
+| -             | 9 pts         | Criar página inicial  |
+| -             | 5 pts         | Criar o banco de dados  |
+| -             | 5 pts         | Criar modelo UML  |
 
 ### Burndown
 
