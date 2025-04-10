@@ -22,9 +22,6 @@
 .bcgRh {
   background-color: var(--color-rh);
 }
-header > img {
-  height: 40px;
-}
 #mainContent {
   /* height: 100%; */
   background-color: #f1f1f1;
@@ -35,8 +32,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 45px;
   padding: 30px 20px;
+}
+header > img {
+  width: calc(5vw + 10px); 
+  height: auto;  
+  min-width: 70px;  
 }
 footer {
   background-color: #e22427;
@@ -85,7 +87,7 @@ footer {
   align-items: center;
 }
 .widthBtn {
-  width: 95%;
+  width: 100%;
 }
 .btnHome {
   width: 100%;
@@ -110,12 +112,12 @@ footer {
   flex-direction: column;
   min-height: 85vh;
   padding: 0px 400px;
-  gap: 150px;
+  gap: 80px;
 }
 .cabecalho{
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
   gap: 10px;
   width: 100%;
@@ -129,6 +131,7 @@ footer {
   border: none;
   border-radius: 8px;
   background-color: #e22427;
+  display: flex;
 }
 .cabecalho > div {
   display: flex;
@@ -138,4 +141,17 @@ footer {
 }
 .social-icons > a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+    .contMain{
+      padding: 50px 5vw;
+      width: 100%;
+    }
+    .cabecalho > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+    }
 }

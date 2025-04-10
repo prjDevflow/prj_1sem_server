@@ -1,70 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="contMain">
-      <section class="cabecalho">
-        <!-- Conteudo cabecalho, btn mapa interativo -->
-        <h1>Horário de Aulas</h1>
-        <hr />
-        <div>
-          <button
-            class="btnPrimary"
-            onclick="loadContentPages(event, 'pages/mapGround.html')"
-          >
-            Área Restrita
-          </button>
-          <button
-            class="btnPrimary"
-            onclick="loadContentPages(event, 'pages/mapGround.html')"
-          >
-            Mapa Interativo
-          </button>
-        </div>
-      </section>
-      <section class="container">
-        <!-- Conteudo principal -->
 
-        <div class="cardCurso">
-          <img
-            src="/client/Imagens/imgMarh.png"
-            alt="Meio Ambiente e Recursos Hídricos"
-          />
-          <button
-            class="btnPrimary widthBtn"
-            onclick="loadContentPages(event, 'pages/rh.html')"
-          >
-            Meio Ambiente e Recursos<br />
-            Hídricos
-          </button>
-        </div>
-        <div class="cardCurso">
-          <img
-            src="/client/Imagens/imgDsm.png"
-            alt="Desenvolvimento de Softwares Multiplataformas"
-          />
-          <button
-            class="btnPrimary widthBtn"
-            onclick="loadContentPages(event, 'pages/dsm.html')"
-          >
-            Desenvolvimento de Softwares<br />
-            Multiplataformas
-          </button>
-        </div>
-        <div class="cardCurso">
-          <img src="/client/Imagens/imgGeo.png" alt="Geoprocessamento" />
-          <button
-            class="btnPrimary widthBtn"
-            onclick="loadContentPages(event, 'pages/geo.html')"
-          >
-            Geoprocessamento
-          </button>
-        </div>
-      </section>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="contMain">
+    <section class="cabecalho">
+      <!-- Conteudo cabecalho, btn mapa interativo -->
+      <h1>Horário de Aulas</h1>
+      <hr />
+      <div>
+        <button class="btnPrimary" onclick="loadContentPages(event, 'pages/mapGround.html')">
+          Área Restrita
+        </button>
+        <button class="btnPrimary" onclick="loadContentPages(event, 'pages/mapGround.html')">
+          Mapa Interativo
+        </button>
+      </div>
+    </section>
+    <section class="container">
+      <!-- Conteudo principal -->
+
+      <div class="cardCurso">
+        <img src="/client/Imagens/imgMarh.png" alt="Meio Ambiente e Recursos Hídricos" />
+        <button class="btnPrimary widthBtn" onclick="loadContentPages(event, 'pages/rh.html')">
+          Meio Ambiente e Recursos
+          Hídricos
+        </button>
+      </div>
+      <div class="cardCurso">
+        <img src="/client/Imagens/imgDsm.png" alt="Desenvolvimento de Softwares Multiplataformas" />
+        <button class="btnPrimary widthBtn" onclick="loadContentPages(event, 'pages/dsm.html')">
+          Desenvolvimento de Softwares
+          Multiplataformas
+        </button>
+      </div>
+      <div class="cardCurso">
+        <img src="/client/Imagens/imgGeo.png" alt="Geoprocessamento" />
+        <button class="btnPrimary widthBtn" onclick="loadContentPages(event, 'pages/geo.html')">
+          Geoprocessamento
+        </button>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
