@@ -74,6 +74,18 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
 | RF05         | Como coordenador ou administrador acadêmico        | Quero realizar consultas no sistema por critérios como turma, turno, professor ou data  | Para que eu possa acessar rapidamente informações relevantes para a gestão acadêmica   |
 | RFN01         | Como gestor acadêmico ou coordenador        | Quero visualizar um mapa interativo das salas com a ocupação por turnos ao longo do dia  | Para que eu possa entender rapidamente a utilização dos ambientes e tomar decisões mais assertivas de alocação   |
 | RFN02         | Como usuário do sistema       | Quero que o sistema se adapte automaticamente ao dispositivo que estou utilizando (computador, tablet ou celular)  | Para que eu tenha uma boa experiência de uso, independentemente do tamanho da tela   |
+
+## Critérios de Aceitação
+
+| Id Requisito  | Critérios de Aceitação |
+|---------------|---------------|
+| RF01          | 1- O sistema deve permitir o upload de arquivos CSV. <br> 2- O sistema deve ler e processar corretamente os dados do arquivo. <br>  3- O sistema deve informar ao usuário sobre possíveis erros no arquivo (Ex: dados mal formatados ou campos obrigatórios ausentes).| 
+| RF02          | 1- Quando eu estiver na interface, o sistema deve carregar os registros e permitir visualizar, editar ou excluir as suas informações. <br> 2- O sistema deve incluir um botão para criar um novo registro e abrir um formulário para adiicionar as informações.| 
+| RF03          | 1- O sistema deve impedir o cadastro de uma nova turma caso já exista outra turma alocada na mesma sala, no mesmo dia e horário.<br> 2- A verificação de conflito deve considerar o intervalo completo da aula (início e fim), não apenas o horário de início. <br> 3- A mensagem de erro deve indicar claramente qual é a turma em conflito, o horário e a sala. <br> 4- A validação deve ocorrer tanto no cadastro manual quanto na importação de dados. <br> 5- O sistema deve permitir o cadastro se as turmas forem em horários diferentes, mesmo que na mesma sala.  | 
+| RF04          | 1- O sistema deve oferecer a opção de exportar relatórios diretamente da interface de visualização de ambientes e horários.<br> 2- O arquivo gerado deve estar no formato PDF e conter todas as informações visíveis na tela selecionada.<br> 3- O layout do PDF deve ser organizado, legível e respeitar a estrutura do mapa/relatório exibido na tela.<br> 4- O sistema deve notificar o usuário caso ocorra alguma falha na geração do arquivo.  | 
+| RF05          | 1- O sistema deve permitir filtros de busca por pelo menos os seguintes campos: turma, turno.<br>  2- O sistema deve exibir os resultados da consulta de forma clara e organizada, em formato de tabela. <br> 3- O sistema deve permitir exportar os resultados da consulta em PDF. <br> 4- Caso não haja resultados para os filtros aplicados, o sistema deve exibir uma mensagem amigável de "nenhum dado encontrado".| 
+| RNF01          | 1- O sistema deve exibir um mapa (grade ou planta).<br> 2- O usuário deve poder clicar ou passar o mouse sobre uma sala para visualizar detalhes como: turma, horário e professor alocados. <br> 3- A interface deve ser responsiva, funcionando em diferentes tamanhos de tela.        | 
+| RNF02          | 1- A interface do sistema deve se ajustar automaticamente a diferentes resoluções de tela (desktop, tablet e mobile).<br> 2- Os elementos de navegação devem permanecer funcionais e visíveis em qualquer dispositivo. <br> 3- O conteúdo principal (como relatórios, mapas de salas, listas de turmas) deve se reorganizar para manter a legibilidade em telas menores.| 
  
 ## Sprint 01
 
