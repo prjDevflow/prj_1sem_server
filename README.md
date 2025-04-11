@@ -36,8 +36,8 @@ curso, ambiente, turno (diurno e noturno) e turma.
 | Sprint | Início     | Entrega     | Status | Trello |
 |--------|------------|-------------|-----------------|--------|
 | 01     | 18/03/2025 | 15/04/2025  |  Em andamento   | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
-| 02     | 16/04/2025 | 15/05/2025  |  -     | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
-| 03     | 16/05/2025 | 10/06/2025  |  -     | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
+| 02     | 16/04/2025 | 15/05/2025  |  -     | - |
+| 03     | 16/05/2025 | 10/06/2025  |  -     | - |
 
 Para visualizar as informações das sprints do projeto, acesse o quadro do Trello [aqui](https://trello.com/invite/b/67cf74d4a47f8308a0bd9c9b/ATTI30ae049e04f5319833ecaf3ba7456af94CA286F4/projeto-abp-1-sprint).
 
