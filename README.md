@@ -88,7 +88,7 @@ Explicação da Sprint...
 
 ### Burndown
 
-![Preview-Screens](https://github.com/steniowagner/mindCast/blob/master/PUXA-R10!.png)
+![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/bourndown%20-%20Sprint%201.PNG)
 
 ### Sprint Retrospective
 
