@@ -93,8 +93,12 @@ Explicação da Sprint...
 ### Sprint Retrospective
 
 _**1. O que funcionou bem durante o sprint?**_
+   Divisão de tarefas
+   Interesse dos Dev´s
+   Comunicação
 
 _**2. O que não funcionou tão bem durante o sprint?**_
-
+      Saída de um integrante da equipe
 _**3. Quais ações podemos tomar para melhorar no próximo sprint?**_
-
+   Organização 
+      Melhor estabelecimento das Dailys
