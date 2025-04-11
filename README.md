@@ -1,6 +1,6 @@
 # ABP - 1º Semestre
 
-![Preview-Screens](https://github.com/steniowagner/mindCast/blob/master/PUXA-R10!.png)
+![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/ModeloPaginas.png)
 
 Caso deseje dar uma olhada no protótipo na versão Desktop, acesse [aqui](https://www.figma.com/design/H9ykp2tUglsJ3HM4xhpoqe/Untitled?node-id=0-1&t=hBgk1VTakJzf9dWQ-1).
 Ou na versão Mobile, [aqui](https://www.figma.com/design/H9ykp2tUglsJ3HM4xhpoqe/Untitled?node-id=101-120&m=dev&t=hBgk1VTakJzf9dWQ-1).
