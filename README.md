@@ -68,10 +68,10 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
 | Id Requisito | Remetente    | Instrução                     | Finalidade  |
 |--------------|--------------|-------------------------------|-------------|
 | RF01         | Como usuário administrativo (secretaria acadêmica)        |  Quero importar dados no sistema a partir de um arquivo CSV  | Para que os dados da faculdade possam ser facilmente carregados no sistema sem a necessidade de inserção manual   |
-| RF02         |  Como usuário administrativo (secretaria acadêmica)       | Quero gerenciar os dados do sistema por meio de uma interface  | Para que eu possa fazer alterações, inclusões ou exclusões diretamente na aplicação.   |
+| RF02         |  Como usuário administrativo (secretaria acadêmica)       | Quero gerenciar os dados do sistema por meio de uma interface  | Para que eu possa fazer alterações, inclusões ou exclusões diretamente na aplicação   |
 | RF03         | Como administrador acadêmico        | Quero que o sistema impeça que duas turmas sejam alocadas na mesma sala no mesmo horário  | Para que eu possa garantir que não existam conflitos físicos de espaço no cronograma da faculdade   |
 | RF04         | Como administrador acadêmico        | Quero exportar relatórios e mapas de ambientes e horários em formato PDF  | Para que eu possa compartilhá-los com a equipe, professores e coordenação de forma padronizada e acessível   |
-| RF05         | Como coordenador ou administrador acadêmico        | Quero realizar consultas no sistema por critérios como turma e turno.  | Para que eu possa acessar rapidamente informações relevantes para a gestão acadêmica   |
+| RF05         | Como coordenador ou administrador acadêmico        | Quero realizar consultas no sistema por critérios como turma e turno  | Para que eu possa acessar rapidamente informações relevantes para a gestão acadêmica   |
 | RFN01         | Como gestor acadêmico ou coordenador        | Quero visualizar um mapa interativo das salas com a ocupação por turnos ao longo do dia  | Para que eu possa entender rapidamente a utilização dos ambientes e tomar decisões mais assertivas de alocação   |
 | RFN02         | Como usuário do sistema       | Quero que o sistema se adapte automaticamente ao dispositivo que estou utilizando (computador, tablet ou celular)  | Para que eu tenha uma boa experiência de uso, independentemente do tamanho da tela   |
 
