@@ -48,7 +48,7 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
    - RF02 – (opcional) Fazer o gerenciamento dos dados do sistema (CRUD) através da interface da aplicação, permitindo que a secretaria acadêmica/coordenação altere os dados por meio de uma tela da aplicação
    - RF03 – Garantir que o cadastro ou a ingestão de dados satisfaça as regras básicas de alocação da faculdade (ex.: duas turmas diferentes não podem ser alocadas na mesma sala, e um professor não pode ter duas turmas no mesmo horário).
    - RF04 – Permitir que o sistema exporte relatórios/mapas de ambientes e horários em formato PDF.
-   - RF05 – Permitir consultas no sistema (ex.: por turma, turno, professor, data) para apoiar a gestão da faculdade.
+   - RF05 – Permitir consultas no sistema (ex.: por turma e turno) para apoiar a gestão da faculdade.
 
 - Requisitos Não Funcionais
    - RNF01 – Exibir um mapa de salas com a opção interativa para visualizar a situação do ambiente (ex. aulas alocadas ao longo dos turnos do dia);
@@ -71,7 +71,7 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
 | RF02         |  Como usuário administrativo (secretaria acadêmica)       | Quero gerenciar os dados do sistema por meio de uma interface  | Para que eu possa fazer alterações, inclusões ou exclusões diretamente na aplicação.   |
 | RF03         | Como administrador acadêmico        | Quero que o sistema impeça que duas turmas sejam alocadas na mesma sala no mesmo horário  | Para que eu possa garantir que não existam conflitos físicos de espaço no cronograma da faculdade   |
 | RF04         | Como administrador acadêmico        | Quero exportar relatórios e mapas de ambientes e horários em formato PDF  | Para que eu possa compartilhá-los com a equipe, professores e coordenação de forma padronizada e acessível   |
-| RF05         | Como coordenador ou administrador acadêmico        | Quero realizar consultas no sistema por critérios como turma, turno, professor ou data  | Para que eu possa acessar rapidamente informações relevantes para a gestão acadêmica   |
+| RF05         | Como coordenador ou administrador acadêmico        | Quero realizar consultas no sistema por critérios como turma e turno.  | Para que eu possa acessar rapidamente informações relevantes para a gestão acadêmica   |
 | RFN01         | Como gestor acadêmico ou coordenador        | Quero visualizar um mapa interativo das salas com a ocupação por turnos ao longo do dia  | Para que eu possa entender rapidamente a utilização dos ambientes e tomar decisões mais assertivas de alocação   |
 | RFN02         | Como usuário do sistema       | Quero que o sistema se adapte automaticamente ao dispositivo que estou utilizando (computador, tablet ou celular)  | Para que eu tenha uma boa experiência de uso, independentemente do tamanho da tela   |
 
