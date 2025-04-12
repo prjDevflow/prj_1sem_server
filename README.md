@@ -116,8 +116,10 @@ _**1. O que funcionou bem durante o sprint?**_
    Comunicação
 <br>
 _**2. O que não funcionou tão bem durante o sprint?**_
+<br>
       Saída de um integrante da equipe
 <br>
 _**3. Quais ações podemos tomar para melhorar no próximo sprint?**_
+<br>
    Organização 
-      Melhor estabelecimento das Dailys
+   Melhor estabelecimento das Dailys
