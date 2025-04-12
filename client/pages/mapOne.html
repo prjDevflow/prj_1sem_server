@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../styles/maps.css" /> -->
-  </head>
-  <body>
-    <section class="andarContainer">
-      <div class="btnHome">
-        <button onclick="loadContentPages(event, 'pages/main.html')">
-          <i class="fa-solid fa-chevron-left fa-sm"></i>
-          Voltar
-        </button>
-      </div>
-      <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
-      <nav>
-        <button onclick="loadContentPages(event, 'pages/mapGround.html')">
-          <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
-        </button>
-        <h1>1º Andar</h1>
-        <button onclick="loadContentPages(event, 'pages/mapTwo.html')">
-          <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
-        </button>
-      </nav>
 
-      <section class="map">
-        <img src="/client/Imagens/img_mapUm.png" alt="mapa do primeiro andar"></img>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../styles/maps.css" /> -->
+</head>
 
-        <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
-        <button class="btnSala_Width" style="top: 55px; left: 4px;" onclick="loadContentPages(event, '')">
-          Sala de Aula
-          <br> 102
-        </button>
-        <button class="btnSala_Width" style="top: 55px; left: 100px;" onclick="loadContentPages(event, '')">
-          Sala de Aula
-          <br> 104
-        </button>
-        <button class="btnSala_Width" style="top: 55px; left: 195px;" onclick="loadContentPages(event, '')">
-          Sala de Aula
-          <br> 106
-        </button>
+<body>
+  <section class="andarContainer">
+    <div class="btnHome">
+      <button onclick="loadContentPages(event, 'pages/main.html')">
+        <i class="fa-solid fa-chevron-left fa-sm"></i>
+        Voltar
+      </button>
+    </div>
+    <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
+    <nav>
+      <button onclick="loadContentPages(event, 'pages/mapGround.html')">
+        <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
+      </button>
+      <h1>1º Andar</h1>
+      <button onclick="loadContentPages(event, 'pages/mapTwo.html')">
+        <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
+      </button>
+    </nav>
 
-        <button class="btnSala_Width" style="bottom: 60px; left: 4px; font-size: 0.95rem;" onclick="loadContentPages(event, '')">
-          Lab. de Informática
-          <br> 101
-        </button>
-        <button class="btnSala_Width" style="bottom: 60px; left: 100px; font-size: 0.95rem;" onclick="loadContentPages(event, '')">
-          Lab. de Informática
-          <br> 103
-        </button>
-        <button class="btnSala_Width" style="bottom: 60px; left: 195px; font-size: 0.95rem;" onclick="loadContentPages(event, '')">
-          Lab. de Informática
-          <br> 105
-        </button>
-        <button class="btnSala_Width" style="bottom: 60px; left: 292px; font-size: 0.95rem;" onclick="loadContentPages(event, '')">
-          Lab. de Informática
-          <br> 107
-        </button>
+    <section class="map">
+      <img class="mapDesktop" src="/client/Imagens/img_mapUm.png" alt="mapa primeiro andar"></img>
+      <img class="mapMobile" src="/client/Imagens/img_mapUmMobile.png" alt="mapa primeiro andar"></img>
 
-        <button class="btnSalaMaior_Width" style="top: 60px; right: 234px;" onclick="loadContentPages(event, '')">
-          Lab. de Informática
-          <br> 108
-        </button>
+      <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
+      <button class="sala sala102" onclick="loadContentPages(event, '')">
+        Sala de Aula
+        <br> 102
+      </button>
+      <button class="sala sala104" onclick="loadContentPages(event, '')">
+        Sala de Aula
+        <br> 104
+      </button>
+      <button class="sala sala106" onclick="loadContentPages(event, '')">
+        Sala de Aula
+        <br> 106
+      </button>
 
-        <button class="btnSalaMaior_Width" style="top: 70px; right: 4px;" onclick="loadContentPages(event, '')">
-          Sala Maker
-          <br> 110
-        </button>
-      </section>
+      <button class="sala sala101" onclick="loadContentPages(event, '')">
+        Lab. de Informática
+        <br> 101
+      </button>
+      <button class="sala sala103" onclick="loadContentPages(event, '')">
+        Lab. de Informática
+        <br> 103
+      </button>
+      <button class="sala sala105" onclick="loadContentPages(event, '')">
+        Lab. de Informática
+        <br> 105
+      </button>
+      <button class="sala sala107" onclick="loadContentPages(event, '')">
+        Lab. de Informática
+        <br> 107
+      </button>
+
+      <button class="sala sala108" onclick="loadContentPages(event, '')">
+        Lab. de Informática
+        <br> 108
+      </button>
+
+      <button class="sala sala110" onclick="loadContentPages(event, '')">
+        Sala Maker
+        <br> 110
+      </button>
     </section>
-  </body>
+  </section>
+</body>
+
 </html>

@@ -1,11 +1,11 @@
 .andarContainer {
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 450px;
+  padding: 0px 25vw;
   gap: 25px;
 }
 .andarContainer > p {
@@ -16,7 +16,6 @@ nav {
   display: flex;
   justify-content: center;
   gap: 200px;
-  /* padding: 0px 200px; */
 }
 nav > h1 {
   text-align: center;
@@ -38,46 +37,308 @@ nav > button {
   border-radius: 6px;
   box-shadow: 0px;
 }
-.map > button {
+.mapMobile {
+  display: none;
+}
+.sala {
   position: absolute;
   /* background-color: greenyellow; */
   background-color: transparent;
   font-weight: 600;
   text-wrap: pretty;
-  font-size: 1rem;
+  font-size: 0.95rem;
   padding: 10px 5px;
   border: none;
   cursor: pointer;
-  line-height: 20px
+  line-height: 20px;
 }
 .map button:hover {
   /* background-color: #eee; */
   text-decoration-line: underline;
   text-underline-offset: 2px;
 }
-.btnLdt {
+/* BOTOES DE REDIRECIONAMENTO */
+/* ANDAR TERREO */
+.sala01,
+.sala02,
+.sala03,
+.sala04 {
+  width: 140px;
+}
+.sala01 {
+  top: 70%;
+  right: 24.5%;
+}
+.sala02 {
+  top: 12%;
+  right: 24.5%;
+}
+.sala03 {
+  top: 68%;
+  right: 1%;
+}
+.sala04 {
+  top: 12%;
+  right: 1%;
+}
+
+/* ANDAR PRIMEIRO */
+.sala101,
+.sala103,
+.sala105,
+.sala107 {
+  width: 84px;
+  top: 71%;
+}
+.sala101 {
+  right: 90.9%;
+}
+.sala103 {
+  right: 81.2%;
+}
+.sala105 {
+  right: 71.5%;
+}
+.sala107 {
+  right: 61.5%;
+}
+
+.sala102,
+.sala104,
+.sala106 {
+  width: 80px;
+  top: 12.5%;
+}
+.sala102 {
+  right: 90.7%;
+}
+.sala104 {
+  right: 81%;
+}
+.sala106 {
+  right: 71.3%;
+}
+
+.sala108,
+.sala110 {
+  width: 140px;
+}
+.sala108 {
+  top: 12.5%;
+  right: 24.5%;
+}
+.sala110 {
+  top: 14%;
+  right: 1%;
+}
+
+/* ANDAR SEGUNDO */
+.sala202,
+.sala204,
+.sala206 {
+  width: 80px;
+  top: 12%;
+}
+.sala202 {
+  right: 90.7%;
+}
+.sala204 {
+  right: 81%;
+}
+.sala206 {
+  right: 71.3%;
+}
+
+.sala208,
+.sala210 {
+  width: 140px;
+}
+.sala208 {
+  top: 15%;
+  right: 24.3%;
+}
+.sala210 {
+  top: 13%;
+  right: 1%;
+}
+
+.sala201,
+.sala203,
+.sala205 {
+  width: 110px;
+}
+.sala201 {
+  top: 70%;
+  right: 87.5%;
+  padding: 10px 0px;
+}
+.sala203 {
+  top: 72.5%;
+  right: 74.5%;
+}
+.sala205 {
+  top: 70%;
+  right: 61.5%;
+}
+
+.sala207,
+.sala209 {
   width: 150px;
-  top: 60px;
-  right: 237px;
+  top: 72%;
 }
-.btnLqa {
-  width: 150px;
-  bottom: 60px;
-  right: 237px;
+.sala207 {
+  right: 22%;
 }
-.btnLma {
-  width: 150px;
-  bottom: 45px;
-  right: 8px;
+.sala209 {
+  right: 2%;
 }
-.btnLaa {
-  width: 150px;
-  top: 60px;
-  right: 8px;
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 800px) {
+  .andarContainer {
+    padding: 3dvh 7vw;
+  }
+  nav {
+    justify-content: space-between;
+    gap: 0px;
+  }
+  .mapMobile {
+    display: block;
+  }
+  .mapDesktop {
+    display: none;
+  }
 }
-.btnSala_Width {
-  width: 90px;
-}
-.btnSalaMaior_Width {
-  width: 155px;
+@media screen and (max-width: 450px) {
+  /* BOTOES DE REDIRECIONAMENTO */
+  /* ANDAR TERREO */
+  .sala01 {
+    width: 140px;
+    top: 27%;
+    right: 1.5%;
+  }
+  .sala02 {
+    width: 140px;
+    top: 27%;
+    right: 60%;
+  }
+  .sala03 {
+    width: 140px;
+    top: 2%;
+    right: 1.5%;
+  }
+  .sala04 {
+    width: 140px;
+    top: 3.5%;
+    right: 60%;
+  }
+
+  /* ANDAR PRIMEIRO */
+  .sala101,
+  .sala103,
+  .sala105,
+  .sala107 {
+    width: 130px;
+    padding: 2px 0px;
+    right: 3%;
+  }
+  .sala101 {
+    top: 90.8%;
+  }
+  .sala103 {
+    top: 81%;
+  }
+  .sala105 {
+    top: 71.3%;
+  }
+  .sala107 {
+    top: 61.4%;
+  }
+
+  .sala102,
+  .sala104,
+  .sala106 {
+    width: 120px;
+    right: 62.5%;
+  }
+  .sala102 {
+    top: 91%;
+  }
+  .sala104 {
+    top: 81.3%;
+  }
+  .sala106 {
+    top: 71.5%;
+  }
+
+  .sala108,
+  .sala110 {
+    width: 140px;
+  }
+  .sala108 {
+    top: 27%;
+    right: 60%;
+  }
+  .sala110 {
+    top: 5%;
+    right: 60%;
+  }
+
+  /* ANDAR SEGUNDO */
+  .sala202,
+  .sala204,
+  .sala206 {
+    width: 100px;
+    right: 65.5%;
+  }
+  .sala202 {
+    top: 91%;
+  }
+  .sala204 {
+    top: 81.5%;
+  }
+  .sala206 {
+    top: 71.7%;
+  }
+
+  .sala208,
+  .sala210 {
+    width: 140px;
+  }
+  .sala208 {
+    top: 28.5%;
+    right: 60%;
+  }
+  .sala210 {
+    top: 3.5%;
+    right: 60%;
+  }
+
+  .sala207,
+  .sala209 {
+    width: 120px;
+    right: 4.5%;
+  }
+  .sala207 {
+    top: 25.2%;
+  }
+  .sala209 {
+    top: 5.2%;
+  }
+
+  .sala201,
+  .sala203,
+  .sala205 {
+    width: 110px;
+    right: 6%;
+  }
+  .sala201 {
+    top: 88.3%;
+  }
+  .sala203 {
+    top: 76.8%;
+  }
+  .sala205 {
+    top: 62.5%;
+  }
 }

@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="../styles/maps.css" /> -->
-  </head>
-  <body>
-    <section class="andarContainer">
-      <div class="btnHome">
-        <button onclick="loadContentPages(event, 'pages/main.html')">
-          <i class="fa-solid fa-chevron-left fa-sm"></i>
-          Voltar
-        </button>
-      </div>
-      <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
-      <nav>
-        <button disabled onclick="loadContentPages(event, 'pages/mapOne.html')">
-          <i class="fa-solid fa-arrow-left-long fa-2xl"></i>
-        </button>
-        
-        <h1>Térreo</h1>
-        <button onclick="loadContentPages(event, 'pages/mapOne.html')">
-          <i class="fa-solid fa-arrow-right-long fa-2xl"></i>
-        </button>
-      </nav>
 
-      <section class="map">
-        <img src="/client/Imagens/img_mapTerreo.png" alt="mapa do primeiro andar"></img>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../styles/maps.css" /> -->
+</head>
+
+<body>
+  <section class="andarContainer">
+    <div class="btnHome">
+      <button onclick="loadContentPages(event, 'pages/main.html')">
+        <i class="fa-solid fa-chevron-left fa-sm"></i>
+        Voltar
+      </button>
+    </div>
+    <!-- NAVEGAÇÃO ENTRE AS PÁGINAS -->
+    <nav>
+      <button disabled onclick="loadContentPages(event, 'pages/mapOne.html')">
+        <i class="fa-solid fa-arrow-left-long fa-xl"></i>
+      </button>
+
+      <h1>Térreo</h1>
+      <button onclick="loadContentPages(event, 'pages/mapOne.html')">
+        <i class="fa-solid fa-arrow-right-long fa-xl"></i>
+      </button>
+    </nav>
+
+    <section class="map">
+      <img class="mapDesktop" src="/client/Imagens/img_mapTerreo.png" alt="mapa primeiro andar"></img>
+      <img class="mapMobile" src="/client/Imagens/img_mapTerreoMobile.png" alt="mapa primeiro andar"></img>
 
         <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
-        <button style="width: 150px; bottom: 60px; right: 237px;" onclick="loadContentPages(event, '')">
+        <button class="sala sala01" onclick="loadContentPages(event, '')">
           Lab. de Química Ambiental
           <br> 01
         </button>
-        <button style="width: 150px; top: 60px; right: 237px;" onclick="loadContentPages(event, '')">
+        <button class="sala sala02" onclick="loadContentPages(event, '')">
           Lab. de Desenho e Topografia
           <br> 02
         </button>
-        <button style="width: 150px; top: 60px; right: 6px;" onclick="loadContentPages(event, '')">
-          Lab. de Análises Ambientais
-          <br> 04
-        </button>
-        <button style="width: 150px; bottom: 45px; right: 8px;" onclick="loadContentPages(event, '')">
+        <button class="sala sala03" onclick="loadContentPages(event, '')">
           Lab. de Microbiologia Ambiental
           <br> 03
         </button>
-      </section>
+        <button class="sala sala04" onclick="loadContentPages(event, '')">
+          Lab. de Análises Ambientais
+          <br> 04
+        </button>
     </section>
-  </body>
+  </section>
+</body>
+
 </html>

@@ -1,20 +1,13 @@
-.contHorarios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 400px;
-  gap: 20px;
-}
 .contTable {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .contTable > .title > h1 {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
 }
 .contTable > .title {
@@ -28,32 +21,38 @@
   padding-top: 20px;
   gap: 20px;
 }
+.table > thead {
+  color: #fafafa; /* ou a cor que preferir */
+}
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombras para dar destaque */
+  border-radius: 6px;
+}
 .table {
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  border: 1px solid;
+  min-width: 1150px;
+} 
+/* Ajusta largura das colunas */
+.table th, .table td {
+  padding: 20px 10px;
+  white-space: wrap;
+  font-size: 14px;
 }
-.table th {
-  color: #fff;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  padding: 25px;
-  text-align: center;
+.thead {
+  color: #fafafa;
 }
-/* .table td {
-  border: 1px solid black;
-  text-align: center;
-  text-wrap: pretty;
-} */
-/* Largura maior para a primeira coluna */
-.table th:nth-child(1), .table td:nth-child(1) {
-  width: 13%; /* Primeira coluna será maior */
-}
-
-/* Largura igual para as outras colunas */
-.table th:nth-child(n+2), .table td:nth-child(n+2) {
-  width: 15%; /* Colunas 2 a 6 terão largura igual */
+.table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3; /* garante que fique sobre as outras colunas */
+  font-weight: bold;
+  min-width: 100px; /* você pode ajustar esse valor */
+  box-shadow: 2px 0 5px rgba(0,0,0,1 );
 }
 
 table > tbody {
@@ -77,33 +76,54 @@ table > tbody {
   font-weight: bolder;
   padding-top: 10px;
 }
-.btnDiv{
+.btnDiv {
   width: 100%;
   text-align: right;
 }
 
-.download-btn { 
+.download-btn {
   display: inline-block;
   background-color: red; /* Cor de fundo */
   color: white; /* Cor do texto */
   padding: 15px 30px; /* Espaçamento interno */
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none; /* Remove o sublinhado */
-  border-radius: 8px; /* Bordas arredondadas */
+  border-radius: 6px; /* Bordas arredondadas */
   text-transform: uppercase; /* Transforma o texto para maiúsculas */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para dar destaque */
   transition: all 0.3s ease-in-out; /* Transição suave para os efeitos */
 }
 
-  /* Efeito de hover (quando passa o mouse por cima) */
-  .download-btn:hover {
-    background-color: #ff3030; /* Cor de fundo no hover */
-    transform: translateY(-2px); /* Efeito de "subir" ao passar o mouse */
+/* Efeito de hover (quando passa o mouse por cima) */
+.download-btn:hover {
+  background-color: #ff3030; /* Cor de fundo no hover */
+  transform: translateY(-2px); /* Efeito de "subir" ao passar o mouse */
 }
 
-  /* Efeito de click (quando o botão é pressionado) */
-  .download-btn:active {
-    background-color: #ff3030; /* Cor de fundo no click */
-    transform: translateY(0); /* Normaliza o botão ao ser pressionado */
+/* Efeito de click (quando o botão é pressionado) */
+.download-btn:active {
+  background-color: #ff3030; /* Cor de fundo no click */
+  transform: translateY(0); /* Normaliza o botão ao ser pressionado */
+}
+@media screen and (max-width: 700px) {
+  .contTable {
+    margin-top: 20px;
+  }
+  .contTable > .info {
+    flex-direction: column;
+  }
+  .info > .professores {
+    width: 100%;
+  }
+  .btnDiv {
+    text-align: left;
+  }
+  .download-btn {
+    padding: 13px 25px; /* Espaçamento interno */
+    font-size: 14px;
+  }
+  .table td:first-child {
+    background-color: #fafafa;
+  }
 }
