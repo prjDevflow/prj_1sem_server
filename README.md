@@ -106,7 +106,7 @@ Explicação da Sprint...
 
 ### Burndown
 
-![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/bourndownSprint1.png)
+![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/Burndown.png)
 
 ### Sprint Retrospective
 
