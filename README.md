@@ -130,7 +130,6 @@ _**2. O que não funcionou tão bem durante o sprint?**_
       
 _**3. Quais ações podemos tomar para melhorar no próximo sprint?**_
 
-   Melhorar a organização e o estabelecimento das Dailys, 
-   garantindo que ocorram em horários fixos e com foco nos pontos principais. 
+   Melhorar a organização e a consistência do registro das Dailys, garantindo que sejam documentadas diariamente, com anotações claras e objetivas dos pontos discutidos.
    
-   Isso ajudará a manter o time alinhado diariamente, promovendo maior transparência e colaboração entre todos.
+   Facilitando o acompanhamento do progresso da equipe, identificar rapidamente impedimentos recorrentes e promover maior transparência no andamento das tarefas
