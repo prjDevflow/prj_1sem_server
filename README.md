@@ -89,7 +89,9 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
  
 ## Sprint 01
 
-Explicação da Sprint...
+Nesta primeira sprint, o foco foi iniciar a estruturação do sistema, 
+com atividades que envolvem tanto o planejamento conceitual quanto o desenvolvimento inicial da interface e funcionalidades principais. 
+A equipe se concentrou em atividades essenciais para estabelecer a base do projeto, garantindo uma base sólida para as próximas etapas.
 
 ### Sprint Backlog
 | Id Requisito  | Story Points  | Tarefa                        |
@@ -104,6 +106,9 @@ Explicação da Sprint...
 | -             | 5 pts         | Criar o banco de dados  |
 | -             | 5 pts         | Criar modelo UML  |
 
+- Botão de exportação para PDF (RF04) em andamento.
+- Página de consulta das aulas (RF05) e mapas interativos (RNF01) em andamento.
+
 ### Burndown
 
 ![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/Burndown.PNG)
@@ -111,15 +116,21 @@ Explicação da Sprint...
 ### Sprint Retrospective
 
 _**1. O que funcionou bem durante o sprint?**_
-   Divisão de tarefas
-   Interesse dos Dev´s
-   Comunicação
-<br>
+   
+   A divisão de tarefas foi feita de maneira clara, 
+   o que evitou sobrecarga de trabalho e garantiu que todos os membros do time estivessem focados em suas responsabilidades específicas. 
+   
+   O envolvimento e o entusiasmo dos desenvolvedores também contribuíram para um ambiente colaborativo e altamente produtivo, 
+   com troca constante de feedbacks e ideias.
+   
 _**2. O que não funcionou tão bem durante o sprint?**_
-<br>
-      Saída de um integrante da equipe
-<br>
+
+   A saída de um integrante da equipe durante o sprint gerou um impacto negativo na distribuição de tarefas e na carga de trabalho dos demais membros. 
+   Isso exigiu uma reestruturação rápida das responsabilidades e ajustes no planejamento.
+      
 _**3. Quais ações podemos tomar para melhorar no próximo sprint?**_
-<br>
-   Organização 
-   Melhor estabelecimento das Dailys
+
+   Melhorar a organização e o estabelecimento das Dailys, 
+   garantindo que ocorram em horários fixos e com foco nos pontos principais. 
+   
+   Isso ajudará a manter o time alinhado diariamente, promovendo maior transparência e colaboração entre todos.
