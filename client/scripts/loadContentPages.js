@@ -3,6 +3,8 @@ function loadContentPages(event, urlPage) {
     event.preventDefault();
   }
 
+  localStorage.setItem("lastPage", urlPage);
+
   fetch(urlPage)
     .then((response) => {
       if (!response.ok) {
@@ -11,7 +13,21 @@ function loadContentPages(event, urlPage) {
       return response.text();
     })
     .then((content) => {
-      document.getElementById("mainContent").innerHTML = content;
+      const main = document.getElementById("mainContent");
+      main.innerHTML = content;
+
+      const scriptsToLoad = [
+        "scripts/dialog.js",
+        // "../scripts/algumOutroScript.js",
+        // "../scripts/outroAlemDaquele.js"
+      ];
+      
+      scriptsToLoad.forEach(src => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.defer = true;
+        document.body.appendChild(script);
+      });
     })
     .catch((error) =>
       console.log("erro ao carregar o conteudo da pagina", error)
@@ -19,5 +35,6 @@ function loadContentPages(event, urlPage) {
 }
 
 window.onload = function () {
-  loadContentPages(event, "pages/main.html");
+  const lastPage = localStorage.getItem("lastPage") || "pages/main.html";
+  loadContentPages(null, lastPage);
 };

@@ -31,46 +31,65 @@
       <img class="mapMobile" src="/client/Imagens/img_mapUmMobile.png" alt="mapa primeiro andar"></img>
 
       <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
-      <button class="sala sala102" onclick="loadContentPages(event, '')">
+      <button class="sala sala102" onclick="openDialog('102 - Sala de Aula')">
         Sala de Aula
         <br> 102
       </button>
-      <button class="sala sala104" onclick="loadContentPages(event, '')">
+      <button class="sala sala104" onclick="openDialog('104 - Sala de Aula')">
         Sala de Aula
         <br> 104
       </button>
-      <button class="sala sala106" onclick="loadContentPages(event, '')">
+      <button class="sala sala106" onclick="openDialog('106 - Sala de Aula')">
         Sala de Aula
         <br> 106
       </button>
 
-      <button class="sala sala101" onclick="loadContentPages(event, '')">
+      <button class="sala sala101" onclick="openDialog('101 - Lab. de Informática')">
         Lab. de Informática
         <br> 101
       </button>
-      <button class="sala sala103" onclick="loadContentPages(event, '')">
+      <button class="sala sala103" onclick="openDialog('103 - Lab. de Informática')">
         Lab. de Informática
         <br> 103
       </button>
-      <button class="sala sala105" onclick="loadContentPages(event, '')">
+      <button class="sala sala105" onclick="openDialog('105 - Lab. de Informática')">
         Lab. de Informática
         <br> 105
       </button>
-      <button class="sala sala107" onclick="loadContentPages(event, '')">
+      <button class="sala sala107" onclick="openDialog('107 - Lab. de Informática')">
         Lab. de Informática
         <br> 107
       </button>
 
-      <button class="sala sala108" onclick="loadContentPages(event, '')">
+      <button class="sala sala108" onclick="openDialog('108 - Lab. de Informática')">
         Lab. de Informática
         <br> 108
       </button>
 
-      <button class="sala sala110" onclick="loadContentPages(event, '')">
+      <button class="sala sala110" onclick="openDialog('110 - Sala Maker')">
         Sala Maker
         <br> 110
       </button>
+
+      <!-- CONPONENTE MODAL -->
+      <!-- RENDERIZA AS AULAS DA SALA DURANTE A SEMANA -->
+      <dialog id="salaDialog">
+        <h2 id="idSala"></h2> <!-- IDENTIFICADOR DA SALA -->
+        <select> <!-- SELECT DO DIA DA SEMANA -->
+          <option selected value="0">Todos</option>
+          <option value="1">Segunda-feira</option>
+          <option value="2">Terça-feira</option>
+          <option value="3">Quarta-feira</option>
+          <option value="4">Quinta-feira</option>
+          <option value="5">Sexta-feira</option>
+        </select>
+
+        <button onclick="closeDialog()">Fechar</button> <!-- BOTAO DE SAIDA -->
+      </dialog>
+
     </section>
+
+    <script src="../scripts/dialog.js"></script> <!-- SCRIPT PARA MODAL -->
   </section>
 </body>
 
