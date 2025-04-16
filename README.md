@@ -62,6 +62,10 @@ Para visualizar as informações das sprints do projeto, acesse o quadro do Trel
       - Implementar o servidor utilizando JavaScript;
       - Manter a documentação e projeto em um repositório público do GitHub, e
       - Utilizar alguma ferramenta de controle de tarefas.
+    
+## UML
+
+![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/UML.png)
 
 ##  User Stories
 
