@@ -10,6 +10,9 @@
   box-sizing: border-box;
   font-family: "Arial";
 }
+button:focus {
+  outline: none;
+}
 .bcgPrimary {
   background-color: #e22427;
 }
