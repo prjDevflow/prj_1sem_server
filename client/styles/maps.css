@@ -90,7 +90,35 @@ dialog {
 dialog[open] {
   visibility: visible; /* Quando aberto, o dialog fica visível */
 }
-
+/*Estilo do SELECT */
+dialog > select {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 1px solid black; 
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  padding: 4px;
+}
+/*Estilo do BTN */
+dialog > div > button {
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 3px;
+  border-radius: 2px;
+}
+dialog > div > button:hover {
+  background-color: gray;
+}
+dialog > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
 /* RESPONSIVIDADE */
 @media screen and (max-width: 450px) {

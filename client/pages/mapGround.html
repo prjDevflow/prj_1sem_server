@@ -53,7 +53,12 @@
     <!-- CONPONENTE MODAL -->
     <!-- RENDERIZA AS AULAS DA SALA DURANTE A SEMANA -->
     <dialog id="salaDialog">
-      <h2 id="idSala"></h2> <!-- IDENTIFICADOR DA SALA -->
+      <div>
+        <h2 id="idSala"></h2> <!-- IDENTIFICADOR DA SALA -->
+        <button onclick="closeDialog()">
+          <i class="fa-solid fa-xmark"></i>
+        </button> <!-- BOTAO DE SAIDA -->
+      </div>
       <select> <!-- SELECT DO DIA DA SEMANA -->
         <option selected value="0">Todos</option>
         <option value="1">Segunda-feira</option>
@@ -62,8 +67,6 @@
         <option value="4">Quinta-feira</option>
         <option value="5">Sexta-feira</option>
       </select>
-
-      <button onclick="closeDialog()">Fechar</button> <!-- BOTAO DE SAIDA -->
     </dialog>
 
   </section>
