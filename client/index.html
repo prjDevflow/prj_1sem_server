@@ -17,17 +17,38 @@
 
   <body>
     <!-- CABECALHO -->
-      <header>
-        <img src="/client/Imagens/LogoFatec.png" alt="Fatec Jacareí" />
-        <img
-          src="/client/Imagens/LogoCentroPauloSouza.png"
-          alt="Centro Paula Souza"
-        />
-        <img
-          src="/client/Imagens/LogoSaoPaulo.png"
-          alt="Governo do Estado de São Paulo"
-        />
-      </header>
+    <header>
+      <div class="header-left">
+        <a href="https://fatecjacarei.cps.sp.gov.br"><img src="/client/Imagens/LogoFatec.png" alt="Fatec Jacareí" /></a>
+      </div>
+    
+      <nav class="header-center">
+        <div class="dropdown">
+          <button class="dropbtn">Mapa Interativo</button>
+          <div class="dropdown-content">
+            <a href="#">Térreo</a>
+            <a href="#">1º Andar</a>
+            <a href="#">2º Andar</a>
+          </div>
+        </div>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Cursos</button>
+          <div class="dropdown-content">
+            <a href="#">DSM</a>
+            <a href="#">GEO</a>
+            <a href="#">MAR</a>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="header-right">
+        <a href="#" class="area-restrita">
+          <i class="fa fa-user"></i> Área Restrita
+        </a>
+      </div>
+    </header>
+    
   
       <!-- CONTEUDO PRINCIPAL -->
       <main id="mainContent"></main>
@@ -36,33 +57,53 @@
   
       <!-- RODAPE -->
       <footer>
-        <div class="social-icons">
-          <a href="https://facebook.com" target="_blank">
-            <img
-              src="Imagens/LogoFacebook.png"
-              alt="Facebook"
-              width="30"
-              height="30"
-            />
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <img
-              src="Imagens/LogoInstagram.png"
-              alt="Instagram"
-              width="30"
-              height="30"
-            />
-          </a>
-          <a href="https://linkedin.com" target="_blank">
-            <img
-              src="Imagens/LogoLinkedin.png"
-              alt="LinkedIn"
-              width="30"
-              height="30"
-            />
-          </a>
+        <div class="footer-container">
+          <div style="display: flex; flex-direction: column; align-items: center">
+            <a href="https://sp.gov.br/sp"><img src="/client/Imagens/LogoSaoPaulo.png" alt="Governo de São Paulo" width="250" height="80"></a>
+            <a href="https://www.cps.sp.gov.br"><img src="/client/Imagens/LogoCentroPauloSouza.png" alt="Centro Paulo Souza" width="135" height="90"></a>
+          </div>
+    
+          <div>
+            <h3>Nossos Cursos</h3>
+            <p>Meio Ambiente e Recursos Hídricos</p>
+            <p>Desenvolvimento de Softwares Multiplataformas</p>
+            <p>Geoprocessamento</p>
+          </div>
+    
+          <div>
+            <h3>Fatec</h3>
+            <p><a href="https://fatecjacarei.cps.sp.gov.br/quem-somos/">Institucional</a></p>
+            <p><a href="https://fatecjacarei.cps.sp.gov.br/cursos/">Cursos</a></p>
+            <p><a href="https://fatecjacarei.cps.sp.gov.br/concursos-e-processos-seletivos-para-docentes-e-auxiliares-de-docentes/">Editais</a></p>
+            <p><a href="https://fatecjacarei.cps.sp.gov.br/tour-360o/">Tour 360°</a></p>
+          </div>
+    
+          <div>
+            <h3>Vestibular</h3>
+            <p><a href="https://fatecjacarei.cps.sp.gov.br/vestibular-2025/">Calendário Completo</a></p>
+            <p><a href="https://fatecjacarei.cps.sp.gov.br/vagas-remanescentes/">Vagas Remanescentes</a></p>
+          </div>
+    
+          <div>
+            <h3>Contato</h3>
+            <p>(12) 3953-7926</p>
+            <p><a href="mailto:f258acad@cps.sp.gov.br">f258acad@cps.sp.gov.br</a></p>
+          </div>
         </div>
-        <p class="copyright">Fatec - Todos os direitos reservados.</p>
+    
+        <hr>
+    
+        <div class="footer-bottom">
+          <p>
+            Fatec - Todos os direitos reservados | Av. Faria Lima, 155 - Jardim Santa
+            Maria - Jacareí/SP - CEP: 12328-070
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/jacareifatec/?locale=pt_BR"><img src="/client/Imagens/LogoFace.png" alt="Facebook Fatec" width="45" height="45"></a>
+            <a href="https://www.instagram.com/fatec_jacarei/"><img src="/client/Imagens/LogoInsta.png" alt="Instagram Fatec" width="40" height="40"></a>
+            <a href="https://br.linkedin.com/in/fatec-jacareí"><img src="/client/Imagens/LogoLinke.png" alt="Linkedin Fatec" width="35" height="35"></a>
+          </div>
+        </div>
       </footer>
   </body>
 </html>

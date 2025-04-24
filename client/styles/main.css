@@ -3,6 +3,14 @@
   --color-dsm: #8e0ee7;
   --color-rh: #72af5f;
   --color-Geo: #1353a3;
+  --header-color: #d92525;
+  --secondary-color: #E22427;
+  --hover-color: #EE0000;
+  --footer-color: #d62828;
+  --background-color: #f5f5f5;
+  --light-gray: #f1f1f1;
+  --text-color: #333;
+  --white: #fff;
 }
 * {
   margin: 0;
@@ -29,26 +37,196 @@ button:focus {
   /* height: 100%; */
   background-color: #f1f1f1;
 }
+
+
+/* ===== HEADER PRINCIPAL ===== */
 header {
   width: 100%;
-  background-color: #e22427;
+  background-color: var(--header-color);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 45px;
-  padding: 30px 20px;
+  justify-content: space-between;
+  padding: 10px 40px;
+  font-family: sans-serif;
+  height: 70px;
 }
-header > img {
-  width: calc(5vw + 10px); 
-  height: auto;  
-  min-width: 70px;  
+
+/* ===== LOGO ===== */
+.header-left img {
+  height: 50px;
+  width: auto;
 }
-footer {
-  background-color: #e22427;
-  color: white;
-  text-align: center;
-  padding: 20px;
+
+/* ===== MENU CENTRAL (DROPDOWNS) ===== */
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 0; 
 }
+
+.dropdown {
+  position: relative;
+  padding: 0 15px; 
+}
+
+/* Traço vertical ENTRE os dropdowns */
+.dropdown:not(:last-child)::after {
+  content: "|";
+  color: var(--branco);
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+/* Botões principais (Mapa Interativo, Cursos) */
+.dropbtn {
+  background-color: transparent;
+  color: var(--branco);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 10px 0; 
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+/* Conteúdo dos dropdowns */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: var(--footer-color);
+  min-width: 160px;
+  width: 100%;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content a {
+  color: var(--branco);
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #a91e1e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* ===== ÁREA RESTRITA (DIREITA) ===== */
+.header-right {
+  font-size: 0.95rem;
+}
+
+.area-restrita {
+  color: var(--branco); 
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+  transition: all 0.3s ease; 
+  padding: 8px 12px; 
+  border-radius: 4px; 
+}
+
+/* Efeito hover */
+.area-restrita:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
+  transform: scale(1.05); 
+}
+
+/* Ícone do usuário (opcional) */
+.area-restrita span {
+  font-size: 1.1em;
+}
+
+
+  /* ===== FOOTER ===== */
+  footer {
+    background-color: var(--footer-color);
+    color: var(--white);
+    padding: 40px 20px;
+    font-family: sans-serif;
+    margin-top: auto;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px 40px;
+    align-items: flex-start;
+  }
+  
+  .footer-container > div {
+    flex: 0 1 auto;
+    min-width: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .footer-container p {
+    margin: 20px 0;
+  }
+  
+  
+  footer h2,
+  footer h3 {
+    font-weight: bold;
+  }
+  
+  footer a {
+    color: var(--white);
+    text-decoration: underline;
+  }
+  
+  footer hr {
+    margin: 30px 0;
+    border-color: var(--white);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 10px 0;
+  }
+  
+  /* Ícones sociais */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
 .container {
   display: flex;
   flex-wrap: wrap; 
@@ -157,4 +335,12 @@ footer {
       gap: 16px;
       width: 100%;
     }
+      header {
+        padding: 10px 20px;
+      }
+      
+      .dropdown {
+        padding: 0 10px;
+      }
+    
 }
