@@ -1,27 +1,29 @@
-function openDialog(sala) {
-  const dialog = document.getElementById("salaDialog");
+function openDialog(idDialog, idTitle, title) {
+  const dialog = document.getElementById(idDialog);
   dialog.showModal();
 
-  const idSala = document.getElementById("idSala");
-  idSala.innerHTML = sala;
+  const titleElement = document.getElementById(idTitle);
+  if (titleElement) titleElement.innerHTML = title;
 
-  dialog.addEventListener("click", function (event) {
-    const rect = dialog.getBoundingClientRect();
-    const isInDialog = (
-      event.clientX >= rect.left &&
-      event.clientX <= rect.right &&
-      event.clientY >= rect.top &&
-      event.clientY <= rect.bottom
-    );
+  dialog.addEventListener(
+    "click",
+    function (event) {
+      const rect = dialog.getBoundingClientRect();
+      const isInDialog =
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom;
 
-    if (!isInDialog) {
-      dialog.close();
-    }
-  }, { once: true });
+      if (!isInDialog) {
+        dialog.close();
+      }
+    },
+    { once: true }
+  );
 }
 
-// Para fechar o dialog ao clicar no botão de fechar
-function closeDialog() {
-  const dialog = document.getElementById("salaDialog");
-  dialog.close(); // Fecha o dialog
+function closeDialog(idDialog) {
+  const dialog = document.getElementById(idDialog);
+  dialog.close();
 }

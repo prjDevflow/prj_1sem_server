@@ -62,7 +62,6 @@ nav > button {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.7); /* Preto com 30% de opacidade */
 }
-
 /* Estilo do dialog */
 dialog {
   display: flex;
@@ -79,14 +78,13 @@ dialog {
 
   visibility: hidden;
 
-  width: 50%; /* Tamanho do dialog */
-  padding: 25px 40px; /* Padding interno */
+  width: 40%; /* Tamanho do dialog */
+  padding: 30px 45px; /* Padding interno */
   background-color: white; /* Cor de fundo */
   border: none;
   border-radius: 6px; /* Bordas arredondadas */
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-
 dialog[open] {
   visibility: visible; /* Quando aberto, o dialog fica visível */
 }
@@ -94,9 +92,9 @@ dialog[open] {
 dialog > select {
   font-size: 16px;
   font-family: Arial, sans-serif;
-  border: 1px solid black; 
+  border: 1px solid #1a1a1a; 
   border-radius: 4px;
-  color: #000;
+  color: #1a1a1a;
   cursor: pointer;
   padding: 4px;
 }
@@ -105,14 +103,14 @@ dialog > div > button {
   border: none;
   font-size: 24px;
   font-weight: bold;
-  color: #000;
+  color: #1a1a1a;
   cursor: pointer;
   background-color: transparent;
-  padding: 3px;
-  border-radius: 2px;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 dialog > div > button:hover {
-  background-color: gray;
+  background-color: #f0f0f0;
 }
 dialog > div {
   width: 100%;
