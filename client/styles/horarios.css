@@ -34,7 +34,7 @@
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  min-width: 1150px;
+  min-width: 500px;
 } 
 /* Ajusta largura das colunas */
 .table th, .table td {
@@ -52,8 +52,12 @@
   z-index: 3; /* garante que fique sobre as outras colunas */
   font-weight: bold;
   min-width: 100px; /* você pode ajustar esse valor */
-  box-shadow: 2px 0 5px rgba(0,0,0,1 );
 }
+.table td:first-child {
+  background-color: #fafafa;
+}
+
+
 
 table > tbody {
   background-color: #fafafa;

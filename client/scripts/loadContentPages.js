@@ -44,7 +44,7 @@ function loadContentPages(event, urlPage) {
       });
 
       const cssToLoad = [
-        "styles/main.css",
+        // "styles/main.css",
         "styles/curso.css",
         "styles/maps.css",
         "styles/btnMaps.css",
