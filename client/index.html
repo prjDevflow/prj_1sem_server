@@ -26,24 +26,24 @@
         <div class="dropdown">
           <button class="dropbtn">Mapa Interativo</button>
           <div class="dropdown-content">
-            <a href="#">Térreo</a>
-            <a href="#">1º Andar</a>
-            <a href="#">2º Andar</a>
+            <a onclick="loadContentPages(event, 'pages/mapGround.html')" href="#">Térreo</a>
+            <a onclick="loadContentPages(event, 'pages/mapOne.html')" href="#">1º Andar</a>
+            <a onclick="loadContentPages(event, 'pages/mapTwo.html')" href="#">2º Andar</a>
           </div>
         </div>
     
         <div class="dropdown">
           <button class="dropbtn">Cursos</button>
           <div class="dropdown-content">
-            <a href="#">DSM</a>
-            <a href="#">GEO</a>
-            <a href="#">MAR</a>
+            <a onclick="loadContentPages(event, 'pages/dsm.html')" href="#">DSM</a>
+            <a onclick="loadContentPages(event, 'pages/geo.html')" href="#">GEO</a>
+            <a onclick="loadContentPages(event, 'pages/rh.html')" href="#">MAR</a>
           </div>
         </div>
       </nav>
     
       <div class="header-right">
-        <a href="#" class="area-restrita">
+        <a href="#" class="area-restrita" onclick="loadContentPages(event, 'pages/login.html')">
           <i class="fa fa-user"></i> Área Restrita
         </a>
       </div>

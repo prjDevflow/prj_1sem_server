@@ -165,9 +165,10 @@ header {
   }
   
   .footer-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px 40px;
     align-items: flex-start;
   }
@@ -196,6 +197,7 @@ header {
   footer a {
     color: var(--white);
     text-decoration: underline;
+    text-underline-offset: 4px;
   }
   
   footer hr {

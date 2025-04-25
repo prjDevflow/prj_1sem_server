@@ -50,14 +50,8 @@
   position: sticky;
   left: 0;
   z-index: 3; /* garante que fique sobre as outras colunas */
-  font-weight: bold;
   min-width: 100px; /* você pode ajustar esse valor */
 }
-.table td:first-child {
-  background-color: #fafafa;
-}
-
-
 
 table > tbody {
   background-color: #fafafa;
