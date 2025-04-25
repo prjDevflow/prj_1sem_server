@@ -1,0 +1,11 @@
+-- Ver turmas disponíveis
+SELECT idTurma FROM Turma;
+
+-- Ver disciplinas
+SELECT idDisciplina, Nome FROM Disciplina;
+
+-- Ver professores
+SELECT idProfessor, Nome FROM Professor;
+
+-- Ver salas
+SELECT Numero, Nome, Andar FROM Sala;
