@@ -1,6 +1,6 @@
 const { Router } = require("express");
-const {  } = require("../controllers/professor");
-const { insert, select, remove, update } = require("../controllers/professor");
+const {  } = require("../controllers/disciplina");
+const { insert, select, remove, update } = require("../controllers/disciplina");
 
 const routes = Router();
 routes.post("/", insert);
