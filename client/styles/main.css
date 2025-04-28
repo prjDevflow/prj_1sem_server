@@ -93,7 +93,6 @@ header {
   display: flex;
   align-items: center;
 }
-
 /* Conteúdo dos dropdowns */
 .dropdown-content {
   display: none;

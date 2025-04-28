@@ -1,0 +1,9 @@
+-- 1. Criar a aula e capturar o ID
+WITH nova_aula AS (
+    INSERT INTO Aula (Turma_idTurma, Disciplina_idDisciplina, Professor_idProfessor)
+    VALUES ('TURMA001', 10, 5)
+    RETURNING idAula
+)
+-- 2. Criar a reserva associada
+INSERT INTO Reserva (Aula_idAula, Sala_Numero)
+SELECT idAula, 101 FROM nova_aula;
