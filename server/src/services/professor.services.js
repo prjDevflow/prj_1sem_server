@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const {  } = require("../controllers/ProfessorController");
+//const {  } = require("../controllers/ProfessorController");
 const { insert, select, remove, update } = require("../controllers/professor");
 
 const routes = Router();
