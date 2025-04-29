@@ -30,6 +30,7 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
+  justify-content: left;
 }
 
 .cursoDivider {
@@ -55,6 +56,7 @@ h2 {
   padding: 0 22px;
   gap: 16px;
   border-radius: 5px;
+  justify-content: space-between;
 }
 .cursoDropdown-dsm {
   position: relative;
@@ -120,70 +122,31 @@ h2 {
   border-radius: 4px;
   text-align: center;
 }
-.sub-btn-dsm {
-  font-weight: bold;
-  font-size: 15px;
-  color: var(--colorText);
-  text-decoration: none;
-  width: 100%;
-  padding: 12px 12px;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-}
-.sub-btn-geo {
-  font-weight: bold;
-  font-size: 15px;
-  color: var(--colorText);
-  text-decoration: none;
-  width: 100%;
-  padding: 12px 12px;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-}
-.sub-btn-rh {
-  font-weight: bold;
-  font-size: 15px;
-  color: var(--colorText);
-  text-decoration: none;
-  width: 100%;
-  padding: 12px 12px;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-}
-
-.cursoDropdown-dsm:hover .dropdown-content {
-  display: block;
-  background-color: #cc33ff;
-}
-.cursoDropdown-geo:hover .dropdown-content {
-  display: block;
-  background-color: #397ed3;
-}
 .cursoDropdown-rh:hover .dropdown-content {
   display: block;
   background-color: #83d968;
 }
-.btn-menu-dsm:hover,
-.sub-btn-dsm:hover {
-  background-color: #4d1078;
-  border-radius: 4px;
-  cursor: pointer;
+.sub-group {
+  padding: 6px 0px;
 }
-.btn-menu-geo:hover,
-.sub-btn-geo:hover {
-  background-color: #04326b;
+
+.sub-sub-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #83d968;
   border-radius: 4px;
-  cursor: pointer;
+  z-index: 999;
 }
-.btn-menu-rh:hover,
-.sub-btn-rh:hover {
-  background-color: #34821b;
-  border-radius: 4px;
-  cursor: pointer;
+.sub-group:hover .sub-sub-menu {
+  display: block;
 }
+.sub-btn-rh {
+  padding: 6px 0px;
+  background-color: red;
+}
+
 .btnHome {
   width: 100%;
   height: 20px;
@@ -216,5 +179,9 @@ h2 {
   h2 {
     font-size: 20px;
     text-align: left;
+  }
+  .cursoSeparator{
+    margin-left: 820px;
+    width: 44%;
   }
 }
