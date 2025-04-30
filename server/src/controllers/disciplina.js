@@ -1,4 +1,4 @@
-const db = require("./db");
+const db = require("../config/db");
 // FUNÇÃO INSERT PARA DISCPLINAS // 
 async function insert(req, res){
     try{
@@ -20,14 +20,14 @@ async function insert(req, res){
 
 // FUNÇÃO SELECT PARA DISCPLINAS // 
 
-async function select(req,res) {
+async function  select(req,res) {
     try{
         const resultado = await db.query(
-            "SELECT * FROM TABLE Disciplina ORDER BY nome"
+            "SELECT * FROM disciplina"
         );
         res.json(resultado.rows);
-    } catch (e) {
-        res.status(500).json({message: "Erro ao processar requisição"});
+    } catch (e){
+        res.status(500).json({message: "Erro ao processar requisição"})
     }
     
 }

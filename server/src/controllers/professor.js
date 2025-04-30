@@ -1,4 +1,4 @@
-const db = require("./db");
+const db = require("../config/db");
 async function insert(req, res){
     try{
         const {nome} = req.body;
@@ -20,7 +20,7 @@ async function insert(req, res){
 async function select(req, res) {
     try{
         const resultado = await db.query(
-            "SELECT * FROM TABLE professor ORDER BY name"
+            "SELECT * FROM professor"
         );
         res.json(resultado.rows);
     }catch (e) {
