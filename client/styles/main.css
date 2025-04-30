@@ -235,26 +235,72 @@ header {
   align-items: center;
   gap: 70px;
 }
+
+.section-header {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 50px;  /* espaçamento entre o menu e o título */
+  margin-bottom: 40px;
+  width: calc(100% - 50px);
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  color: #111;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: none;
+  bottom: 0;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #e22427, #ff6163);
+  border-radius: 4px;
+}
 .cardCurso {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
-  width: 250px;
-  /* background-color: #1353a3; */
+  gap: 20px;
+  width: 275px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.2s ease-in-out;
+  border-top: 4px solid var(--vermelho-principal);
+    margin-bottom: 40px; /* ou outro valor conforme seu layout */
 }
+.cardCurso:hover {
+  transform: translateY(-4px);
+}
+
 .cardCurso img {
-  width: 200px;
-  height: 200px;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 12px;
 }
+
 .cardCurso p {
   background-color: #e22427;
   color: white;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
   margin-top: 10px;
 }
+
+
 .btnPrimary {
   background-color: #e22427;
   color: white;
@@ -267,8 +313,26 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Estilo da seta */
+.seta {
+  display: inline-block;
+  margin-left: -15px; /* Posição inicial */
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btnPrimary:hover .seta {
+  margin-left: 10px;
+  opacity: 1;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+
 .btnPrimary:hover{
   transform: translateY(-2px);
 }
@@ -325,6 +389,18 @@ header {
   gap: 16px;
   width: 100%;
 }
+
+.texto-simples {
+  color: #333; 
+  font-size: 0.5rem;
+  font-weight: 800;
+  margin: 8px 0; 
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .social-icons > a {
   text-decoration: none;
 }
@@ -347,5 +423,18 @@ header {
       .dropdown {
         padding: 0 10px;
       }
-    
-}
+        .section-header {
+          margin-top: 80px;  /* maior distância do menu no mobile */
+          margin-bottom: 60px;
+        }
+      
+        .section-header h2 {
+          font-size: 1.5rem;
+        }
+      
+        .section-header h2::after {
+          width: 80%;
+        }
+        
+
+      }

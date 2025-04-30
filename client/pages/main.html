@@ -9,32 +9,34 @@
 
 <body>
   <div class="contMain">
-    <section class="cabecalho">
-      <!-- Conteudo cabecalho, btn mapa interativo -->
-      <h1>Horário de Aulas</h1>
-      <hr />
-    </section>
+    <div class="section-header">
+      <h2>Horário de Aulas</h2>
+    </div>
     <section class="container">
-      <!-- Conteudo principal -->
-
+      <!-- Card 1 -->
       <div class="cardCurso">
         <img src="/client/Imagens/imgMarh.png" alt="Meio Ambiente e Recursos Hídricos" />
+        <div class="texto-simples">Meio Ambiente e Recursos Hídricos</div>  
         <button class="btnPrimary widthBtn" onclick="loadContentPages(event, 'pages/rh.html')">
-          Meio Ambiente e Recursos
-          Hídricos
+          Consultar grade <span class="seta">→</span>
         </button>
       </div>
+  
+      <!-- Card 2 -->
       <div class="cardCurso">
         <img src="/client/Imagens/imgDsm.png" alt="Desenvolvimento de Softwares Multiplataformas" />
+        <div class="texto-simples">Desenvolvimento de Softawares Multiplataformas</div> 
         <button class="btnPrimary widthBtn" onclick="loadContentPages(event, 'pages/dsm.html')">
-          Desenvolvimento de Softwares
-          Multiplataformas
+          Consultar grade <span class="seta">→</span>
         </button>
       </div>
+  
+      <!-- Card 3 -->
       <div class="cardCurso">
         <img src="/client/Imagens/imgGeo.png" alt="Geoprocessamento" />
+        <div class="texto-simples">Geoprocessamento</div> 
         <button class="btnPrimary widthBtn" onclick="loadContentPages(event, 'pages/geo.html')">
-          Geoprocessamento
+          Consultar grade <span class="seta">→</span>
         </button>
       </div>
     </section>
