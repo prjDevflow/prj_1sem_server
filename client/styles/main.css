@@ -104,6 +104,7 @@ header {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 0 0 4px 4px;
+  font-weight: bold;
 }
 
 .dropdown-content a {
@@ -259,7 +260,7 @@ header {
   left: 0;
   transform: none;
   bottom: 0;
-  width: 100px;
+  width: 1010px;
   height: 4px;
   background: linear-gradient(to right, #e22427, #ff6163);
   border-radius: 4px;

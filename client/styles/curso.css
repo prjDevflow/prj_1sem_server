@@ -2,10 +2,12 @@
   --padding-page: 18vw;
   --colorText: white;
 }
+
 h2 {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .cursoSection {
   display: flex;
   flex-direction: column;
@@ -13,6 +15,7 @@ h2 {
   padding: 50px var(--padding-page);
   gap: 30px;
 }
+
 .cursoTitle {
   width: 100%;
   align-items: center;
@@ -21,10 +24,12 @@ h2 {
   align-items: center;
   gap: 20px;
 }
+
 .imgCurso {
   width: 170px;
   height: 170px;
 }
+
 .contCursos {
   min-height: 80vh;
   display: flex;
@@ -58,95 +63,110 @@ h2 {
   border-radius: 5px;
   justify-content: space-between;
 }
-.cursoDropdown-dsm {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-}
-.cursoDropdown-geo {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-}
-.cursoDropdown-rh {
-  position: relative;
-  display: inline-block;
-  height: 100%;
-}
-.btn-menu-dsm {
-  font-weight: bold;
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  color: var(--colorText);
-  cursor: pointer;
-  padding: 0px 8px;
-  height: 100%;
-  border-radius: 5px;
-}
-.btn-menu-geo {
-  font-weight: bold;
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  color: var(--colorText);
-  cursor: pointer;
-  padding: 0px 8px;
-  height: 100%;
-  border-radius: 5px;
-}
-.btn-menu-rh {
-  font-weight: bold;
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  color: var(--colorText);
-  cursor: pointer;
-  padding: 0px 8px;
-  height: 100%;
-  border-radius: 5px;
-}
-.dropdown-content {
+
+/* ---------- */
+
+.menu-curso {
   display: none;
   position: absolute;
+  top: 100%;
   left: 0;
-  bottom: 0;
-  transform: translateY(100%);
-  min-width: 100px;
-  border-radius: 4px;
-  text-align: center;
-}
-.cursoDropdown-rh:hover .dropdown-content {
-  display: block;
-  background-color: #83d968;
-}
-.sub-group {
-  padding: 6px 0px;
+  background-color: #333;
+  ;
+  border-radius: 5px;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sub-sub-menu {
+.dropdown-curso {
+  position: relative; /* Importante para posicionar o menu abaixo */
+}
+
+/* Estilo do botão FILTRO */
+.btn-menu {
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: var(--colorText);
+  cursor: pointer;
+  padding: 7px 7px;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.btn-menu:hover {
+  background-color: #d8d8d8;
+  color: #333;
+}
+
+/* Estilo dos botões de período (Diurno e Noturno) */
+.btn-periodo {
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: var(--colorText);
+  cursor: pointer;
+  padding: 8px 8px;
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.btn-periodo:hover {
+  background-color: #d8d8d8;
+  color: #333;}
+
+/* Cada bloco de turno precisa ser relativo para posicionar o submenu corretamente */
+.sub-menu-curso {
+  position: relative;
+  width: 100%;
+}
+
+/* Submenu das turmas (AGORA AO LADO) */
+.sub-sub-menu-curso {
   display: none;
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: #83d968;
-  border-radius: 4px;
-  z-index: 999;
-}
-.sub-group:hover .sub-sub-menu {
-  display: block;
-}
-.sub-btn-rh {
-  padding: 6px 0px;
-  background-color: red;
+  border-radius: 6px;
+  flex-direction: column;
+  z-index: 20;
 }
 
+/* Botões de cada turma (1RH, 3RH, etc.) */
+.button-periodo {
+  font-weight: bold;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border: none;
+  color: var(--colorText);
+  cursor: pointer;
+  padding: 8px 8px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button-periodo:hover {
+  background-color: #d8d8d8;
+  color: #333;
+}
+
+/* ---------- */
 .btnHome {
   width: 100%;
   height: 20px;
@@ -154,6 +174,7 @@ h2 {
   border: none;
   padding-top: 8px;
 }
+
 .btnHome > button {
   color: #333;
   background-color: transparent;
@@ -164,6 +185,7 @@ h2 {
   gap: 12px;
   justify-content: left;
 }
+
 .btnHome > button:hover {
   color: #000;
 }
@@ -172,16 +194,14 @@ h2 {
   .cursoSection {
     padding: 0 5vw;
   }
+
   .imgCurso {
     width: 120px;
     height: 120px;
   }
+
   h2 {
     font-size: 20px;
     text-align: left;
-  }
-  .cursoSeparator{
-    margin-left: 820px;
-    width: 44%;
   }
 }

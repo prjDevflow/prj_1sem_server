@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title></title>
 </head>
-
+ 
 <body>
   <section class="contCursos">
     <section class="cursoSection">
@@ -20,9 +20,9 @@
         <img class="imgCurso" src="/client/Imagens/imgDsm.png" />
         <h2>Desenvolvimento de Software Multiplaforma</h2>
       </div>
-
+ 
       <div class="cursoDivider bcgDsm"></div>
-
+ 
       <p class="cursoText">
         O egresso do Curso Superior de Tecnologia em Desenvolvimento de
         Software Multiplataforma tem como perfil o profissional que projeta,
@@ -34,21 +34,32 @@
         para apoiar a tomada de decisão. Coordena projetos e equipes de
         desenvolvimento de software.
       </p>
+ 
       <div class="cursoSeparator bcgDsm">
-        <div class="cursoDropdown-dsm">
-          <button class="btn-menu-dsm">TURNO</button>
-          <div class="dropdown-content bcgDsm">
-            <button class="sub-btn-dsm">NOTURNO</button>
+        <div class="dropdown-curso">
+          <button class="btn-menu">FILTRO <i class="fa-solid fa-chevron-down fa-sm" style="margin-left: 12px;"></i></button>
+          <div class="menu-curso bcgDsm">
+            <!-- Período Noturno -->
+            <div class="sub-menu-curso">
+              <button class="btn-periodo" data-periodo="noturno">NOTURNO</button>
+              <div id="drop_noturno" class="sub-sub-menu-curso">
+                <button class="button-periodo">1DSM</button>
+                <button class="button-periodo">2DSM</button>
+                <button class="button-periodo">3DSM</button>
+                <button class="button-periodo">4DSM</button>
+                <button class="button-periodo">5DSM</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
+ 
       <section class="contTable">
         <section class="title">
           <h1>1 Dsm</h1>
           <p>Turno: Diurno</p>
         </section>
-
+ 
         <div class="table-container">
           <table class="table">
             <thead>
@@ -69,7 +80,7 @@
                 <td>Engenharia de Software I</td>
                 <td>Engenharia de Software I</td>
                 <td>Sistemas Operacionais e Redes</td>
-  
+ 
               </tr>
               <tr>
                 <td class="dias">Terça</td>
@@ -86,7 +97,7 @@
                 <td>Algoritmo e Lógica de Programação</td>
                 <td>Algoritmo e Lógica de Programação</td>
                 <td>x</td>
-  
+ 
               </tr>
               <tr>
                 <td class="dias">Quinta</td>
@@ -107,7 +118,7 @@
             </tbody>
           </table>
         </div>
-
+ 
         <section class="info">
           <section class="professores">
             <h3>Professores</h3>
@@ -127,8 +138,8 @@
         </section>
       </section>
     </section>
+ 
   </section>
-
 </body>
-
+ 
 </html>
