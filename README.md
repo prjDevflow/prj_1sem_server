@@ -98,17 +98,17 @@ com atividades que envolvem tanto o planejamento conceitual quanto o desenvolvim
 A equipe se concentrou em atividades essenciais para estabelecer a base do projeto, garantindo uma base sólida para as próximas etapas.
 
 ### Sprint Backlog
-| Id Requisito  | Story Points  | Tarefa                        |
-|---------------|---------------|-------------------------------|
-| RF03          | 13 pts        | Criar modelo conceitual do banco de dados  |
-| RF04          | 3 pts         | Criar botão para exportar mapa/relatório em pdf  |
-| RF05          | 31 pts        | Criar página para consultar as aulas de cada curso  |
-| RNF01         | 13 pts        | Criar mapas interativos das salas  |
-| RNF02         | 5 pts         | Criar layout responsivo para aplicativos móveis  |
-| R01           | 13 pts        | Prototipar as telas do sistema no Figma  |
-| -             | 9 pts         | Criar página inicial  |
-| -             | 5 pts         | Criar o banco de dados  |
-| -             | 5 pts         | Criar modelo UML  |
+| Story Points  | Tarefa                                    |
+|---------------|-------------------------------------------|
+| 13 pts        | Criar modelo conceitual do banco de dados  |
+| 3 pts         | Criar botão para exportar mapa/relatório em pdf  |
+| 31 pts        | Criar página para consultar as aulas de cada curso  |
+| 13 pts        | Criar mapas interativos das salas  |
+| 5 pts         | Criar layout responsivo para aplicativos móveis  |
+| 13 pts        | Prototipar as telas do sistema no Figma  |
+| 9 pts         | Criar página inicial  |
+| 5 pts         | Criar o banco de dados  |
+| 5 pts         | Criar modelo UML  |
 
 - Botão de exportação para PDF (RF04) em andamento.
 - Página de consulta das aulas (RF05) e mapas interativos (RNF01) em andamento.
@@ -137,3 +137,23 @@ _**3. Quais ações podemos tomar para melhorar no próximo sprint?**_
    Melhorar a organização e a consistência do registro das Dailys, garantindo que sejam documentadas diariamente, com anotações claras e objetivas dos pontos discutidos.
    
    Facilitando o acompanhamento do progresso da equipe, identificar rapidamente impedimentos recorrentes e promover maior transparência no andamento das tarefas
+
+## Sprint 02
+
+descrição sprint 02...
+
+### Sprint Backlog
+| Story Points  | Tarefa                                    |
+|---------------|-------------------------------------------|
+| 5 pts         | Alterações no visual do sistema, mais intuitivo e moderno  |
+| 3 pts         | Criar página de autenticação para secretaria entrar no sistema  |
+| 11 pts        | Criar página para secretaria visualizar, alterar e excluir dados do sistema  |
+| 8 pts         | Criar modal(dialog) do mapa interativo para visualizar aulas da sala |
+| 29 pts        | Renderizar as informações da api(fake) no cliente, simulando a conexão com o servidor |
+| 8 pts         | Criar as consultas para simular os processos do servidor e para revisão da estrutura do banco de dados |
+| 43 pts        | Criar as rotas do servidor para conectar com o banco de dados e assim, cadastrar ou buscar as informações necessárias |
+| 9 pts         | Documentar sprint no GitHub e em vídeo |
+
+### Burndown
+
+![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/Burndown.PNG)
