@@ -285,8 +285,8 @@ header {
 }
 
 .cardCurso img {
-  width: 225px;
-  height: 225px;
+  width: 210px;
+  height: 210px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -395,11 +395,16 @@ header {
   color: #333; 
   font-size: 0.5rem;
   font-weight: 800;
+  font-size: 14px;
   margin: 8px 0; 
   text-align: center;
   width: 100%;
   padding: 0 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-false {
+  color: #ffffff;
 }
 
 .social-icons > a {

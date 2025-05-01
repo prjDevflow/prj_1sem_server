@@ -1,6 +1,24 @@
 :root {
   --padding-page: 18vw;
   --colorText: white;
+  --color-rh: #2f7360;
+  --color-white: #ffffff;
+  --color-bg: #f5f5f5;
+  --color-text: #333333;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+.contCursos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h2 {
@@ -22,8 +40,15 @@ h2 {
   text-align: center;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
 }
+
+.cursoTitle h2 {
+  font-size: 1.8rem;
+  color: var(--color-rh);
+}
+
 .card-grade{
   display: flex;
   align-items: center;
@@ -46,8 +71,11 @@ h2 {
   padding-bottom: 200px; /* Additional space for period dropdown */
 }
 .imgCurso {
-  width: 170px;
-  height: 170px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .contCursos {
@@ -59,18 +87,25 @@ h2 {
 }
 
 .cursoDivider {
-  height: 5px;
+  height: 4px;
   align-items: center;
   justify-content: center;
   text-align: center;
   display: flex;
   width: 100%;
+  background-color: var(--color-rh);
+  margin: 1rem 0;
+  border-radius: 6px;
 }
 
 .cursoText {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #444;
 }
 
 .cursoSeparator {
@@ -81,7 +116,8 @@ h2 {
   padding: 0 22px;
   gap: 16px;
   border-radius: 5px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
 }
 
 /* ---------- */
@@ -89,25 +125,30 @@ h2 {
 .menu-curso {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 120%;
   left: 0;
-  background-color: #8f8f8f;
-  ;
-  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   z-index: 10;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem;
+  min-width: 220px;
 }
 
+
 .dropdown-curso {
-  position: relative; /* Importante para posicionar o menu abaixo */
+  position: relative;
+}
+
+.dropdown-curso:hover .menu-curso {
+  display: block;
 }
 
 /* Estilo do botão FILTRO */
 .btn-menu {
   font-weight: bold;
-  font-size: 19px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -127,21 +168,15 @@ h2 {
 
 /* Estilo dos botões de período (Diurno e Noturno) */
 .btn-periodo {
-  font-weight: bold;
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
+  background-color: #eee;
   border: none;
-  color: var(--colorText);
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
   cursor: pointer;
-  padding: 8px 8px;
-  height: 100%;
-  border-radius: 5px;
-  text-align: center;
+  font-weight: 500;
   width: 100%;
-  position: relative;
+  text-align: left;
 }
 
 .btn-periodo:hover {
@@ -152,33 +187,25 @@ h2 {
 .sub-menu-curso {
   position: relative;
   width: 100%;
+  
 }
 
 /* Submenu das turmas (AGORA AO LADO) */
 .sub-sub-menu-curso {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  border-radius: 6px;
-  flex-direction: column;
-  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.5rem;
 }
-
 /* Botões de cada turma (1RH, 3RH, etc.) */
 .button-periodo {
-  font-weight: bold;
-  font-size: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #8f8f8f;
+  background-color: var(--color-rh);
+  color: var(--color-white);
   border: none;
-  color: var(--colorText);
+  padding: 5px 10px;
+  border-radius: 4px;
   cursor: pointer;
-  padding: 8px 8px;
-  border-radius: 5px;
-  width: 100%;
+  font-size: 0.9rem;
 }
 
 .button-periodo:hover {
@@ -193,6 +220,21 @@ h2 {
   background-color: transparent;
   border: none;
   padding-top: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.btnHome button {
+  background-color: var(--color-rh);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .btnHome > button {
@@ -208,6 +250,74 @@ h2 {
 
 .btnHome > button:hover {
   color: #000;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.table th {
+  background-color: var(--color-rh);
+  color: var(--color-white);
+}
+
+.dias {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.professores h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--color-rh);
+}
+
+.professores div {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.btnDiv {
+  display: flex;
+  align-items: center;
+}
+
+.download-btn {
+  background-color: var(--color-rh);
+  color: var(--color-white);
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #245d4f;
 }
 
 @media screen and (max-width: 700px) {
