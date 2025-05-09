@@ -2,9 +2,9 @@ function loadContentPages(event, urlPage) {
   if (event) {
     event.preventDefault();
   }
-
+ 
   localStorage.setItem("lastPage", urlPage);
-
+ 
   fetch(urlPage)
     .then((response) => {
       if (!response.ok) {
@@ -15,12 +15,12 @@ function loadContentPages(event, urlPage) {
     .then((content) => {
       const main = document.getElementById("mainContent");
       main.innerHTML = content;
-
+ 
       const header = document.querySelector("header");
       const footer = document.querySelector("footer");
-
+ 
       const hideLayout = ["login.html", "secretary.html"];
-
+ 
       if (hideLayout.some((page) => urlPage.includes(page))) {
         header.style.display = "none";
         footer.style.display = "none";
@@ -28,7 +28,7 @@ function loadContentPages(event, urlPage) {
         header.style.display = "";
         footer.style.display = "";
       }
-
+ 
       // Carrega os scripts necessários
       const scriptsToLoad = [
         "scripts/dialog.js",
@@ -36,7 +36,7 @@ function loadContentPages(event, urlPage) {
         "scripts/login.js",
         "scripts/btnFiltro.js"
       ];
-
+ 
       loadScriptsSequentially(scriptsToLoad, () => {
         // Após carregar os scripts, inicializa os eventos específicos da página
         if (urlPage.includes("dsm.html",)) {
@@ -55,7 +55,7 @@ function loadContentPages(event, urlPage) {
           initCursoFilter();
         }
       });
-
+ 
       // Carrega os estilos CSS necessários
       const cssToLoad = [
         "styles/curso.css",
@@ -64,7 +64,7 @@ function loadContentPages(event, urlPage) {
         "styles/horarios.css",
         "styles/secretary.css",
       ];
-
+ 
       cssToLoad.forEach((href) => {
         const link = document.createElement("link");
         link.rel = "stylesheet";
@@ -76,7 +76,7 @@ function loadContentPages(event, urlPage) {
       console.log("Erro ao carregar o conteúdo da página", error)
     );
 }
-
+ 
 function loadScriptsSequentially(scripts, callback, index = 0) {
   if (index >= scripts.length) {
     if (callback) callback();
@@ -87,8 +87,24 @@ function loadScriptsSequentially(scripts, callback, index = 0) {
   script.onload = () => loadScriptsSequentially(scripts, callback, index + 1);
   document.body.appendChild(script);
 }
-
+ 
 window.onload = function () {
   const lastPage = localStorage.getItem("lastPage") || "pages/main.html";
   loadContentPages(null, lastPage);
 };
+ 
+function validarLogin() {
+  const usuario = document.getElementById("usuario").value.trim();
+  const senha = document.getElementById("senha").value.trim();
+ 
+  if (!usuario || !senha) {
+    
+    return;
+  }
+ 
+  if (usuario === "pedro@gmail.com" && senha === "1234") {
+    loadContentPages(null, 'pages/secretary.html')
+  } else {
+    alert("E-mail ou senha inválidos.");
+  }
+}

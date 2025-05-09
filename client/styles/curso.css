@@ -1,7 +1,7 @@
 :root {
   --padding-page: 18vw;
   --colorText: white;
-  --color-rh: #2f7360;
+  --color-rh: #72af5f;
   --color-white: #ffffff;
   --color-bg: #f5f5f5;
   --color-text: #333333;
@@ -186,13 +186,6 @@ h2 {
   
 }
 
-/* Submenu das turmas (AGORA AO LADO) */
-.sub-sub-menu-curso {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0.5rem;
-}
 /* Botões de cada turma (1RH, 3RH, etc.) */
 .button-periodo {
   background-color: var(--color-rh);
@@ -202,7 +195,7 @@ h2 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .button-periodo:hover {

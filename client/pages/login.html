@@ -12,26 +12,27 @@
     <div class="login">
       <a onclick="loadContentPages(event, 'pages/main.html')"><i class="fa-solid fa-arrow-left-long fa-xl"></i></a>
       <h2>Faça o seu login</h2>
+      <div id="mensagemErro" class="mensagem-erro"></div>
       <form id="loginForm">
         <label for="usuario">Nome do usuário</label>
         <input type="text" id="usuario" placeholder="Insira seu usuário" required>
-  
+ 
         <label for="senha">Senha:</label>
         <div class="password-container">
           <input type="password" id="senha" placeholder="Digite sua senha" required>
           <i class="fas fa-eye" id="toggleSenha"></i>
         </div>
-  
-        <button type="submit" onclick="loadContentPages(event, 'pages/secretary.html')">ENVIAR</button>
+ 
+        <button type="submit" onclick="validarLogin()">ENVIAR</button>
         <!-- <button type="submit">ENVIAR</button> -->
       </form>
-  
+ 
       <div class="obs">
         <b>OBSERVAÇÃO:</b> Essa página é de uso exclusivo da Secretaria.
       </div>
     </div>
   </section>
-
+ 
   <script src="../scripts/login.js"></script>
 </body>
 </html>
