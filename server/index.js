@@ -6,6 +6,7 @@ const cors = require("cors");
 const professor = require("./src/services/professor.services.js");
 const curso = require("./src/services/curso.services.js");
 const disciplina = require("./src/services/disciplina.services.js");
+const agenda = require("./src/services/agenda.services.js");
 
 const pool = require("./src/config/db.js");
 
@@ -28,6 +29,7 @@ app.use(cors());
 app.use("/curso.services", curso);
 app.use("/professor.services", professor);
 app.use("/disciplina.services", disciplina);
+app.use("/agenda.services", agenda);
 
 async function testDBConnection() {
   try {
