@@ -2,32 +2,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("loginForm");
   const toggleSenha = document.getElementById("toggleSenha");
   const senhaInput = document.getElementById("senha");
- 
+
   // Mostrar/ocultar senha
   toggleSenha.addEventListener("click", () => {
     senhaInput.type = senhaInput.type === "password" ? "text" : "password";
     toggleSenha.classList.toggle("fa-eye-slash");
   });
- 
-  // Validação do formulário
-  form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Impede o envio padrão do formulário
- 
-    const usuario = document.getElementById("usuario").value.trim();
-    const senha = document.getElementById("senha").value.trim();
- 
-    // Verifica se os campos estão vazios
-    if (!usuario || !senha) {
-      alert("Por favor, preencha todos os campos!");
+
+  // Submete formulário para o backend
+  async function login(e) {
+    e.preventDefault(); // Impede envio padrão
+
+    const email = document.getElementById("usuario").value.trim();
+    const senha = senhaInput.value.trim();
+
+    if (!email || !senha) {
+      console.log("Preencha todos os campos.");
       return;
     }
- 
-    // Validação do e-mail e senha
-    if (usuario === "pedro@gmail.com" && senha === "1234") {
-      window.location.href = "pages/secretary.html";
-    } else {
-      alert("E-mail ou senha inválidos.");
+
+    try {
+      const response = await fetch("http://localhost:3333/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, senha }),
+      });
+
+      const data = await response.json();
+
+      // if (!response.ok) {
+      //   console.log("Erro:", data.erro);
+
+      // } else {
+      //   console.log("Sucesso:", data.mensagem);
+      //   // Aqui você pode redirecionar ou armazenar token futuramente
+      // }
+    } catch (error) {
+      console.error("Erro na requisição:", error);
     }
-  });
+  };
 });
- 
