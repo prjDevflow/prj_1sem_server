@@ -10,7 +10,8 @@ const professor = require("./src/services/professor.services.js");
 const curso = require("./src/services/curso.services.js");
 const disciplina = require("./src/services/disciplina.services.js");
 const addProfessor = require("./src/services/insertCsv.services.js");
-// BANCO DE DADOS
+const agenda = require("./src/services/agenda.services.js");
+
 const pool = require("./src/config/db.js");
 
 dotenv.config();
@@ -28,6 +29,7 @@ app.post("/insert-csv", upload.single("file"), addProfessor);
 app.use("/curso.services", curso);
 app.use("/professor.services", professor);
 app.use("/disciplina.services", disciplina);
+app.use("/agenda.services", agenda);
 
 // Rota de teste
 app.get("/health", (req, res) => {
@@ -35,14 +37,14 @@ app.get("/health", (req, res) => {
 });
 
 // Teste de conexão com o banco de dados
-async function testDBConnection() {
-  try {
-    const res = await pool.query("SELECT NOW()");
-    console.log("Conexão bem-sucedida:");
-  } catch (err) {
-    console.error("Erro na conexão com o banco:", err);
-  }
-}
+// async function testDBConnection() {
+//   try {
+//     const res = await pool.query("SELECT NOW()");
+//     console.log("Conexão bem-sucedida:");
+//   } catch (err) {
+//     console.error("Erro na conexão com o banco:", err);
+//   }
+// }
 
 // Inicia o servidor e escuta na porta definida
 app.listen(PORT, function () {

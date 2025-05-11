@@ -66,32 +66,9 @@ async function update(req, res) {
         res.status(500).json({message: "Erro ao processar requisição"});
     }
 }
-
-// ------- teste ------
-async function buscaGrade(req, res) {
-    try {
-        const { curso, turno, turma } = req.body;
-
-        if (!curso) {
-            return res.status(400).json({ erro: "Dados não recebidos corretamente" });
-        }
-
-        const res1 = await db.query(
-            "SELECT nome FROM curso WHERE nome = $1",
-            [curso]
-        );
-
-        res.json(res1.rows);
-    } catch (e) {
-        console.error(e);
-        res.status(500).json({ message: "Erro ao processar requisição" });
-    }
-}
 module.exports = {
     insert,
     update,
     remove, 
     select,
-
-    buscaGrade
 }
