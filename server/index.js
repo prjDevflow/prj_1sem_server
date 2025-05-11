@@ -31,23 +31,7 @@ app.use("/professor.services", professor);
 app.use("/disciplina.services", disciplina);
 app.use("/agenda.services", agenda);
 
-// Rota de teste
-app.get("/health", (req, res) => {
-  res.status(200).json({ status: "OK", message: "Servidor operacional" });
-});
-
-// Teste de conexão com o banco de dados
-// async function testDBConnection() {
-//   try {
-//     const res = await pool.query("SELECT NOW()");
-//     console.log("Conexão bem-sucedida:");
-//   } catch (err) {
-//     console.error("Erro na conexão com o banco:", err);
-//   }
-// }
-
 // Inicia o servidor e escuta na porta definida
 app.listen(PORT, function () {
-  // testDBConnection();
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
