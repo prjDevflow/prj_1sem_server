@@ -9,7 +9,7 @@ const upload = multer({ dest: "uploads/" });
 const professor = require("./src/services/professor.services.js");
 const curso = require("./src/services/curso.services.js");
 const disciplina = require("./src/services/disciplina.services.js");
-const addProfessor = require("./src/services/insertCsv.services.js")
+const addProfessor = require("./src/services/insertCsv.services.js");
 // BANCO DE DADOS
 const pool = require("./src/config/db.js");
 
@@ -29,6 +29,12 @@ app.use("/curso.services", curso);
 app.use("/professor.services", professor);
 app.use("/disciplina.services", disciplina);
 
+// Rota de teste
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "OK", message: "Servidor operacional" });
+});
+
+// Teste de conexão com o banco de dados
 async function testDBConnection() {
   try {
     const res = await pool.query("SELECT NOW()");
@@ -40,6 +46,6 @@ async function testDBConnection() {
 
 // Inicia o servidor e escuta na porta definida
 app.listen(PORT, function () {
-  testDBConnection();
+  // testDBConnection();
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
