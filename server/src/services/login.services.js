@@ -1,7 +1,3 @@
-const express = require("express");
-// const router = express.Router();
-require('dotenv').config();
-
 async function login(req, res) {
   try {
     const { usuario, senha } = req.body;
@@ -17,18 +13,17 @@ async function login(req, res) {
       return res.status(401).json({ erro: "Senha incorreta." });
     }
 
-    return res.status(200).json({ 
+    return res.status(200).json({
       mensagem: "Login bem-sucedido!",
       usuario: {
         email: process.env.EMAIL_SECRETARIA,
-        perfil: "secretaria"
-      }
+        perfil: "secretaria",
+      },
     });
-
   } catch (error) {
     console.error("Erro no servidor:", error);
     return res.status(500).json({ erro: "Erro interno do servidor" });
   }
-};
+}
 
 module.exports = login;

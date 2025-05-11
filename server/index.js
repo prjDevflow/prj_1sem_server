@@ -2,8 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
-const multer = require("multer");
-const upload = multer({ dest: "uploads/" });
+const routes = require("./src/routes/app.routes.js");
 
 // SERVICOS
 const professor = require("./src/services/professor.services.js");
@@ -12,26 +11,17 @@ const disciplina = require("./src/services/disciplina.services.js");
 const addProfessor = require("./src/services/insertCsv.services.js");
 const agenda = require("./src/services/agenda.services.js");
 
-const pool = require("./src/config/db.js");
-
+// CONFIG
 dotenv.config();
-
 const app = express();
-
+app.use(express.json());
+app.use(cors());
 const PORT = process.env.PORT_SERVER;
 
-app.use(express.json());
+// ROTAS
+app.use("/", routes);
 
-app.use(cors());
-
-app.post("/insert-csv", upload.single("file"), addProfessor);
-
-app.use("/curso.services", curso);
-app.use("/professor.services", professor);
-app.use("/disciplina.services", disciplina);
-app.use("/agenda.services", agenda);
-
-// Inicia o servidor e escuta na porta definida
+// INICIA SERVIDOR
 app.listen(PORT, function () {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
