@@ -7,7 +7,7 @@ async function select(req, res) {
         res.json(resultado.rows);
     } catch (e) {
         res.status(500).json({
-            message: "Erro ao processar requisição"
+            message: "Erro ao processar requisição."
         })
     }
 
