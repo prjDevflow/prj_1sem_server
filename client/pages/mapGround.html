@@ -33,19 +33,19 @@
       <img class="mapMobile" src="/client/Imagens/img_mapTerreoMobile.png" alt="mapa primeiro andar"></img>
 
       <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
-      <button class="sala sala01" onclick="openDialog('dialogSala', 'idTitleSala', '01 - Lab. de Química Ambiental'), buscaAulaSala('Segunda-feira')">
+      <button class="sala sala01" onclick="openDialog('dialogSala', 'idTitleSala', '01 - Lab. de Química Ambiental'), buscaAulaSala(1, 'Segunda-feira')">
         Lab. de Química Ambiental
         <br> 01
       </button>
-      <button class="sala sala02" onclick="openDialog('dialogSala', 'idTitleSala', '02 - Lab. de Desenho e Topografia'), buscaAulaSala('Segunda-feira')">
+      <button class="sala sala02" onclick="openDialog('dialogSala', 'idTitleSala', '02 - Lab. de Desenho e Topografia'), buscaAulaSala(2, 'Segunda-feira')">
         Lab. de Desenho e Topografia
         <br> 02
       </button>
-      <button class="sala sala03" onclick="openDialog('dialogSala', 'idTitleSala', '03 - Lab. de Microbiologia Ambiental'), buscaAulaSala('Segunda-feira')">
+      <button class="sala sala03" onclick="openDialog('dialogSala', 'idTitleSala', '03 - Lab. de Microbiologia Ambiental'), buscaAulaSala(3, 'Segunda-feira')">
         Lab. de Microbiologia Ambiental
         <br> 03
       </button>
-      <button class="sala sala04" onclick="openDialog('dialogSala', 'idTitleSala', '04 - Lab. de Análises Ambientais'), buscaAulaSala('Segunda-feira')">
+      <button class="sala sala04" onclick="openDialog('dialogSala', 'idTitleSala', '04 - Lab. de Análises Ambientais'), buscaAulaSala(4, 'Segunda-feira')">
         Lab. de Análises Ambientais
         <br> 04
       </button>
@@ -72,17 +72,16 @@
       </select>
       <!-- TABELA -->
       <div class="table-container">
-        <table class="table">
+        <table class="tableSala">
           <thead>
-            <tr>
-              <th class="red">Turma</th>
-              <th class="red">Turno</th>
-              <th class="red">Materia</th>
-              <th class="red">Horário</th>
-          </tr>
-        </thead>
-        <tbody id="tbodyAulas">
-        </tbody>
+            <tr class="bcgSecretary">
+              <th class="bcgSecretary">Turma</th>
+              <th class="">Turno</th>
+              <th class="">Disciplina</th>
+              <th class="">Horário</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyAulas"></tbody>
         </table>
       </div>
     </dialog>

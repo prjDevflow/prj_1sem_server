@@ -1,150 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-</head>
+  <body>
+    <section class="contCursos">
+      <section class="cursoSection">
+        <!-- INFO CURSO -->
+        <section class="card-grade">
+          <div class="btnHome">
+            <button onclick="loadContentPages(event, 'pages/main.html')">
+              <i class="fa-solid fa-chevron-left fa-sm"></i>
+              Voltar
+            </button>
+          </div>
 
-<body>
-  <section class="contCursos">
-    <section class="cursoSection">
-      <section class="card-grade">
-        <div class="btnHome">
-          <button onclick="loadContentPages(event, 'pages/main.html')">
-            <i class="fa-solid fa-chevron-left fa-sm"></i>
-            Voltar
-          </button>
-        </div>
+          <div class="cursoTitle">
+            <img class="imgCurso" src="/client/Imagens/imgMarh.png" />
+            <h2>Meio Ambiente e Recursos Hídricos</h2>
+          </div>
 
-        <div class="cursoTitle">
-          <img class="imgCurso" src="/client/Imagens/imgMarh.png" />
-          <h2>Meio Ambiente e Recursos Hídricos</h2>
-        </div>
+          <div class="cursoDivider bcgRh"></div>
 
-        <div class="cursoDivider bcgRh"></div>
+          <p class="cursoText">
+            O Tecnólogo em Meio Ambiente e Recursos Hídricos está apto a
+            planejar e gerenciar os aspectos ambientais de organizações dos mais
+            diversos setores e segmentos; identificar, caracterizar e solucionar
+            problemas ambientais; realizar a gestão racional e responsável dos
+            recursos hídricos; promover a recuperação ambiental de áreas
+            degradadas, rios e bacias hidrográficas.
+          </p>
 
-        <p class="cursoText">
-          O Tecnólogo em Meio Ambiente e Recursos Hídricos está apto a planejar e gerenciar os aspectos ambientais de
-          organizações dos mais diversos setores e segmentos; identificar, caracterizar e solucionar problemas
-          ambientais;
-          realizar a gestão racional e responsável dos recursos hídricos; promover a recuperação ambiental de áreas
-          degradadas, rios e bacias hidrográficas.
-        </p>
-
-        <div class="cursoSeparator bcgRh">
-          <div class="dropdown-curso">
-            <button class="btn-menu">FILTRO <i class="fa-solid fa-chevron-down fa-sm"
-                style="margin-left: 12px;"></i></button>
-            <div class="menu-curso bcgRh">
-              <!-- Período Diurno -->
-              <div class="sub-menu-curso">
-                <button class="btn-periodo" data-periodo="diurno">DIURNO</button>
-                <div id="drop_diurno" class="sub-sub-menu-curso">
-                  <button class="button-periodo">5RH</button>
-                  <button class="button-periodo">6RH</button>
+          <div class="cursoSeparator bcgRh">
+            <div class="dropdown-curso">
+              <button class="btn-menu">
+                FILTRO
+                <i
+                  class="fa-solid fa-chevron-down fa-sm"
+                  style="margin-left: 12px"
+                ></i>
+              </button>
+              <div class="menu-curso bcgRh">
+                <!-- Período Diurno -->
+                <div class="sub-menu-curso">
+                  <button class="btn-periodo" data-periodo="diurno">
+                    DIURNO
+                  </button>
                 </div>
-              </div>
 
-              <!-- Período Noturno -->
-              <div class="sub-menu-curso">
-                <button class="btn-periodo" data-periodo="noturno">NOTURNO</button>
-                <div id="drop_noturno" class="sub-sub-menu-curso">
-                  <button class="button-periodo">1RH</button>
-                  <button class="button-periodo">2RH</button>
-                  <button class="button-periodo">3RH</button>
+                <!-- Período Noturno -->
+                <div class="sub-menu-curso">
+                  <button class="btn-periodo" data-periodo="noturno">
+                    NOTURNO
+                  </button>
+                  <div id="drop_diurno" class="sub-sub-menu-curso">
+                    <button class="button-periodo">5RH</button>
+                    <button class="button-periodo">6RH</button>
+                  </div>
+                  <div id="drop_noturno" class="sub-sub-menu-curso">
+                    <button class="button-periodo">1RH</button>
+                    <button class="button-periodo">2RH</button>
+                    <button class="button-periodo">3RH</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="card-grade">
-        <section class="contTable">
-          <section class="title">
-            <h1>1 RH</h1>
-            <p>Turno: Noturno</p>
-          </section>
-
-          <div class="table-container">
-            <table class="table bcgRh">
-              <thead>
-                <tr>
-                  <th class="bcgRh">Horário</th>
-                  <th>18:45 - 19:35</th>
-                  <th>19:35 - 20:25</th>
-                  <th>20:25 - 21:25</th>
-                  <th>21:25 - 22:15</th>
-                  <th>22:15 - 23:05</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="dias">Segunda</td>
-                  <td>Engenharia de Software I</td>
-                  <td>Engenharia de Software I</td>
-                  <td>Engenharia de Software I</td>
-                  <td>Engenharia de Software I</td>
-                  <td>Sistemas Operacionais e Redes</td>
-                </tr>
-                <tr>
-                  <td class="dias">Terça</td>
-                  <td>Modelagem de Banco de Dados</td>
-                  <td>Modelagem de Banco de Dados</td>
-                  <td>Modelagem de Banco de Dados</td>
-                  <td>Design Digital</td>
-                  <td>Design Digital</td>
-                </tr>
-                <tr>
-                  <td class="dias">Quarta</td>
-                  <td>Algoritmo e Lógica de Programação</td>
-                  <td>Algoritmo e Lógica de Programação</td>
-                  <td>Algoritmo e Lógica de Programação</td>
-                  <td>Algoritmo e Lógica de Programação</td>
-                  <td>x</td>
-                </tr>
-                <tr>
-                  <td class="dias">Quinta</td>
-                  <td>Sistemas Operacionais e Redes</td>
-                  <td>Sistemas Operacionais e Redes</td>
-                  <td>Sistemas Operacionais e Redes</td>
-                  <td>Design Digital</td>
-                  <td>Design Digital</td>
-                </tr>
-                <tr>
-                  <td class="dias">Sexta</td>
-                  <td>Desenvolvimento Web I</td>
-                  <td>Desenvolvimento Web I</td>
-                  <td>Desenvolvimento Web I</td>
-                  <td>Desenvolvimento Web I</td>
-                  <td>Modelagem de Banco de Dados</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <section class="info">
-            <section class="professores">
-              <h3>Professores</h3>
-              <div>Engenharia de Software I - Egydio</div>
-              <div>Sistemas Operacionais e Redes - Egydio</div>
-              <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
-              <div>Design Digital - Marcelo Sudo</div>
-              <div>Algoritmo e Lógica de Programação - Arley</div>
-              <div>Desenvolvimento Web - Henrique Louro</div>
+        </section>
+        <!-- GRADE HORARIOS -->
+        <section class="card-grade">
+          <section class="contTable">
+            <section class="title">
+              <h1>1 RH</h1>
+              <p>Turno: Noturno</p>
             </section>
-            <div class="btnDiv">
-              <a href="" class="download-btn" download>
-                Baixar PDF
-                <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
-              </a>
+
+            <div class="table-container">
+              <table class="table bcgRh">
+                <thead>
+                  <tr>
+                    <th class="bcgRh">Horário</th>
+                    <th>18:45 - 19:35</th>
+                    <th>19:35 - 20:25</th>
+                    <th>20:25 - 21:25</th>
+                    <th>21:25 - 22:15</th>
+                    <th>22:15 - 23:05</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="dias">Segunda</td>
+                    <td>Engenharia de Software I</td>
+                    <td>Engenharia de Software I</td>
+                    <td>Engenharia de Software I</td>
+                    <td>Engenharia de Software I</td>
+                    <td>Sistemas Operacionais e Redes</td>
+                  </tr>
+                  <tr>
+                    <td class="dias">Terça</td>
+                    <td>Modelagem de Banco de Dados</td>
+                    <td>Modelagem de Banco de Dados</td>
+                    <td>Modelagem de Banco de Dados</td>
+                    <td>Design Digital</td>
+                    <td>Design Digital</td>
+                  </tr>
+                  <tr>
+                    <td class="dias">Quarta</td>
+                    <td>Algoritmo e Lógica de Programação</td>
+                    <td>Algoritmo e Lógica de Programação</td>
+                    <td>Algoritmo e Lógica de Programação</td>
+                    <td>Algoritmo e Lógica de Programação</td>
+                    <td>x</td>
+                  </tr>
+                  <tr>
+                    <td class="dias">Quinta</td>
+                    <td>Sistemas Operacionais e Redes</td>
+                    <td>Sistemas Operacionais e Redes</td>
+                    <td>Sistemas Operacionais e Redes</td>
+                    <td>Design Digital</td>
+                    <td>Design Digital</td>
+                  </tr>
+                  <tr>
+                    <td class="dias">Sexta</td>
+                    <td>Desenvolvimento Web I</td>
+                    <td>Desenvolvimento Web I</td>
+                    <td>Desenvolvimento Web I</td>
+                    <td>Desenvolvimento Web I</td>
+                    <td>Modelagem de Banco de Dados</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+
+            <section class="info">
+              <section class="professores">
+                <h3>Professores</h3>
+                <div>Engenharia de Software I - Egydio</div>
+                <div>Sistemas Operacionais e Redes - Egydio</div>
+                <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
+                <div>Design Digital - Marcelo Sudo</div>
+                <div>Algoritmo e Lógica de Programação - Arley</div>
+                <div>Desenvolvimento Web - Henrique Louro</div>
+              </section>
+              <div class="btnDiv">
+                <a href="" class="download-btn" download>
+                  Baixar PDF
+                  <i
+                    class="fa-solid fa-arrow-down"
+                    style="margin-left: 5px"
+                  ></i>
+                </a>
+              </div>
+            </section>
           </section>
         </section>
       </section>
-      </section>
     </section>
-</body>
-
+  </body>
 </html>

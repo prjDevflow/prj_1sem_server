@@ -1,154 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
-</head>
-<style>
-  .button-periodo {background-color: blueviolet; }
-  .cursoTitle h2 {color: blueviolet;}
-  .cursoDivider {background-color: blueviolet;}
-  .table th {background-color: blueviolet;}
-  .professores h3 {color: blueviolet;}
-</style>
-<body>
-  <section class="contCursos">
-    <section class="cursoSection">
-      <section class="card-grade">
-      <div class="btnHome">
-        <button onclick="loadContentPages(event, 'pages/main.html')">
-          <i class="fa-solid fa-chevron-left fa-sm"></i>
-          Voltar
-        </button>
-      </div>
-      <div class="cursoTitle">
-        <img class="imgCurso" src="/client/Imagens/imgDsm.png" />
-        <h2>Desenvolvimento de Software Multiplaforma</h2>
-      </div>
- 
-      <div class="cursoDivider bcgDsm"></div>
- 
-      <p class="cursoText">
-        O egresso do Curso Superior de Tecnologia em Desenvolvimento de
-        Software Multiplataforma tem como perfil o profissional que projeta,
-        desenvolve e testa software para múltiplas plataformas, aplicações em
-        Nuvem e Internet das Coisas. Seleciona e aplica conceitos, métodos e
-        tecnologias de Linguagens de Programação, Banco de Dados, Engenharia
-        de Software, Segurança da Informação e Inteligência Artificial,
-        propondo soluções tecnológicas. Realiza análise estatística de dados
-        para apoiar a tomada de decisão. Coordena projetos e equipes de
-        desenvolvimento de software.
-      </p>
- 
-      <div class="cursoSeparator bcgDsm">
-        <div class="dropdown-curso">
-          <button class="btn-menu">FILTRO <i class="fa-solid fa-chevron-down fa-sm" style="margin-left: 12px;"></i></button>
-          <div class="menu-curso bcgDsm">
-            <!-- Período Noturno -->
-            <div class="sub-menu-curso">
-              <button class="btn-periodo" data-periodo="noturno">NOTURNO</button>
-              <div id="drop_noturno" class="sub-sub-menu-curso">
-                <button class="button-periodo">1DSM</button>
-                <button class="button-periodo">2DSM</button>
-                <button class="button-periodo">3DSM</button>
-                <button class="button-periodo">4DSM</button>
-                <button class="button-periodo">5DSM</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <style>
+    .button-periodo {
+      background-color: blueviolet;
+    }
+    .cursoTitle h2 {
+      color: blueviolet;
+    }
+    .cursoDivider {
+      background-color: blueviolet;
+    }
+    .table th {
+      background-color: blueviolet;
+    }
+    .professores h3 {
+      color: blueviolet;
+    }
+  </style>
+  <body>
+    <section class="contCursos">
+      <section class="cursoSection">
+        <!-- INFO CURSO -->
+        <section class="card-grade">
+          <div class="btnHome">
+            <button onclick="loadContentPages(event, 'pages/main.html')">
+              <i class="fa-solid fa-chevron-left fa-sm"></i>
+              Voltar
+            </button>
+          </div>
+          <div class="cursoTitle">
+            <img class="imgCurso" src="/client/Imagens/imgDsm.png" />
+            <h2>Desenvolvimento de Software Multiplaforma</h2>
+          </div>
+          <div class="cursoDivider bcgDsm"></div>
+          <p class="cursoText">
+            O egresso do Curso Superior de Tecnologia em Desenvolvimento de
+            Software Multiplataforma tem como perfil o profissional que projeta,
+            desenvolve e testa software para múltiplas plataformas, aplicações
+            em Nuvem e Internet das Coisas. Seleciona e aplica conceitos,
+            métodos e tecnologias de Linguagens de Programação, Banco de Dados,
+            Engenharia de Software, Segurança da Informação e Inteligência
+            Artificial, propondo soluções tecnológicas. Realiza análise
+            estatística de dados para apoiar a tomada de decisão. Coordena
+            projetos e equipes de desenvolvimento de software.
+          </p>
+          <!-- FILTRO -->
+          <div class="cursoSeparator bcgDsm">
+            <div class="dropdown-curso">
+              <button class="btn-menu">
+                FILTRO
+                <i
+                  class="fa-solid fa-chevron-down fa-sm"
+                  style="margin-left: 12px"
+                ></i>
+              </button>
+              <div class="menu-curso bcgDsm">
+                <!-- Período Noturno -->
+                <div class="sub-menu-curso">
+                  <button class="btn-periodo" data-periodo="noturno">
+                    NOTURNO
+                  </button>
+                  <div id="drop_noturno" class="sub-sub-menu-curso">
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '1DSM')"
+                    >
+                      1DSM
+                    </button>
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '1DSM')"
+                    >
+                      2DSM
+                    </button>
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '1DSM')"
+                    >
+                      3DSM
+                    </button>
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '1DSM')"
+                    >
+                      4DSM
+                    </button>
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '1DSM')"
+                    >
+                      5DSM
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="card-grade">
-      <section class="contTable">
-        <section class="title">
-          <h1>1 Dsm</h1>
-          <p>Turno: Diurno</p>
+          <script src="../scripts/renderDisciplinas.js"></script>
         </section>
- 
-        <div class="table-container">
-          <table class="table">
-            <thead>
-              <tr class="bcgDsm">
-                <th class="bcgDsm">Horário</th>
-                <th>18:45 - 19:35</th>
-                <th>19:35 - 20:25</th>
-                <th>20:25 - 21:25</th>
-                <th>21:25 - 22:15</th>
-                <th>22:15 - 23:05</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="dias">Segunda</td>
-                <td>Engenharia de Software I</td>
-                <td>Engenharia de Software I</td>
-                <td>Engenharia de Software I</td>
-                <td>Engenharia de Software I</td>
-                <td>Sistemas Operacionais e Redes</td>
- 
-              </tr>
-              <tr>
-                <td class="dias">Terça</td>
-                <td>Modelagem de Banco de Dados</td>
-                <td>Modelagem de Banco de Dados</td>
-                <td>Modelagem de Banco de Dados</td>
-                <td>Design Digital</td>
-                <td>Design Digital</td>
-              </tr>
-              <tr>
-                <td class="dias">Quarta</td>
-                <td>Algoritmo e Lógica de Programação</td>
-                <td>Algoritmo e Lógica de Programação</td>
-                <td>Algoritmo e Lógica de Programação</td>
-                <td>Algoritmo e Lógica de Programação</td>
-                <td>x</td>
- 
-              </tr>
-              <tr>
-                <td class="dias">Quinta</td>
-                <td>Sistemas Operacionais e Redes</td>
-                <td>Sistemas Operacionais e Redes</td>
-                <td>Sistemas Operacionais e Redes</td>
-                <td>Design Digital</td>
-                <td>Design Digital</td>
-              </tr>
-              <tr>
-                <td class="dias">Sexta</td>
-                <td>Desenvolvimento Web I</td>
-                <td>Desenvolvimento Web I</td>
-                <td>Desenvolvimento Web I</td>
-                <td>Desenvolvimento Web I</td>
-                <td>Modelagem de Banco de Dados</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
- 
-        <section class="info">
-          <section class="professores">
-            <h3>Professores</h3>
-            <div>Engenharia de Software I - Egydio</div>
-            <div>Sistemas Operacionais e Redes - Egydio</div>
-            <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
-            <div>Design Digital - Marcelo Sudo</div>
-            <div>Algoritmo e Lógica a de Programação: Arley</div>
-            <div>Desenvolvimento Web: Henrique Louro</div>
+        <!-- GRADE HORARIOS -->
+        <section class="card-grade hidden">
+          <section class="contTable">
+            <!-- TURMA -->
+            <section class="title">
+              <h1>1 Dsm</h1>
+              <p>Turno: Diurno</p>
+            </section>
+            <!-- TABELA -->
+            <div class="table-container">
+              <table class="table">
+                <thead>
+                  <tr class="bcgDsm" id="theadTabela">
+                    <th class="bcgDsm">Horário</th>
+                    <!-- horarios -->
+                  </tr>
+                </thead>
+                <tbody id="tbodyDisciplinas">
+                  <!-- disciplinas -->
+                </tbody>
+              </table>
+            </div>
+            <!-- PROFESSORES -->
+            <section class="info">
+              <section class="professores">
+                <h3>Professores</h3>
+                <div>Engenharia de Software I - Egydio</div>
+                <div>Sistemas Operacionais e Redes - Egydio</div>
+                <div>Modelagem de Banco de Dados - Marcelo Sudo</div>
+                <div>Design Digital - Marcelo Sudo</div>
+                <div>Algoritmo e Lógica a de Programação: Arley</div>
+                <div>Desenvolvimento Web: Henrique Louro</div>
+              </section>
+              <div class="btnDiv">
+                <a href="" class="download-btn" download>
+                  Baixar PDF
+                  <i
+                    class="fa-solid fa-arrow-down"
+                    style="margin-left: 5px"
+                  ></i>
+                </a>
+              </div>
+            </section>
           </section>
-          <div class="btnDiv">
-            <a href="" class="download-btn" download>
-              Baixar PDF
-              <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i>
-            </a>
-          </div>
         </section>
       </section>
     </section>
-    </section>
- 
-  </section>
-</body>
- 
+  </body>
 </html>

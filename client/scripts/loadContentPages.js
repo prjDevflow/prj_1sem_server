@@ -36,6 +36,7 @@ function loadContentPages(event, urlPage) {
         "scripts/login.js",
         "scripts/btnFiltro.js",
         "scripts/renderAulaSala.js",
+        "scripts/renderDisciplinas.js",
       ];
 
       loadScriptsSequentially(scriptsToLoad, () => {
@@ -109,29 +110,28 @@ function initLoginPage() {
 
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
-  
+
     const usuario = document.getElementById("usuario").value.trim();
     const senha = document.getElementById("senha").value.trim();
     erroGeral.textContent = "";
-  
+
     try {
       const response = await fetch("http://localhost:3333/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ usuario, senha }),
       });
-  
+
       const data = await response.json();
-  
+
       if (!response.ok) {
         erroGeral.textContent = data.erro || "Erro ao fazer login.";
         return;
       }
-  
+
       // Sucesso no login
       console.log(data.mensagem);
       loadContentPages(null, "pages/secretary.html");
-  
     } catch (error) {
       console.error(error);
       erroGeral.textContent = "Erro na conexão com o servidor.";
