@@ -33,23 +33,24 @@
       <img class="mapMobile" src="/client/Imagens/img_mapTerreoMobile.png" alt="mapa primeiro andar"></img>
 
       <!-- BOTEOS PARA INTERATIVIDADE COM SALAS -->
-      <button class="sala sala01" onclick="openDialog('dialogSala', 'idTitleSala', '01 - Lab. de Química Ambiental')">
+      <button class="sala sala01" onclick="openDialog('dialogSala', 'idTitleSala', '01 - Lab. de Química Ambiental'), buscaAulaSala('Segunda-feira')">
         Lab. de Química Ambiental
         <br> 01
       </button>
-      <button class="sala sala02" onclick="openDialog('dialogSala', 'idTitleSala', '02 - Lab. de Desenho e Topografia')">
+      <button class="sala sala02" onclick="openDialog('dialogSala', 'idTitleSala', '02 - Lab. de Desenho e Topografia'), buscaAulaSala('Segunda-feira')">
         Lab. de Desenho e Topografia
         <br> 02
       </button>
-      <button class="sala sala03" onclick="openDialog('dialogSala', 'idTitleSala', '03 - Lab. de Microbiologia Ambiental')">
+      <button class="sala sala03" onclick="openDialog('dialogSala', 'idTitleSala', '03 - Lab. de Microbiologia Ambiental'), buscaAulaSala('Segunda-feira')">
         Lab. de Microbiologia Ambiental
         <br> 03
       </button>
-      <button class="sala sala04" onclick="openDialog('dialogSala', 'idTitleSala', '04 - Lab. de Análises Ambientais')">
+      <button class="sala sala04" onclick="openDialog('dialogSala', 'idTitleSala', '04 - Lab. de Análises Ambientais'), buscaAulaSala('Segunda-feira')">
         Lab. de Análises Ambientais
         <br> 04
       </button>
     </section>
+    <script src="../scripts/renderAulaSala.js"></script>
 
     <!-- CONPONENTE MODAL -->
     <!-- RENDERIZA AS AULAS DA SALA DURANTE A SEMANA -->
@@ -62,39 +63,26 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-      <select> <!-- SELECT DO DIA DA SEMANA -->
-        <option selected value="0">Todos</option>
-        <option value="1">Segunda-feira</option>
-        <option value="2">Terça-feira</option>
-        <option value="3">Quarta-feira</option>
-        <option value="4">Quinta-feira</option>
-        <option value="5">Sexta-feira</option>
+      <select onchange="buscaAulaSala(value)"> <!-- SELECT DO DIA DA SEMANA -->
+        <option value="Segunda-feira">Segunda-feira</option>
+        <option value="Terça-feira">Terça-feira</option>
+        <option value="Quarta-feira">Quarta-feira</option>
+        <option value="Quinta-feira">Quinta-feira</option>
+        <option value="Sexta-feira">Sexta-feira</option>
       </select>
+      <!-- TABELA -->
       <div class="table-container">
         <table class="table">
           <thead>
-            <tr class="bcgPrimary">
-              <th>Turma</th>
-              <th>Turno</th>
-              <th>Materia</th>
-              <th>Horário</th>
+            <tr>
+              <th class="red">Turma</th>
+              <th class="red">Turno</th>
+              <th class="red">Materia</th>
+              <th class="red">Horário</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>1DSM</td>
-              <td>Noturno</td>
-              <td>Engenharia de Software I</td>
-              <td>18:45 - 22:15</td>
-            </tr>
-            <tr>
-              <td>1DSM</td>
-              <td>Noturno</td>
-              <td>Sistemas Operacionais e Redes</td>
-              <td>22:15 - 23:05</td>
-            </tr>
-            
-          </tbody>
+        <tbody id="tbodyAulas">
+        </tbody>
         </table>
       </div>
     </dialog>

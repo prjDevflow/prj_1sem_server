@@ -35,6 +35,7 @@ function loadContentPages(event, urlPage) {
         "scripts/accordion.js",
         "scripts/login.js",
         "scripts/btnFiltro.js",
+        "scripts/renderAulaSala.js",
       ];
 
       loadScriptsSequentially(scriptsToLoad, () => {

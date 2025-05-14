@@ -248,12 +248,13 @@ h2 {
 
 .table {
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
   font-size: 0.95rem;
 }
 
-.table th,
+.table tr .red {
+  border: 1px solid red;
+  background-color: red;
+}
 .table td {
   padding: 12px;
   border: 1px solid #ccc;
