@@ -1,7 +1,7 @@
 const db = require("../config/db");
 async function select(req, res) {
     try {
-        const { salaNumero, turma, diaSemana } = req;
+        const { salaNumero, diaSemana } = req;
 
         const resultado = await db.query(
             `SELECT 
@@ -25,9 +25,9 @@ async function select(req, res) {
             JOIN Sala s ON r.Sala_Numero = s.Numero 
             JOIN Horario h ON r.Horario_IdHorario = h.idHorario 
             JOIN Semana sem ON r.Semana_idSemana = sem.idSemana 
-            WHERE s.Numero = $1 AND t.idTurma = $2 AND sem.Dia = $3
+            WHERE s.Numero = $1 AND sem.Dia = $2
             ORDER BY sem.idSemana, h.HoraInicial;`,
-            [salaNumero, turma, diaSemana]
+            [salaNumero, diaSemana]
         );
 
         res.json(resultado.rows);
