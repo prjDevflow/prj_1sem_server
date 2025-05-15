@@ -2,14 +2,8 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
-const routes = require("./src/routes/app.routes.js");
-
-// SERVICOS
-const professor = require("./src/services/professor.services.js");
-const curso = require("./src/services/curso.services.js");
-const disciplina = require("./src/services/disciplina.services.js");
-const addProfessor = require("./src/services/insertCsv.services.js");
-const agenda = require("./src/services/agenda.services.js");
+const appRoute = require("./src/routes/app.routes.js");
+const csvRoute = require("./src/routes/csv.routes.js");
 
 // CONFIG
 dotenv.config();
@@ -19,7 +13,8 @@ app.use(cors());
 const PORT = process.env.PORT_SERVER;
 
 // ROTAS
-app.use("/", routes);
+app.use("/", appRoute);
+app.use("/csv", csvRoute);
 
 // INICIA SERVIDOR
 app.listen(PORT, function () {

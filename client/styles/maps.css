@@ -69,7 +69,7 @@ dialog {
   align-items: start;
   flex-direction: column;
   gap: 20px;
-  
+
   /* Torna o dialog invisível por padrão */
   position: absolute;
   top: 50%;
@@ -92,7 +92,7 @@ dialog[open] {
 dialog > select {
   font-size: 16px;
   font-family: Arial, sans-serif;
-  border: 1px solid #1a1a1a; 
+  border: 1px solid #1a1a1a;
   border-radius: 4px;
   color: #1a1a1a;
   cursor: pointer;
@@ -119,7 +119,7 @@ dialog > div {
 }
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   dialog {
     width: 80%;
   }
