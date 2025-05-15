@@ -36,7 +36,7 @@ curso, ambiente, turno (diurno e noturno) e turma.
 | Sprint | Início     | Entrega     | Trello |
 |--------|------------|-------------|--------|
 | 01     | 18/03/2025 | 15/04/2025  | [Link](https://trello.com/b/qOWm2Dro/sprint-1) |
-| 02     | 16/04/2025 | 15/05/2025  | - |
+| 02     | 16/04/2025 | 15/05/2025  | [link](#sprint-02) |
 | 03     | 16/05/2025 | 10/06/2025  | - |
 
 
