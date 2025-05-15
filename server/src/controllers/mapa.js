@@ -5,28 +5,30 @@ async function select(req, res) {
 
         const resultado = await db.query(
             `SELECT 
-                r.idReserva, 
-                a.idAula, 
-                d.Nome AS Disciplina, 
-                p.Nome AS Professor, 
-                t.idTurma, 
-                t.Turno, 
-                s.Numero AS SalaNumero, 
-                s.Nome AS SalaNome, 
-                s.Andar AS SalaAndar, 
-                h.HoraInicial, 
-                h.HoraFinal, 
-                sem.Dia AS DiaSemana 
-            FROM Reserva r 
-            JOIN Aula a ON r.Aula_idAula = a.idAula 
-            JOIN Professor p ON a.Professor_idProfessor = p.idProfessor 
-            JOIN Disciplina d ON a.Disciplina_idDisciplina = d.idDisciplina 
-            JOIN Turma t ON a.Turma_idTurma = t.idTurma 
-            JOIN Sala s ON r.Sala_Numero = s.Numero 
-            JOIN Horario h ON r.Horario_IdHorario = h.idHorario 
-            JOIN Semana sem ON r.Semana_idSemana = sem.idSemana 
-            WHERE s.Numero = $1 AND sem.Dia = $2
-            ORDER BY sem.idSemana, h.HoraInicial;`,
+                A.idAula,
+                T.idTurma,
+                C.Nome AS Curso,
+                T.Turno,
+                H.HoraInicial,
+                H.HoraFinal,
+                S.Numero AS NumeroSala,
+                S.Nome AS NomeSala,
+                S.Andar,
+                SM.Dia AS DiaSemana,
+                D.Nome AS Disciplina,
+                P.Nome AS Professor
+            FROM Aula A
+            JOIN Turma T ON A.Turma_idTurma = T.idTurma
+            JOIN Curso C ON T.Curso_idCurso = C.idCurso
+            JOIN Horario H ON A.Horario_idHorario = H.idHorario
+            JOIN Sala S ON A.Sala_Numero = S.Numero
+            JOIN Semana SM ON A.Semana_idSemana = SM.idSemana
+            JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
+            JOIN Professor P ON A.Professor_idProfessor = P.idProfessor
+            WHERE 
+                S.Numero = $1 AND SM.Dia = $2
+            ORDER BY
+                SM.idSemana, H.HoraInicial;`,
             [salaNumero, diaSemana]
         );
 
