@@ -145,77 +145,77 @@ Nesta sprint, o time foi responsável por implementar funcionalidades essenciais
 
 ### Sprint Backlog
 
-_**1. Alterações no visual do sistema (RNF02 - 5 pts)**_
+**1. Alterações no visual do sistema (RNF02 - 5 pts)**
 
 ✔️ Atualizamos o layout das principais telas, tornando-o mais moderno e responsivo.
 
-🙋‍♂️ **Responsável:** Rafael Costa
+_Responsável:_ Rafael Costa
 
-_**2. Página de autenticação da secretaria (RF02 - 3 pts)**_
+**2. Página de autenticação da secretaria (RF02 - 3 pts)**
 
 ✔️ Criamos uma página de login funcional com validação, redirecionamento e interface alinhada ao novo visual do sistema.
 
-🙋‍♂️ **Responsável:** Matheus Soldesi, Lucas Cauã
+_Responsável:_ Matheus Soldesi, Lucas Cauã
 
-_**3. Página da secretaria para visualizar, alterar e excluir dados (RF02 - 11 pts)**_
+**3. Página da secretaria para visualizar, alterar e excluir dados (RF02 - 11 pts)**
 
 ✔️ Implementamos uma interface completa para a secretaria com funcionalidades de CRUD e feedback visual.
 
-🙋‍♂️ **Responsável:** Rafael Costa, Eduardo Machado
+_Responsável:_ Rafael Costa, Eduardo Machado
 
-_**4. Modal interativo com o mapa de aulas por sala (RNF01 - 8 pts)**_
+**4. Modal interativo com o mapa de aulas por sala (RNF01 - 8 pts)**
 
 ✔️ Desenvolvido um modal que mostra a ocupação das salas por dia e horário, com layout responsivo.
 
-🙋‍♂️ **Responsável:** Eduardo Machado, Pedro Henrique, Lucas Cauã
+_Responsável:_ Eduardo Machado, Pedro Henrique, Lucas Cauã
 
-_**5. Consultas e revisão da estrutura do banco (RF03 - 8 pts)**_
+**5. Consultas e revisão da estrutura do banco (RF03 - 8 pts)**
 
 ✔️ Criamos as consultas básicas para simular interações com o banco e validar a estrutura dos dados.
 
-🙋‍♂️ **Responsável:** Matheus Venancio, Pedro Henrique
+_Responsável:_ Matheus Venancio, Pedro Henrique
 
-_**6. Documentação da sprint (8 pts)**_
+**6. Documentação da sprint (8 pts)**
 
 ✔️ Documentamos o progresso no GitHub e elaboramos um vídeo explicativo.
 
-🙋‍♂️ **Responsável:** Eduardo Machado, Matheus Soldesi, Rafael Costa
+_Responsável:_ Eduardo Machado, Matheus Soldesi, Rafael Costa
 
-_**7. Grade com horários das turmas e professores (RF05 - 8 pts)**_
+**7. Grade com horários das turmas e professores (RF05 - 8 pts)**
 
 ✔️ A funcionalidade permite a visualização das grades de cada turma, consumindo dados da API.
 
-🙋‍♂️ **Responsável:** Eduardo Machado
+_Responsável:_ Eduardo Machado
 
-_**8. Autenticação da secretaria - backend (RF02 - 3 pts)**_
+**8. Autenticação da secretaria - backend (RF02 - 3 pts)**
 
 ✔️ A rota de autenticação foi implementada, retornando token ou erro conforme as credenciais.
 
-🙋‍♂️ **Responsável:** Rafael Costa
+_Responsável:_ Rafael Costa
 
-_**9. Rota de consulta à grade de horários por turma (RF05 - 8 pts)**_
+**9. Rota de consulta à grade de horários por turma (RF05 - 8 pts)**
 
 ✔️ Criada rota que retorna os dados estruturados da grade, com horários e dias da semana.
 
-🙋‍♂️ **Responsável:** Matheus Venancio, Pedro Henrique
+_Responsável:_ Matheus Venancio, Pedro Henrique
 
-_**10. Cadastro de dados via arquivo CSV (RF01 - 11 pts)**_
+**10. Cadastro de dados via arquivo CSV (RF01 - 11 pts)**
 
 ✔️ A rota permite o envio de arquivos CSV para inserção automatizada de dados no banco.
 
-🙋‍♂️ **Responsável:** Eduardo Machado
+_Responsável:_ Eduardo Machado
 
-_**11. Validação de entrada da secretaria (RF02 - 3 pts)**_
+**11. Validação de entrada da secretaria (RF02 - 3 pts)**
 
 ✔️ Implementada validação na rota de login com retorno de status apropriado e geração de token.
 
-🙋‍♂️ **Responsável:** Rafael Costa
+_Responsável:_ Rafael Costa
 
-_**12. Rota para buscar aulas de uma sala por dia da semana (RNF01 - 11 pts)**_
+**12. Rota para buscar aulas de uma sala por dia da semana (RNF01 - 11 pts)**
 
 ✔️ Desenvolvida rota que retorna as aulas de uma sala específica, com filtro por dia da semana.
 
-🙋‍♂️ **Responsável:** Matheus Soldesi, Lucas Cauã
+_Responsável:_ Matheus Soldesi, Lucas Cauã
 
 ### Burndown
 
@@ -225,22 +225,21 @@ _**12. Rota para buscar aulas de uma sala por dia da semana (RNF01 - 11 pts)**_
 
 _**1. O que funcionou bem durante o sprint?**_
    
-   A divisão de tarefas foi feita de maneira clara, 
-   o que evitou sobrecarga de trabalho e garantiu que todos os membros do time estivessem focados em suas responsabilidades específicas. 
-   
-   O envolvimento e o entusiasmo dos desenvolvedores também contribuíram para um ambiente colaborativo e altamente produtivo, 
-   com troca constante de feedbacks e ideias.
+   A equipe demonstrou comprometimento em aprender e superar os desafios técnicos, especialmente na parte do backend, mesmo com a limitação de conhecimento prévio.
+
+   A colaboração entre os membros foi essencial para compartilhar descobertas e ajudar uns aos outros durante o processo de aprendizagem.
    
 _**2. O que não funcionou tão bem durante o sprint?**_
 
-   A saída de um integrante da equipe durante o sprint gerou um impacto negativo na distribuição de tarefas e na carga de trabalho dos demais membros. 
-   Isso exigiu uma reestruturação rápida das responsabilidades e ajustes no planejamento.
+   A falta de familiaridade da maioria do time com o desenvolvimento backend resultou em atrasos nas entregas e dificuldade para seguir o planejamento inicial.
+
+   Além disso, o tempo necessário para entender novas tecnologias acabou sendo subestimado no planejamento.
       
 _**3. Quais ações podemos tomar para melhorar no próximo sprint?**_
 
-   Melhorar a organização e a consistência do registro das Dailys, garantindo que sejam documentadas diariamente, com anotações claras e objetivas dos pontos discutidos.
-   
-   Facilitando o acompanhamento do progresso da equipe, identificar rapidamente impedimentos recorrentes e promover maior transparência no andamento das tarefas
+   Incluir um tempo de "imersão técnica" no início da sprint para estudo coletivo dos temas mais desafiadores.
+
+   Ajustar as estimativas no planejamento com mais margem para tarefas que envolvem aprendizado de novas tecnologias.
 
 
 
