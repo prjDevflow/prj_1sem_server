@@ -90,7 +90,7 @@ async function buscaTurma(turno, turma) {
         horario: "21:25 - 22:15",
         disciplina: "Algoritmos",
       },
-      { diaSemana: "Quarta", horario: "22:15 - 23:05", disciplina: "x" },
+      { diaSemana: "Quarta", horario: "22:15 - 23:05", disciplina: "  " },
 
       {
         diaSemana: "Quinta",
@@ -144,9 +144,8 @@ async function buscaTurma(turno, turma) {
         disciplina: "Banco de Dados I",
       },
     ];
-    document.querySelector(".card-grade").classList.remove("hidden");
     RenderTabela(dadosTeste);
-
+    
     console.log("busca turma chamada");
   } catch (erro) {
     console.error("Erro ao buscar os dados da API:", erro);
@@ -154,6 +153,7 @@ async function buscaTurma(turno, turma) {
 }
 
 async function RenderTabela(dados) {
+  document.querySelector("#grade").classList.remove("hidden");
   const thead = document.getElementById("theadTabela");
   const tbody = document.getElementById("tbodyDisciplinas");
 

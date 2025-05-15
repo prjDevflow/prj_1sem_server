@@ -50,8 +50,6 @@
         <br> 04
       </button>
     </section>
-    <script src="../scripts/renderAulaSala.js"></script>
-
     <!-- CONPONENTE MODAL -->
     <!-- RENDERIZA AS AULAS DA SALA DURANTE A SEMANA -->
     <dialog id="dialogSala">
@@ -64,7 +62,7 @@
         </button>
       </div>
       <select onchange="buscaAulaSala(value)"> <!-- SELECT DO DIA DA SEMANA -->
-        <option value="Segunda-feira">Segunda-feira</option>
+        <option value="Segunda-feira" selected>Segunda-feira</option>
         <option value="Terça-feira">Terça-feira</option>
         <option value="Quarta-feira">Quarta-feira</option>
         <option value="Quinta-feira">Quinta-feira</option>
@@ -85,6 +83,8 @@
         </table>
       </div>
     </dialog>
+    <script src="../scripts/renderAulaSala.js"></script>
+
     <script src="../scripts/dialog.js"></script> <!-- SCRIPT PARA MODAL -->
     
   </section>

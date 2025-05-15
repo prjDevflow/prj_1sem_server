@@ -16,13 +16,13 @@ async function buscaAulaSala(sala, diaSemana) {
     }
     const dados = await res.json();
 
-    RenderTabela(dados);
+    RenderTabelaSala(dados);
   } catch (erro) {
     console.error("Erro ao buscar os dados da API:", erro);
   }
 }
 
-async function RenderTabela(dados) {
+async function RenderTabelaSala(dados) {
   const tbody = document.getElementById("tbodyAulas");
   tbody.innerHTML = ""; // Limpa o conteúdo anterior da tabela
 

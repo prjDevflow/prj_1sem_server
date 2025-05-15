@@ -50,28 +50,54 @@
                     DIURNO
                   </button>
                 </div>
-
+                
                 <!-- Período Noturno -->
                 <div class="sub-menu-curso">
                   <button class="btn-periodo" data-periodo="noturno">
                     NOTURNO
                   </button>
                   <div id="drop_diurno" class="sub-sub-menu-curso">
-                    <button class="button-periodo">5RH</button>
-                    <button class="button-periodo">6RH</button>
-                  </div>
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '5RH')"
+                    >
+                      5RH
+                    </button>
+                    <button
+                      class="button-periodo"
+                      onclick="buscaTurma('noturno', '6RH')"
+                    >
+                      6RH
+                    </button>
+                    </div>
+                  
                   <div id="drop_noturno" class="sub-sub-menu-curso">
-                    <button class="button-periodo">1RH</button>
-                    <button class="button-periodo">2RH</button>
-                    <button class="button-periodo">3RH</button>
-                  </div>
-                </div>
-              </div>
+                    <button
+                    class="button-periodo"
+                    onclick="buscaTurma('noturno', '1RH')"
+                    >
+                    1RH
+                  </button>
+                  <button
+                  class="button-periodo"
+                  onclick="buscaTurma('noturno', '2RH')"
+                  >
+                  2RH
+                </button>
+                <button
+                class="button-periodo"
+                onclick="buscaTurma('noturno', '3RH')"
+                >
+                3RH
+              </button>
             </div>
           </div>
+        </div>
+      </div>
+      <script src="../scripts/renderDisciplinas.js"></script>
         </section>
         <!-- GRADE HORARIOS -->
-        <section class="card-grade">
+        <section id="grade" class="card-grade hidden">
           <section class="contTable">
             <section class="title">
               <h1>1 RH</h1>
