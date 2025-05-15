@@ -1,4 +1,0 @@
-INSERT INTO Curso (idCurso, Nome) VALUES
-('DSM', 'Desenvolvimento de Software Multiplataforma'),
-('MARH', 'Meio Ambiente e Recursos Hídricos'),
-('GEO', 'Geoprocessamento');

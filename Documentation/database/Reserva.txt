@@ -1,2 +1,0 @@
-INSERT INTO Reserva (Aula_idAula, Sala_Numero)
-VALUES (42, 101);
