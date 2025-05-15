@@ -219,7 +219,7 @@ _**12. Rota para buscar aulas de uma sala por dia da semana (RNF01 - 11 pts)**_
 
 ### Burndown
 
-![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/BurndownSprint2.PNG)
+![Preview-Screens](https://github.com/prjDevflow/Index/blob/main/Documentation/images/BourndownSprint2.png)
 
 ### Sprint Retrospective
 
