@@ -1,0 +1,4 @@
+INSERT INTO Curso (Nome) VALUES
+('Desenvolvimento de Software Multiplataforma'),
+('Meio Ambiente e Recursos Hídricos'),
+('Geoprocessamento');
