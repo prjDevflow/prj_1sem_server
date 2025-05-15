@@ -90,7 +90,7 @@ async function buscaTurma(turno, turma) {
         horario: "21:25 - 22:15",
         disciplina: "Algoritmos",
       },
-      { diaSemana: "Quarta", horario: "22:15 - 23:05", disciplina: "  " },
+      { diaSemana: "Quarta", horario: "22:15 - 23:05", disciplina: "-" },
 
       {
         diaSemana: "Quinta",
@@ -145,7 +145,7 @@ async function buscaTurma(turno, turma) {
       },
     ];
     RenderTabela(dadosTeste);
-    
+
     console.log("busca turma chamada");
   } catch (erro) {
     console.error("Erro ao buscar os dados da API:", erro);
@@ -158,7 +158,7 @@ async function RenderTabela(dados) {
   const tbody = document.getElementById("tbodyDisciplinas");
 
   tbody.innerHTML = "";
-  thead.innerHTML = `<th>Dia / Horário</th>`; // reset
+  thead.innerHTML = `<th>Dia / Horário</th>`;
 
   // 1. Identificar horários únicos e ordená-los
   const horariosUnicos = [...new Set(dados.map((aula) => aula.horario))].sort();
@@ -170,7 +170,6 @@ async function RenderTabela(dados) {
     thead.appendChild(th);
   });
 
-  // 3. Dias fixos
   const diasSemana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta"];
 
   diasSemana.forEach((dia) => {
@@ -184,7 +183,7 @@ async function RenderTabela(dados) {
       );
 
       const td = document.createElement("td");
-      td.textContent = aula ? aula.disciplina : "-"; // ou "x" se quiser marcar vazio
+      td.textContent = aula ? aula.disciplina : "-";
       tr.appendChild(td);
     });
 
