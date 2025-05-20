@@ -12,17 +12,23 @@
     <link rel="stylesheet" href="./styles/horarios.css" />
     <link rel="stylesheet" href="./styles/btnMaps.css" />
 
-    <script src="https://kit.fontawesome.com/b6d8a4c6a8.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/b6d8a4c6a8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <!-- CABECALHO -->
     <header>
       <div class="header-left">
-        <a href="https://fatecjacarei.cps.sp.gov.br"><img src="/client/Imagens/LogoFatec.png" alt="Fatec Jacareí" /></a>
+        <a href="https://fatecjacarei.cps.sp.gov.br">
+          <img src="/client/Imagens/LogoFatec.png" alt="Fatec Jacareí" />
+        </a>
       </div>
     
-      <nav class="header-center">
+      <!-- Menu desktop (visível apenas >700px) -->
+      <nav class="header-center desktop-menu">
         <div class="dropdown">
           <button class="dropbtn">Mapa Interativo</button>
           <div class="dropdown-content">
@@ -42,68 +48,155 @@
         </div>
       </nav>
     
-      <div class="header-right">
+      <div class="header-right desktop-menu">
         <a href="#" class="area-restrita" onclick="loadContentPages(event, 'pages/login.html')">
           <i class="fa fa-user"></i> Área Restrita
         </a>
       </div>
+    
+      <div class="hamburger-menu mobile-menu">
+        <button class="hamburger-btn" onclick="toggleMenu()">☰</button>
+      
+        <div class="hamburger-dropdown" id="hamburgerDropdown">
+          <!-- Área Restrita -->
+          <a class="menu-link" href="#" onclick="loadContentPages(event, 'pages/login.html')">Área Restrita</a>
+          
+          <!-- Submenu Mapa Interativo -->
+          <div class="hamburger-submenu">
+            <button class="submenu-toggle" onclick="toggleSubmenu('mapaSubmenu')">Mapa Interativo ▾</button>
+            <div class="submenu-items" id="mapaSubmenu">
+              <a href="#" onclick="loadContentPages(event, 'pages/mapGround.html')">Térreo</a>
+              <a href="#" onclick="loadContentPages(event, 'pages/mapOne.html')">1º Andar</a>
+              <a href="#" onclick="loadContentPages(event, 'pages/mapTwo.html')">2º Andar</a>
+            </div>
+          </div>
+      
+          <!-- Submenu Cursos -->
+          <div class="hamburger-submenu">
+            <button class="submenu-toggle" onclick="toggleSubmenu('cursosSubmenu')">Cursos ▾</button>
+            <div class="submenu-items" id="cursosSubmenu">
+              <a href="#" onclick="loadContentPages(event, 'pages/dsm.html')">DSM</a>
+              <a href="#" onclick="loadContentPages(event, 'pages/geo.html')">GEO</a>
+              <a href="#" onclick="loadContentPages(event, 'pages/rh.html')">MAR</a>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      
     </header>
     
-  
-      <!-- CONTEUDO PRINCIPAL -->
-      <main id="mainContent"></main>
-      <script src="scripts/loadContentPages.js"></script>
-      <!-- script carrega conteudo paginas -->
-  
-      <!-- RODAPE -->
-      <footer>
-        <div class="footer-container">
-          <div style="display: flex; flex-direction: column; align-items: center">
-            <a href="https://sp.gov.br/sp"><img src="/client/Imagens/LogoSaoPaulo.png" alt="Governo de São Paulo" width="250" height="80"></a>
-            <a href="https://www.cps.sp.gov.br"><img src="/client/Imagens/LogoCentroPauloSouza.png" alt="Centro Paulo Souza" width="135" height="90"></a>
-          </div>
-    
-          <div>
-            <h3>Nossos Cursos</h3>
-            <p>Meio Ambiente e Recursos Hídricos</p>
-            <p>Desenvolvimento de Softwares Multiplataformas</p>
-            <p>Geoprocessamento</p>
-          </div>
-    
-          <div>
-            <h3>Fatec</h3>
-            <p><a href="https://fatecjacarei.cps.sp.gov.br/quem-somos/">Institucional</a></p>
-            <p><a href="https://fatecjacarei.cps.sp.gov.br/cursos/">Cursos</a></p>
-            <p><a href="https://fatecjacarei.cps.sp.gov.br/concursos-e-processos-seletivos-para-docentes-e-auxiliares-de-docentes/">Editais</a></p>
-            <p><a href="https://fatecjacarei.cps.sp.gov.br/tour-360o/">Tour 360°</a></p>
-          </div>
-    
-          <div>
-            <h3>Vestibular</h3>
-            <p><a href="https://fatecjacarei.cps.sp.gov.br/vestibular-2025/">Calendário Completo</a></p>
-            <p><a href="https://fatecjacarei.cps.sp.gov.br/vagas-remanescentes/">Vagas Remanescentes</a></p>
-          </div>
-    
-          <div>
-            <h3>Contato</h3>
-            <p>(12) 3953-7926</p>
-            <p><a href="mailto:f258acad@cps.sp.gov.br">f258acad@cps.sp.gov.br</a></p>
-          </div>
+
+    <!-- CONTEUDO PRINCIPAL -->
+    <main id="mainContent"></main>
+    <script src="scripts/loadContentPages.js"></script>
+    <!-- script carrega conteudo paginas -->
+
+    <!-- RODAPE -->
+    <footer>
+      <div class="footer-container">
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <a href="https://sp.gov.br/sp"
+            ><img
+              src="/client/Imagens/LogoSaoPaulo.png"
+              alt="Governo de São Paulo"
+              width="250"
+              height="80"
+          /></a>
+          <a href="https://www.cps.sp.gov.br"
+            ><img
+              src="/client/Imagens/LogoCentroPauloSouza.png"
+              alt="Centro Paulo Souza"
+              width="135"
+              height="90"
+          /></a>
         </div>
-    
-        <hr>
-    
-        <div class="footer-bottom">
+
+        <div>
+          <h3>Nossos Cursos</h3>
+          <p>Meio Ambiente e Recursos Hídricos</p>
+          <p>Desenvolvimento de Softwares Multiplataformas</p>
+          <p>Geoprocessamento</p>
+        </div>
+
+        <div>
+          <h3>Fatec</h3>
           <p>
-            Fatec - Todos os direitos reservados | Av. Faria Lima, 155 - Jardim Santa
-            Maria - Jacareí/SP - CEP: 12328-070
+            <a href="https://fatecjacarei.cps.sp.gov.br/quem-somos/"
+              >Institucional</a
+            >
           </p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/jacareifatec/?locale=pt_BR"><img src="/client/Imagens/LogoFace.png" alt="Facebook Fatec" width="45" height="45"></a>
-            <a href="https://www.instagram.com/fatec_jacarei/"><img src="/client/Imagens/LogoInsta.png" alt="Instagram Fatec" width="40" height="40"></a>
-            <a href="https://br.linkedin.com/in/fatec-jacareí"><img src="/client/Imagens/LogoLinke.png" alt="Linkedin Fatec" width="35" height="35"></a>
-          </div>
+          <p><a href="https://fatecjacarei.cps.sp.gov.br/cursos/">Cursos</a></p>
+          <p>
+            <a
+              href="https://fatecjacarei.cps.sp.gov.br/concursos-e-processos-seletivos-para-docentes-e-auxiliares-de-docentes/"
+              >Editais</a
+            >
+          </p>
+          <p>
+            <a href="https://fatecjacarei.cps.sp.gov.br/tour-360o/"
+              >Tour 360°</a
+            >
+          </p>
         </div>
-      </footer>
+
+        <div>
+          <h3>Vestibular</h3>
+          <p>
+            <a href="https://fatecjacarei.cps.sp.gov.br/vestibular-2025/"
+              >Calendário Completo</a
+            >
+          </p>
+          <p>
+            <a href="https://fatecjacarei.cps.sp.gov.br/vagas-remanescentes/"
+              >Vagas Remanescentes</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <h3>Contato</h3>
+          <p>(12) 3953-7926</p>
+          <p>
+            <a href="mailto:f258acad@cps.sp.gov.br">f258acad@cps.sp.gov.br</a>
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>
+          Fatec - Todos os direitos reservados | Av. Faria Lima, 155 - Jardim
+          Santa Maria - Jacareí/SP - CEP: 12328-070
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/jacareifatec/?locale=pt_BR"
+            ><img
+              src="/client/Imagens/LogoFace.png"
+              alt="Facebook Fatec"
+              width="45"
+              height="45"
+          /></a>
+          <a href="https://www.instagram.com/fatec_jacarei/"
+            ><img
+              src="/client/Imagens/LogoInsta.png"
+              alt="Instagram Fatec"
+              width="40"
+              height="40"
+          /></a>
+          <a href="https://br.linkedin.com/in/fatec-jacareí"
+            ><img
+              src="/client/Imagens/LogoLinke.png"
+              alt="Linkedin Fatec"
+              width="35"
+              height="35"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    
   </body>
 </html>
