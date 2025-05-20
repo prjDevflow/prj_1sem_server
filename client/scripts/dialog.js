@@ -27,3 +27,26 @@ function closeDialog(idDialog) {
   const dialog = document.getElementById(idDialog);
   dialog.close();
 }
+
+// EXCLUSÃO 
+
+function pedirConfirmarExclusao(botao) {
+  elementoParaExcluir = botao.closest('.materia');
+  const dialog = document.getElementById('dialogConfirmarExclusao');
+  dialog.showModal(); // Em vez de classList.add('open')
+}
+
+function fecharDialogConfirmacao() {
+  const dialog = document.getElementById('dialogConfirmarExclusao');
+  dialog.close(); // Em vez de classList.remove('open')
+}
+
+
+function confirmarExclusao() {
+  if (elementoParaExcluir) {
+    elementoParaExcluir.remove(); // Remove a matéria
+    elementoParaExcluir = null;
+  }
+
+  fecharDialogConfirmacao(); // Fecha o modal depois de excluir
+}
