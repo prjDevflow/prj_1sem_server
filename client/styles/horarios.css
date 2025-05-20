@@ -117,7 +117,7 @@ td:first-child {
   background-color: #ff3030; /* Cor de fundo no click */
   transform: translateY(0); /* Normaliza o botão ao ser pressionado */
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .contTable {
     margin-top: 20px;
   }
@@ -137,4 +137,5 @@ td:first-child {
   .table td:first-child {
     background-color: #f3f3f3;
   }
+ 
 }
