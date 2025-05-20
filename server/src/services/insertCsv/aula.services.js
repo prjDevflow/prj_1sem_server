@@ -29,6 +29,9 @@ async function addAula(req, res) {
       const turma = lineSplit[0].trim();
       const disciplina = lineSplit[1].trim();
       const professor = lineSplit[2].trim();
+      const horario = lineSplit[3].trim();
+      const sala = lineSplit[4].trim();
+      const semana = lineSplit[5].trim();
 
       // BUSCAS PARA RELACIONAMENTO DE TABELAS
       // -- turma --
@@ -59,9 +62,39 @@ async function addAula(req, res) {
       }
       const idProfessor = buscaProfessor.rows[0].idprofessor;
 
+          // -- Horario --
+    const buscaHorario = await db.query(
+      "SELECT idHorario FROM Horario WHERE HoraInicial = $1",
+      [Horario_idHorario]
+    );
+    if (buscaHorario.rows.length === 0) {
+      throw new Error(`Horario '${Horario}' não encontrado`);
+    }
+    const idHorario = buscaHorario.rows[0].idHorario;
+
+    // -- Sala --
+    const buscaSala = await db.query(
+      "SELECT Numero FROM sala WHERE Numero = $1",
+      [Sala_Numero]
+    );
+    if (buscaSala.rows.length === 0) {
+      throw new Error(`Sala '${Sala}' não encontrado`);
+    }
+    const Numero = buscaHorario.rows[0].Numero;
+
+    // -- Semana --
+    const buscaSemana = await db.query(
+      "SELECT dia FROM Semana WHERE dia = $1",
+      [Semana_idSemana]
+    );
+    if (buscaSemana.rows.length === 0) {
+      throw new Error(`dia '${Semana}' não encontrado`);
+    }
+    const idSemana = buscaHorario.rows[0].idSemana;
+
       await db.query(
-        "INSERT INTO Aula (Turma_idTurma, Disciplina_idDisciplina, Professor_idProfessor) VALUES ($1, $2, $3)",
-        [idTurma, idDisciplina, idProfessor]
+        "INSERT INTO Aula (Turma_idTurma,Disciplina_idDisciplina,Professor_idProfessor,Horario_idHorario,Sala_Numero,Semana_idSemana) VALUES ($1, $2, $3, $4, $5, $6)",
+       [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario]
       );
 
       count++;
