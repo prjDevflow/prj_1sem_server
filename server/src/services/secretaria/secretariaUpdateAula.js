@@ -72,8 +72,16 @@ async function secretariaUpdateAula(req, res) {
     const idSemana = buscaHorario.rows[0].idSemana;
 
     await db.query(
-        "INSERT INTO Aula (Turma_idTurma,Disciplina_idDisciplina,Professor_idProfessor,Horario_idHorario,Sala_Numero,Semana_idSemana) VALUES ($1, $2, $3, $4, $5, $6)",
-       [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario]
+        `UPDATE Aula
+          SET
+            Turma_idTurma = $1,
+            Disciplina_idDisciplina = $2,
+            Professor_idProfessor = $3,
+            Horario_idHorario = $4,
+            Sala_Numero = $5,
+            Semana_idSemana = $6
+          WHERE idAula = $7`,
+       [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario, idAula]
       );
 
     return res.status(200).json({
