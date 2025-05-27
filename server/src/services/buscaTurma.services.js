@@ -1,20 +1,35 @@
+const db = require("../config/db");
+
 async function buscaTurma(req, res) {
   try {
-    const {curso, turno} = req
+    const { curso, turno } = req.body;
+
+    const cursoExiste = await db.query(
+      `SELECT * FROM "curso" WHERE "nome" = $1`,
+      [curso]
+    );
+
+    if (cursoExiste.rowCount === 0) {
+      return res.status(404).json({ message: "Curso não encontrado" });
+    }
+
     const result = await db.query(
-    `SELECT 
-        t.idTurma,
-        t.Turno,
-        c.Nome AS Curso
-    FROM Turma t
-    JOIN Curso c ON t.Curso_idCurso = c.idCurso
-    WHERE t.Curso_idCurso = $1 AND t.Turno = $2
-    ORDER BY t.idTurma;`,
-     [curso, turno]
+      `SELECT DISTINCT 
+          t."idturma",
+          t."nome" AS "turma",
+          t."turno"
+       FROM "turma" t
+       JOIN "curso" c ON t."curso_idcurso" = c."idcurso"
+       WHERE 
+         c."nome" = $1
+         AND t."turno" = $2
+       ORDER BY t."nome";`,
+      [curso, turno]
     );
     res.json(result.rows);
   } catch (e) {
+    console.log(e);
     res.status(500).json({ message: "Erro ao processar a requisição" });
   }
 }
-module.exports = buscaTurma
+module.exports = buscaTurma;

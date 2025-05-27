@@ -6,7 +6,7 @@ async function addTurma(req, res) {
   try {
     const { file } = req;
     if (!file || !file.buffer)
-      throw new Error("arquivo não enviado corretamente");
+      throw new Error("Arquivo não enviado corretamente");
 
     const readableFile = new Readable();
     readableFile.push(file.buffer);
@@ -19,9 +19,14 @@ async function addTurma(req, res) {
     let count = 0;
 
     for await (let line of registerLine) {
+      if (!line.trim()) continue;
+
       const lineSplit = line.split(";");
+
       if (lineSplit.length < 3) {
-        throw new Error("Formato de arquivo inválido");
+        throw new Error(
+          "Formato de arquivo inválido. Esperado: Nome;Curso;Turno"
+        );
       }
 
       const nome = lineSplit[0].trim();
@@ -29,28 +34,30 @@ async function addTurma(req, res) {
       const turno = lineSplit[2].trim();
 
       const buscaCurso = await db.query(
-        "SELECT idCurso FROM Curso WHERE Nome = $1",
+        "SELECT idcurso FROM curso WHERE nome = $1",
         [nomeCurso]
       );
 
-      if (buscaCurso.rows.length === 0) {
+      if (buscaCurso.rowCount === 0) {
         throw new Error(`Curso '${nomeCurso}' não encontrado`);
       }
 
       const idCurso = buscaCurso.rows[0].idcurso;
 
       await db.query(
-        "INSERT INTO Turma (nome, curso_id, turno) VALUES ($1, $2, $3)",
+        "INSERT INTO turma (nome, curso_idcurso, turno) VALUES ($1, $2, $3)",
         [nome, idCurso, turno]
       );
 
       count++;
     }
 
-    return res.status(200).json({ message: `${count} turmas cadastradas` });
+    return res
+      .status(200)
+      .json({ message: `${count} turmas cadastradas com sucesso.` });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: err.message });
+    return res.status(500).json({ message: err.message });
   }
 }
 

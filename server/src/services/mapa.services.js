@@ -1,44 +1,49 @@
 const db = require("../config/db");
-async function mapa (req, res) {
-    try {
-        const { salaNumero, diaSemana } = req;
+async function mapa(req, res) {
+  try {
+    const { sala, diaSemana } = req.body;
 
-        const resultado = await db.query(
-            `SELECT 
-                A.idAula,
-                T.idTurma,
-                C.Nome AS Curso,
-                T.Turno,
-                H.HoraInicial,
-                H.HoraFinal,
-                S.Numero AS NumeroSala,
-                S.Nome AS NomeSala,
-                S.Andar,
-                SM.Dia AS DiaSemana,
-                D.Nome AS Disciplina,
-                P.Nome AS Professor
-            FROM Aula A
-            JOIN Turma T ON A.Turma_idTurma = T.idTurma
-            JOIN Curso C ON T.Curso_idCurso = C.idCurso
-            JOIN Horario H ON A.Horario_idHorario = H.idHorario
-            JOIN Sala S ON A.Sala_Numero = S.Numero
-            JOIN Semana SM ON A.Semana_idSemana = SM.idSemana
-            JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
-            JOIN Professor P ON A.Professor_idProfessor = P.idProfessor
-            WHERE 
-                S.Numero = $1 AND SM.Dia = $2
-            ORDER BY
-                SM.idSemana, H.HoraInicial;`,
-            [salaNumero, diaSemana]
-        );
-
-        res.json(resultado.rows);
-    } catch (e) {
-        console.error("Erro ao buscar reservas:", e);
-        res.status(500).json({
-            message: "Erro ao processar requisição."
-        });
+    if (!sala || !diaSemana) {
+      return res.status(400).json({
+        message: "Sala e dia da semana obrigatórios",
+      });
     }
+
+    const resultado = await db.query(
+      `SELECT 
+            A."idaula",
+            T."idturma",
+            C."nome" AS "curso",
+            T."turno",
+            H."horainicial",
+            H."horafinal",
+            S."numero" AS "numerosala",
+            S."nome" AS "nomesala",
+            S."andar",
+            SM."dia" AS "diasemana",
+            D."nome" AS "disciplina",
+            P."nome" AS "professor"
+            FROM "aula" A
+            JOIN "turma" T ON A."turma_idturma" = T."idturma"
+            JOIN "curso" C ON T."curso_idcurso" = C."idcurso"
+            JOIN "horario" H ON A."horario_idhorario" = H."idhorario"
+            JOIN "sala" S ON A."sala_numero" = S."numero"
+            JOIN "semana" SM ON A."semana_idsemana" = SM."idsemana"
+            JOIN "disciplina" D ON A."disciplina_iddisciplina" = D."iddisciplina"
+            JOIN "professor" P ON A."professor_idprofessor" = P."idprofessor"
+            WHERE S."numero" = $1 AND SM."dia" = $2
+            ORDER BY SM."idsemana", H."horainicial";
+        `,
+      [sala, diaSemana]
+    );
+
+    res.json(resultado.rows);
+  } catch (e) {
+    console.error("Erro ao buscar reservas:", e);
+    res.status(500).json({
+      message: "Erro ao processar requisição.",
+    });
+  }
 }
 
-module.exports = mapa
+module.exports = mapa;

@@ -249,25 +249,25 @@ INSERT INTO Aula (idAula, Turma_idTurma, Disciplina_idDisciplina, Professor_idPr
 (33, '5DSM', 25, 41);   -- Fundamentos da Redação Técnica (A definir)
 
 -- Inserção de horários
-INSERT INTO Horario (idHorario, HoraInicial, HoraFinal) VALUES
-(1, '18:45:00', '19:35:00'),
-(2, '19:35:00', '20:25:00'),
-(3, '20:25:00', '21:25:00'),
-(4, '21:25:00', '22:15:00'),
-(5, '22:15:00', '23:05:00'),
-(6, '07:30:00', '08:20:00'),
-(7, '08:20:00', '09:10:00'),
-(8, '09:20:00', '10:10:00'),
-(9, '10:10:00', '11:00:00'),
-(10, '11:10:00', '12:00:00'),
-(11, '12:00:00', '12:50:00');
+INSERT INTO Horario (HoraInicial, HoraFinal) VALUES
+('18:45:00', '19:35:00'),
+('19:35:00', '20:25:00'),
+('20:25:00', '21:25:00'),
+('21:25:00', '22:15:00'),
+('22:15:00', '23:05:00'),
+('07:30:00', '08:20:00'),
+('08:20:00', '09:10:00'),
+('09:20:00', '10:10:00'),
+('10:10:00', '11:00:00'),
+('11:10:00', '12:00:00'),
+('12:00:00', '12:50:00');
 
 -- Inserção de dias da semana
-INSERT INTO Semana (idSemana, Dia) VALUES
-(1, 'Segunda-feira'),
-(2, 'Terça-feira'),
-(3, 'Quarta-feira'),
-(4, 'Quinta-feira'),
-(5, 'Sexta-feira'),
-(6, 'Sábado'),
-(7, 'Domingo');
+INSERT INTO Semana (Dia) VALUES
+('Segunda-feira'),
+('Terça-feira'),
+('Quarta-feira'),
+('Quinta-feira'),
+('Sexta-feira'),
+('Sábado'),
+('Domingo');
