@@ -1,43 +1,41 @@
+const db = require("../../config/db");
+
 async function secretariaBuscaDia(req, res) {
   try {
-    const {curso, turma, turno, dia} = req
+    const { curso, turma, turno, dia } = req.body;
+
+    if (!curso || !turma || !turno || !dia) {
+      return res.status(400).json({ message: "Informações inválidas" });
+    }
+
     const result = await db.query(
-    `SELECT DISTINCT
-    d.idDisciplina,
-    d.Nome AS Disciplina,
-    p.Nome AS Professor,
-    h.HoraInicial,
-    h.HoraFinal,
-    s.Nome AS Sala,
-    s.Numero AS NumeroSala
-FROM 
-    Aula a
-JOIN 
-    Disciplina d ON a.Disciplina_idDisciplina = d.idDisciplina
-JOIN 
-    Professor p ON a.Professor_idProfessor = p.idProfessor
-JOIN 
-    Horario h ON a.Horario_idHorario = h.idHorario
-JOIN 
-    Sala s ON a.Sala_Numero = s.Numero
-JOIN 
-    Semana w ON a.Semana_idSemana = w.idSemana
-JOIN 
-    Turma t ON a.Turma_idTurma = t.idTurma
-JOIN 
-    Curso c ON t.Curso_idCurso = c.idCurso
-WHERE 
-    c.idCurso = $1
-    AND t.idTurma = $2
-    AND t.Turno = $3
-    AND w.Dia =  $4
-ORDER BY 
-    d.Nome, h.HoraInicial;`,
-     [curso, turma, turno, dia]
+      `SELECT DISTINCT
+      a.idaula,
+      d.nome AS disciplina,
+      p.nome AS professor,
+      h.horainicial,
+      h.horafinal,
+      s.nome AS sala,
+      s.numero AS numerosala
+    FROM aula a
+    JOIN disciplina d ON a.disciplina_iddisciplina = d.iddisciplina
+    JOIN professor p ON a.professor_idprofessor = p.idprofessor
+    JOIN horario h ON a.horario_idhorario = h.idhorario
+    JOIN sala s ON a.sala_numero = s.numero
+    JOIN semana w ON a.semana_idsemana = w.idsemana
+    JOIN turma t ON a.turma_idturma = t.idturma
+    JOIN curso c ON t.curso_idcurso = c.idcurso
+    WHERE 
+      c.nome = $1 AND
+      t.nome = $2 AND
+      t.turno = $3 AND
+      w.dia = $4
+    ORDER BY h.horainicial;`,
+      [curso, turma, turno, dia]
     );
     res.json(result.rows);
   } catch (e) {
     res.status(500).json({ message: "Erro ao processar a requisição" });
   }
 }
-module.exports = secretariaBuscaDia
+module.exports = secretariaBuscaDia;

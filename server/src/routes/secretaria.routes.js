@@ -1,18 +1,17 @@
 const { Router } = require("express");
-const appRoute = Router();
+const adminRoute = Router();
 
-const secretariaBuscaTurno = require("../services/secretaria/secretariaBuscaTurno.services");
-const secretariaBuscaTurma = require("../services/secretaria/secretariaBuscaTurma.services");
+// const secretariaBuscaTurno = require("../services/secretaria/secretariaBuscaTurno.services");
+// const secretariaBuscaTurma = require("../services/secretaria/secretariaBuscaTurma.services");
 const secretariaBuscaDia = require("../services/secretaria/secretariaBuscaDia.services");
 const secretariaRemoveAula = require("../services/secretaria/secretariaRemoveAula");
 const secretariaUpdateAula = require("../services/secretaria/secretariaUpdateAula");
 
+// adminRoute.get("/buscaTurno", secretariaBuscaTurno);
+// adminRoute.get("/buscaTurma", secretariaBuscaTurma);
 
-appRoute.get("/secretariaBuscaTurno", secretariaBuscaTurno);
-appRoute.get("/secretariaBuscaTurma", secretariaBuscaTurma);
-appRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
-appRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
-appRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
+adminRoute.post("/busca-dia", secretariaBuscaDia);
+adminRoute.put("/aula", secretariaUpdateAula);
+adminRoute.delete("/aula/:id", secretariaRemoveAula);
 
-
-module.exports = appRoute;
+module.exports = adminRoute;

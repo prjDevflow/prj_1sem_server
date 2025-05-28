@@ -1,90 +1,116 @@
+const db = require("../../config/db");
+
 async function secretariaUpdateAula(req, res) {
   try {
-
     const {
-      Turma_idTurma,
-      Disciplina_idDisciplina,
-      Professor_idProfessor,
-      Horario_idHorario,
-      Sala_Numero,
-      Semana_idSemana
-    } = req.body
+      idAula,
+      turma,
+      disciplina,
+      professor,
+      horarioInicial,
+      horarioFinal,
+      sala,
+      diaSemana,
+    } = req.body;
 
-    // BUSCAS PARA RELACIONAMENTO DE TABELAS
-    // -- turma --
+    // Verifica se a aula existe
+    const aulaExiste = await db.query(`SELECT * FROM aula WHERE idaula = $1`, [
+      idAula,
+    ]);
+    if (aulaExiste.rowCount === 0) {
+      return res.status(404).json({ message: "Aula não encontrada" });
+    }
+
+    // -- Turma --
     const buscaTurma = await db.query(
-      "SELECT idTurma FROM Turma WHERE Nome = $1",
-      [Turma_idTurma]
+      `SELECT idturma FROM turma WHERE nome = $1`,
+      [turma]
     );
-    if (buscaTurma.rows.length === 0) {
-      throw new Error(`Turma '${turma}' não encontrada`);
+    if (buscaTurma.rowCount === 0) {
+      return res.status(404).json({ message: "Turma não encontrada" });
     }
     const idTurma = buscaTurma.rows[0].idturma;
 
-    // -- disciplina --
+    // -- Disciplina --
     const buscaDisciplina = await db.query(
-      "SELECT idDisciplina FROM Disciplina WHERE Nome = $1",
-      [Disciplina_idDisciplina]
+      `SELECT iddisciplina FROM disciplina WHERE nome = $1`,
+      [disciplina]
     );
-    if (buscaDisciplina.rows.length === 0) {
-      throw new Error(`Disciplina '${disciplina}' não encontrada`);
+    if (buscaDisciplina.rowCount === 0) {
+      return res.status(404).json({ message: "Disciplina não encontrada" });
     }
     const idDisciplina = buscaDisciplina.rows[0].iddisciplina;
 
-    // -- professor --
+    // -- Professor --
     const buscaProfessor = await db.query(
-      "SELECT idProfessor FROM Professor WHERE Nome = $1",
-      [Professor_idProfessor]
+      `SELECT idprofessor FROM professor WHERE nome = $1`,
+      [professor]
     );
-    if (buscaProfessor.rows.length === 0) {
-      throw new Error(`Professor '${professor}' não encontrado`);
+    if (buscaProfessor.rowCount === 0) {
+      return res.status(404).json({ message: "Professor não encontrado" });
     }
     const idProfessor = buscaProfessor.rows[0].idprofessor;
 
-    // -- Horario --
+    // -- Horário --
     const buscaHorario = await db.query(
-      "SELECT idHorario FROM Horario WHERE HoraInicial = $1",
-      [Horario_idHorario]
+      `SELECT idhorario FROM horario WHERE horainicial = $1 AND horafinal = $2`,
+      [horarioInicial, horarioFinal]
     );
-    if (buscaHorario.rows.length === 0) {
-      throw new Error(`Horario '${Horario}' não encontrado`);
+    if (buscaHorario.rowCount === 0) {
+      return res.status(404).json({ message: "Horário não encontrado" });
     }
-    const idHorario = buscaHorario.rows[0].idHorario;
+    const idHorario = buscaHorario.rows[0].idhorario;
 
     // -- Sala --
     const buscaSala = await db.query(
-      "SELECT Numero FROM sala WHERE Numero = $1",
-      [Sala_Numero]
+      `SELECT numero FROM sala WHERE numero = $1`,
+      [sala]
     );
-    if (buscaSala.rows.length === 0) {
-      throw new Error(`Sala '${Sala}' não encontrado`);
+    if (buscaSala.rowCount === 0) {
+      return res.status(404).json({ message: "Sala não encontrada" });
     }
-    const Numero = buscaHorario.rows[0].Numero;
+    const numeroSala = buscaSala.rows[0].numero;
 
-    // -- Semana --
+    // -- Semana (Dia da semana) --
     const buscaSemana = await db.query(
-      "SELECT dia FROM Semana WHERE dia = $1",
-      [Semana_idSemana]
+      `SELECT idsemana FROM semana WHERE dia = $1`,
+      [diaSemana]
     );
-    if (buscaSemana.rows.length === 0) {
-      throw new Error(`dia '${Semana}' não encontrado`);
+    if (buscaSemana.rowCount === 0) {
+      return res.status(404).json({ message: "Dia da semana não encontrado" });
     }
-    const idSemana = buscaHorario.rows[0].idSemana;
+    const idSemana = buscaSemana.rows[0].idsemana;
 
+    // ✅ Update da aula
     await db.query(
-        "INSERT INTO Aula (Turma_idTurma,Disciplina_idDisciplina,Professor_idProfessor,Horario_idHorario,Sala_Numero,Semana_idSemana) VALUES ($1, $2, $3, $4, $5, $6)",
-       [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario]
-      );
+      `UPDATE aula SET 
+        turma_idturma = $1,
+        disciplina_iddisciplina = $2,
+        professor_idprofessor = $3,
+        horario_idhorario = $4,
+        sala_numero = $5,
+        semana_idsemana = $6
+      WHERE idaula = $7`,
+      [
+        idTurma,
+        idDisciplina,
+        idProfessor,
+        idHorario,
+        numeroSala,
+        idSemana,
+        idAula,
+      ]
+    );
 
     return res.status(200).json({
-      message: `${count} aulas cadastradas`
+      message: "Aula atualizada com sucesso",
     });
   } catch (err) {
     console.error(err);
     res.status(500).json({
-      message: err.message
+      message: err.message,
     });
   }
 }
 
-module.exports = secretariaUpdateAula
+module.exports = secretariaUpdateAula;

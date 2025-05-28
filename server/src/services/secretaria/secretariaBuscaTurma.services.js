@@ -1,8 +1,8 @@
 async function secretariaBuscaTurma(req, res) {
   try {
-    const {curso, turno} = req
+    const { curso, turno } = req;
     const result = await db.query(
-    `SELECT 
+      `SELECT 
         t.idTurma,
         t.Turno,
         c.Nome AS Curso
@@ -10,11 +10,12 @@ async function secretariaBuscaTurma(req, res) {
     JOIN Curso c ON t.Curso_idCurso = c.idCurso
     WHERE t.Curso_idCurso = $1 AND t.Turno = $2
     ORDER BY t.idTurma;`,
-     [curso, turno]
+      [curso, turno]
     );
+
     res.json(result.rows);
   } catch (e) {
     res.status(500).json({ message: "Erro ao processar a requisição" });
   }
 }
-module.exports = secretariaBuscaTurma
+module.exports = secretariaBuscaTurma;
