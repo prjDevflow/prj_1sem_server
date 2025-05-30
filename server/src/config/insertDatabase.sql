@@ -6,23 +6,18 @@ INSERT INTO Curso (Nome) VALUES
 
 -- Inserção de turmas
 INSERT INTO Turma (idTurma, Curso_idCurso, Turno) VALUES
--- Turmas for Desenvolvimento de Software Multiplataforma (idCurso 1)
 ('1DSM', '1', 'Noturno'),
 ('2DSM', '1', 'Noturno'),
 ('3DSM', '1', 'Noturno'),
 ('4DSM', '1', 'Noturno'),
 ('5DSM', '1', 'Noturno'),
 ('6DSM', '1', 'Noturno'),
-
--- Turmas for Meio Ambiente e Recursos Hídricos (idCurso 2)
 ('1MARH', '2', 'Noturno'),
 ('2MARH', '2', 'Noturno'),
 ('3MARH', '2', 'Noturno'),
 ('4MARH', '2', 'Noturno'),
 ('5MARH', '2', 'Diurno'),
 ('6MARH', '2', 'Diurno'),
-
--- Turmas for Geoprocessamento (idCurso 3)
 ('1GEO', '3', 'Noturno'),
 ('2GEO', '3', 'Noturno'),
 ('3GEO', '3', 'Noturno'),
@@ -73,8 +68,6 @@ INSERT INTO Professor (Nome) VALUES
 ('Prof. Me. Ronaldo Emerick Moreira'),
 ('Prof. Me. Wellington Rios'),
 ('Sem professor');
-
-
 
 -- Inserção de disciplinas (DSM)
 INSERT INTO Disciplina (Nome) VALUES
