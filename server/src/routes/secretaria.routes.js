@@ -6,6 +6,7 @@ const secretariaBuscaTurma = require("../services/secretaria/secretariaBuscaTurm
 const secretariaBuscaDia = require("../services/secretaria/secretariaBuscaDia.services");
 const secretariaRemoveAula = require("../services/secretaria/secretariaRemoveAula");
 const secretariaUpdateAula = require("../services/secretaria/secretariaUpdateAula");
+const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.services");
 
 
 appRoute.get("/secretariaBuscaTurno", secretariaBuscaTurno);
@@ -13,6 +14,7 @@ appRoute.get("/secretariaBuscaTurma", secretariaBuscaTurma);
 appRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
 appRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
 appRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
+appRoute.post("/secretariaCriaAula", secretariaCriaAula);
 
 
 module.exports = appRoute;
