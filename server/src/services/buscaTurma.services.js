@@ -2,14 +2,14 @@ async function buscaTurma(req, res) {
   try {
     const {curso, turno} = req
     const result = await db.query(
-    `SELECT 
-        t.idTurma,
-        t.Turno,
-        c.Nome AS Curso
+    `SELECT
+    json_object_agg(Turno, TurmasArray)
+    FROM (SELECT t.Turno,json_agg(t.Nome ORDER BY t.Nome) AS TurmasArray
     FROM Turma t
     JOIN Curso c ON t.Curso_idCurso = c.idCurso
-    WHERE t.Curso_idCurso = $1 AND t.Turno = $2
-    ORDER BY t.idTurma;`,
+    WHERE c.Nome = 'Meio Ambiente e Recursos Hídricos' 
+    GROUP BY t.Turno 
+) AS Subquery;`,
      [curso, turno]
     );
     res.json(result.rows);

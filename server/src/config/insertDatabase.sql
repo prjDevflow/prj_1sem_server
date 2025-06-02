@@ -5,25 +5,25 @@ INSERT INTO Curso (Nome) VALUES
 ('Geoprocessamento');
 
 -- Inserção de turmas
-INSERT INTO Turma (idTurma, Curso_idCurso, Turno) VALUES
-('1DSM', '1', 'Noturno'),
-('2DSM', '1', 'Noturno'),
-('3DSM', '1', 'Noturno'),
-('4DSM', '1', 'Noturno'),
-('5DSM', '1', 'Noturno'),
-('6DSM', '1', 'Noturno'),
-('1MARH', '2', 'Noturno'),
-('2MARH', '2', 'Noturno'),
-('3MARH', '2', 'Noturno'),
-('4MARH', '2', 'Noturno'),
-('5MARH', '2', 'Diurno'),
-('6MARH', '2', 'Diurno'),
-('1GEO', '3', 'Noturno'),
-('2GEO', '3', 'Noturno'),
-('3GEO', '3', 'Noturno'),
-('4GEO', '3', 'Noturno'),
-('5GEO', '3', 'Noturno'),
-('6GEO', '3', 'Noturno');
+INSERT INTO Turma (Nome, Curso_idCurso, Turno) VALUES
+('1 DSM', '1', 'Noturno'),
+('2 DSM', '1', 'Noturno'),
+('3 DSM', '1', 'Noturno'),
+('4 DSM', '1', 'Noturno'),
+('5 DSM', '1', 'Noturno'),
+('6 DSM', '1', 'Noturno'),
+('1 MARH', '2', 'Noturno'),
+('2 MARH', '2', 'Noturno'),
+('3 MARH', '2', 'Noturno'),
+('4 MARH', '2', 'Noturno'),
+('5 MARH', '2', 'Matutino'),
+('6 MARH', '2', 'Matutino'),
+('1 GEO', '3', 'Noturno'),
+('2 GEO', '3', 'Noturno'),
+('3 GEO', '3', 'Noturno'),
+('4 GEO', '3', 'Noturno'),
+('5 GEO', '3', 'Noturno'),
+('6 GEO', '3', 'Noturno');
 
 -- Inserção de professores
 INSERT INTO Professor (Nome) VALUES
@@ -208,15 +208,6 @@ INSERT INTO Semana (Dia) VALUES
 ('Sexta-feira'),
 ('Sábado'),
 ('Domingo');
-
-
-INSERT INTO Turma (Nome, Curso_idCurso, Turno)VALUES
-  ('1DSM', 1, 'Noturno'),
-  ('2DSM', 1, 'Noturno'),
-  ('3DSM', 1, 'Noturno'),
-  ('4DSM', 1, 'Noturno'),
-  ('5DSM', 1, 'Noturno'),
-  ('6DSM', 1, 'Noturno');
 
   INSERT INTO Sala (Nome, Andar) VALUES
 ('Lab. de Química Ambiental', '0'),
