@@ -14,17 +14,15 @@ async function buscaTurma(req, res) {
     }
 
     const result = await db.query(
-      `SELECT DISTINCT 
-          t."idturma",
-          t."nome" AS "turma",
-          t."turno"
-       FROM "turma" t
-       JOIN "curso" c ON t."curso_idcurso" = c."idcurso"
-       WHERE 
-         c."nome" = $1
-         AND t."turno" = $2
-       ORDER BY t."nome";`,
-      [curso, turno]
+    `SELECT
+    json_object_agg(Turno, TurmasArray)
+    FROM (SELECT t.Turno,json_agg(t.Nome ORDER BY t.Nome) AS TurmasArray
+    FROM Turma t
+    JOIN Curso c ON t.Curso_idCurso = c.idCurso
+    WHERE c.Nome = 'Meio Ambiente e Recursos Hídricos' 
+    GROUP BY t.Turno 
+) AS Subquery;`,
+     [curso, turno]
     );
     res.json(result.rows);
   } catch (e) {

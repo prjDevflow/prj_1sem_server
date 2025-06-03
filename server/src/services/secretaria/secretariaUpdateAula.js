@@ -83,24 +83,17 @@ async function secretariaUpdateAula(req, res) {
 
     // ✅ Update da aula
     await db.query(
-      `UPDATE aula SET 
-        turma_idturma = $1,
-        disciplina_iddisciplina = $2,
-        professor_idprofessor = $3,
-        horario_idhorario = $4,
-        sala_numero = $5,
-        semana_idsemana = $6
-      WHERE idaula = $7`,
-      [
-        idTurma,
-        idDisciplina,
-        idProfessor,
-        idHorario,
-        numeroSala,
-        idSemana,
-        idAula,
-      ]
-    );
+        `UPDATE Aula
+          SET
+            Turma_idTurma = $1,
+            Disciplina_idDisciplina = $2,
+            Professor_idProfessor = $3,
+            Horario_idHorario = $4,
+            Sala_Numero = $5,
+            Semana_idSemana = $6
+          WHERE idAula = $7`,
+       [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario, idAula]
+      );
 
     return res.status(200).json({
       message: "Aula atualizada com sucesso",

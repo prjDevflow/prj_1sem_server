@@ -1,40 +1,40 @@
+
 -- Tabela: Professor
 CREATE TABLE Professor (
     idProfessor SERIAL PRIMARY KEY,
-    Nome VARCHAR(100) UNIQUE NOT NULL
+    Nome VARCHAR UNIQUE NOT NULL
 );
 
 -- Tabela: Disciplina
 CREATE TABLE Disciplina (
     idDisciplina SERIAL PRIMARY KEY,
-    Nome VARCHAR(100) UNIQUE NOT NULL
+    Nome VARCHAR UNIQUE NOT NULL
 );
 
--- Tabela: Semana (Dias da Semana)
+-- Tabela: Semana
 CREATE TABLE Semana (
     idSemana SERIAL PRIMARY KEY,
-    Dia VARCHAR(20) UNIQUE NOT NULL
+    Dia VARCHAR UNIQUE NOT NULL
 );
 
 -- Tabela: Sala
 CREATE TABLE Sala (
     Numero SERIAL PRIMARY KEY,
-    Nome VARCHAR(50) NOT NULL,
-    Andar CHAR(2)
+    Nome VARCHAR UNIQUE NOT NULL,
+    Andar CHAR
 );
 
 -- Tabela: Curso
 CREATE TABLE Curso (
     idCurso SERIAL PRIMARY KEY,
-    Nome VARCHAR(100) UNIQUE NOT NULL
+    Nome VARCHAR UNIQUE NOT NULL
 );
 
 -- Tabela: Horario
 CREATE TABLE Horario (
     idHorario SERIAL PRIMARY KEY,
-    HoraInicial TIME NOT NULL,
-    HoraFinal TIME NOT NULL,
-    UNIQUE (HoraInicial, HoraFinal) -- evita duplicidade no mesmo horário
+    HoraInicial TIME,
+    HoraFinal TIME
 );
 
 -- Tabela: Turma
