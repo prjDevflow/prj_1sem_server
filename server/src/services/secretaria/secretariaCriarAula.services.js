@@ -13,7 +13,7 @@ async function secretariaCriaAula(req, res) {
     // BUSCAS PARA RELACIONAMENTO DE TABELAS
     // -- turma --
     const buscaTurma = await db.query(
-      "SELECT idTurma FROM Turma WHERE Nome = $1",
+      "SELECT idturma FROM turma WHERE nome = $1",
       [Turma_idTurma]
     );
     if (buscaTurma.rows.length === 0) {
@@ -23,7 +23,7 @@ async function secretariaCriaAula(req, res) {
 
     // -- disciplina --
     const buscaDisciplina = await db.query(
-      "SELECT idDisciplina FROM Disciplina WHERE Nome = $1",
+      "SELECT iddisciplina FROM disciplina WHERE nome = $1",
       [Disciplina_idDisciplina]
     );
     if (buscaDisciplina.rows.length === 0) {
@@ -33,7 +33,7 @@ async function secretariaCriaAula(req, res) {
 
     // -- professor --
     const buscaProfessor = await db.query(
-      "SELECT idProfessor FROM Professor WHERE Nome = $1",
+      "SELECT idprofessor FROM professor WHERE nome = $1",
       [Professor_idProfessor]
     );
     if (buscaProfessor.rows.length === 0) {
@@ -43,7 +43,7 @@ async function secretariaCriaAula(req, res) {
 
     // -- Horario --
     const buscaHorario = await db.query(
-      "SELECT idHorario FROM Horario WHERE HoraInicial = $1",
+      "SELECT idhorario FROM horario WHERE horainicial = $1",
       [Horario_idHorario]
     );
     if (buscaHorario.rows.length === 0) {
@@ -53,7 +53,7 @@ async function secretariaCriaAula(req, res) {
 
     // -- Sala --
     const buscaSala = await db.query(
-      "SELECT Numero FROM sala WHERE Numero = $1",
+      "SELECT numero FROM sala WHERE Numero = $1",
       [Sala_Numero]
     );
     if (buscaSala.rows.length === 0) {
@@ -63,7 +63,7 @@ async function secretariaCriaAula(req, res) {
 
     // -- Semana --
     const buscaSemana = await db.query(
-      "SELECT dia FROM Semana WHERE dia = $1",
+      "SELECT dia FROM semana WHERE dia = $1",
       [Semana_idSemana]
     );
     if (buscaSemana.rows.length === 0) {
@@ -72,7 +72,7 @@ async function secretariaCriaAula(req, res) {
     const idSemana = buscaHorario.rows[0].idSemana;
 
     await db.query(
-         `INSERT INTO Aula (Turma_idTurma,Disciplina_idDisciplina,Professor_idProfessor,Horario_idHorario,Sala_Numero,Semana_idSemana) VALUES ($1, $2, $3, $4, $5, $6)`,
+         `INSERT INTO aula (turma_idturma,disciplina_iddisciplina,professor_idprofessor,horario_idhorario,sala_numero,semana_idsemana) VALUES ($1, $2, $3, $4, $5, $6)`,
        [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario]
       );
 

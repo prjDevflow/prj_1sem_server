@@ -16,15 +16,15 @@ async function buscaTurma(req, res) {
     const result = await db.query(
       `
       SELECT
-        json_object_agg(t."Turno", turmas) AS resultado
+        json_object_agg(t."turno", turmas) AS resultado
       FROM (
         SELECT
-          t."Turno",
-          json_agg(t."Nome" ORDER BY t."Nome") AS turmas
-        FROM "Turma" t
-        JOIN "Curso" c ON t."Curso_idCurso" = c."idCurso"
-        WHERE c."Nome" = $1
-        GROUP BY t."Turno"
+          t."turno",
+          json_agg(t."nome" ORDER BY t."nome") AS turmas
+        FROM "turma" t
+        JOIN "curso" c ON t."curso_idcurso" = c."idcurso"
+        WHERE c."nome" = $1
+        GROUP BY t."turno"
       ) AS t
       `,
       [curso]

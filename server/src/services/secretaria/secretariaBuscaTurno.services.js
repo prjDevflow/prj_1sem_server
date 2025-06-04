@@ -3,13 +3,13 @@ async function secretariaBuscaTurno(req, res) {
     const {curso} = req
     const result = await db.query(
     `SELECT DISTINCT 
-        c.Nome AS Curso,
-        t.Turno
-    FROM Curso c
-    JOIN Turma t ON c.idCurso = t.Curso_idCurso
-    WHERE c.idCurso = $1
+        c.nome AS curso,
+        t.turno
+    FROM curso c
+    JOIN turma t ON c.idcurso = t.curso_idcurso
+    WHERE c.idcurso = $1
     ORDER BY 
-    t.Turno;`,
+    t.turno;`,
      [curso]
     );
     res.json(result.rows);

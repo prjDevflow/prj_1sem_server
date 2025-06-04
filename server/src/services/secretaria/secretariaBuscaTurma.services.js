@@ -3,13 +3,13 @@ async function secretariaBuscaTurma(req, res) {
     const { curso, turno } = req;
     const result = await db.query(
       `SELECT 
-        t.idTurma,
-        t.Turno,
-        c.Nome AS Curso
-    FROM Turma t
-    JOIN Curso c ON t.Curso_idCurso = c.idCurso
-    WHERE t.Curso_idCurso = $1 AND t.Turno = $2
-    ORDER BY t.idTurma;`,
+        t.idturma,
+        t.turno,
+        c.nome AS curso
+    FROM turma t
+    JOIN curso c ON t.curso_idcurso = c.idcurso
+    WHERE t.curso_idcurso = $1 AND t.turno = $2
+    ORDER BY t.idturma;`,
       [curso, turno]
     );
 
