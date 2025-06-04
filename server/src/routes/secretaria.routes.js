@@ -1,8 +1,8 @@
 const { Router } = require("express");
 const adminRoute = Router();
 
-// const secretariaBuscaTurno = require("../services/secretaria/secretariaBuscaTurno.services");
-// const secretariaBuscaTurma = require("../services/secretaria/secretariaBuscaTurma.services");
+const secretariaBuscaTurno = require("../services/secretaria/secretariaBuscaTurno.services");
+const secretariaBuscaTurma = require("../services/secretaria/secretariaBuscaTurma.services");
 const secretariaBuscaDia = require("../services/secretaria/secretariaBuscaDia.services");
 const secretariaRemoveAula = require("../services/secretaria/secretariaRemoveAula");
 const secretariaUpdateAula = require("../services/secretaria/secretariaUpdateAula");
@@ -11,11 +11,11 @@ const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.s
 // adminRoute.get("/buscaTurno", secretariaBuscaTurno);
 // adminRoute.get("/buscaTurma", secretariaBuscaTurma);
 
-appRoute.get("/secretariaBuscaTurno", secretariaBuscaTurno);
-appRoute.get("/secretariaBuscaTurma", secretariaBuscaTurma);
-appRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
-appRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
-appRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
-appRoute.post("/secretariaCriaAula", secretariaCriaAula);
+adminRoute.get("/secretariaBuscaTurno", secretariaBuscaTurno);
+adminRoute.get("/secretariaBuscaTurma", secretariaBuscaTurma);
+adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
+adminRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
+adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
+adminRoute.post("/secretariaCriaAula", secretariaCriaAula);
 
 module.exports = adminRoute;
