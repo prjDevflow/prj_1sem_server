@@ -2,7 +2,7 @@ const db = require("../config/db");
 
 async function buscaTurma(req, res) {
   try {
-    const { curso, turno } = req.body;
+    const { curso } = req.body;
 
     const cursoExiste = await db.query(
       `SELECT * FROM "curso" WHERE "nome" = $1`,
@@ -14,20 +14,28 @@ async function buscaTurma(req, res) {
     }
 
     const result = await db.query(
-    `SELECT
-    json_object_agg(Turno, TurmasArray)
-    FROM (SELECT t.Turno,json_agg(t.Nome ORDER BY t.Nome) AS TurmasArray
-    FROM Turma t
-    JOIN Curso c ON t.Curso_idCurso = c.idCurso
-    WHERE c.Nome = 'Meio Ambiente e Recursos Hídricos' 
-    GROUP BY t.Turno 
-) AS Subquery;`,
-     [curso, turno]
+      `
+      SELECT
+        json_object_agg(t."Turno", turmas) AS resultado
+      FROM (
+        SELECT
+          t."Turno",
+          json_agg(t."Nome" ORDER BY t."Nome") AS turmas
+        FROM "Turma" t
+        JOIN "Curso" c ON t."Curso_idCurso" = c."idCurso"
+        WHERE c."Nome" = $1
+        GROUP BY t."Turno"
+      ) AS t
+      `,
+      [curso]
     );
-    res.json(result.rows);
+
+    const json = result.rows[0].resultado;
+    res.json(json);
   } catch (e) {
-    console.log(e);
+    console.error(e);
     res.status(500).json({ message: "Erro ao processar a requisição" });
   }
 }
+
 module.exports = buscaTurma;
