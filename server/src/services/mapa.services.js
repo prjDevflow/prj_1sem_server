@@ -6,20 +6,23 @@ async function mapa(req, res) {
 
         const resultado = await db.query(
             `SELECT 
-                S.numero AS numerosala,
-                SM.dia AS diasemana,
-                T.idturma AS turma,
-                H.horainicial,
-                H.horafinal
-            FROM aula A
-            JOIN turma T ON A.turma_idturma = T.idturma
-            JOIN horario H ON AhHorario_idhorario = H.idhorario
-            JOIN sala S ON A.sala_numero = S.numero
-            JOIN semana SM ON A.semana_idsemana = SM.idsemana
-            WHERE 
-                S.numero = $1 AND SM.dia = $2
-            ORDER BY
-                H.horainicial;`,
+            S.Numero AS numeroSala,
+            SM.Dia AS diaSemana,
+            T.idTurma AS turma,
+            T.Turno AS turno,
+            D.Nome AS disciplina,
+            H.HoraInicial,
+            H.HoraFinal
+        FROM Aula A
+        JOIN Turma T ON A.Turma_idTurma = T.idTurma
+        JOIN Horario H ON A.Horario_idHorario = H.idHorario
+        JOIN Sala S ON A.Sala_Numero = S.Numero
+        JOIN Semana SM ON A.Semana_idSemana = SM.idSemana
+        JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
+        WHERE 
+            S.Numero = $1 AND SM.Dia = $2
+        ORDER BY
+            H.HoraInicial;`,
             [salaNumero, diaSemana]
         );
 
