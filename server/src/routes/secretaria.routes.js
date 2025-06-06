@@ -11,7 +11,7 @@ const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.s
 // adminRoute.get("/buscaTurno", secretariaBuscaTurno);
 // adminRoute.get("/buscaTurma", secretariaBuscaTurma);
 
-adminRoute.get("/secretariaBuscaTurno", secretariaBuscaTurno);
+adminRoute.post("/busca-turno", secretariaBuscaTurno);
 adminRoute.get("/secretariaBuscaTurma", secretariaBuscaTurma);
 adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
 adminRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
