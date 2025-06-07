@@ -30,11 +30,12 @@ async function addAula(req, res) {
       }
 
       const turma = lineSplit[0].trim();
-      const disciplina = lineSplit[1].trim();
-      const professor = lineSplit[2].trim();
-      const horario = lineSplit[3].trim();
-      const sala = lineSplit[4].trim();
-      const semana = lineSplit[5].trim();
+      const horario = lineSplit[1].trim();
+      const sala = lineSplit[2].trim();
+      const semana = lineSplit[3].trim();
+      const disciplina = lineSplit[4].trim();
+      const professor = lineSplit[5].trim();
+
 
       // -- Turma
       const buscaTurma = await db.query(
@@ -81,7 +82,7 @@ async function addAula(req, res) {
 
       // -- Sala
       const buscaSala = await db.query(
-        "SELECT numero FROM sala WHERE numero = $1",
+        "SELECT numero FROM sala WHERE nome = $1",
         [sala]
       );
       if (buscaSala.rowCount === 0) {

@@ -20,16 +20,15 @@ async function addSala(req, res) {
 
     for await (let line of registerLine) {
       const lineSplit = line.split(";");
-      if (lineSplit.length < 3) {
-        throw new Error("Formato de arquivo inválido");
+      if (lineSplit.length < 2) {
+        return res.status(500).json({ message: "Formato de arquivo inválido" });
       }
-      const numero = lineSplit[0].trim();
-      const nome = lineSplit[1].trim();
-      const andar = lineSplit[2].trim();
+      const nome = lineSplit[0].trim();
+      const andar = lineSplit[1].trim();
 
       result = await db.query(
-        "INSERT INTO Sala (numero, nome, andar) VALUES ($1, $2, $3)",
-        [numero, nome, andar]
+        "INSERT INTO Sala (nome, andar) VALUES ($1, $2)",
+        [nome, andar]
       );
 
       count++;
