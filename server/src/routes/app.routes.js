@@ -7,11 +7,11 @@ const mapa = require("../services/mapa.services");
 const buscaTurno = require("../services/buscaTurno.services");
 const buscaTurma = require("../services/buscaTurma.services");
 
-
 appRoute.post("/login", login);
-appRoute.get("/agenda", agenda);
-appRoute.get("/mapa", mapa);
-appRoute.get("/buscaTurno", buscaTurno);
-appRoute.get("/buscaTurma", buscaTurma);
+appRoute.post("/agenda", agenda);
+appRoute.post("/mapa", mapa);
+appRoute.post("/busca-turno", buscaTurno);
+
+appRoute.post("/busca-turma", buscaTurma);
 
 module.exports = appRoute;

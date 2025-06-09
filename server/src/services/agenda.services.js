@@ -6,24 +6,25 @@ async function agenda(req, res) {
 
         const resultado = await db.query(
             `SELECT 
-                A.idAula AS id,
-                SM.Dia AS diaSemana,
-                T.idTurma AS turma,
-                T.Turno AS turno,
-                D.Nome AS disciplina,
-                CONCAT(H.HoraInicial, ' - ', H.HoraFinal) AS horario
-            FROM Aula A
-            JOIN Turma T ON A.Turma_idTurma = T.idTurma
-            JOIN Horario H ON A.Horario_idHorario = H.idHorario
-            JOIN Semana SM ON A.Semana_idSemana = SM.idSemana
-            JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
-            WHERE T.idTurma = $1 AND T.Turno = $2
-            ORDER BY SM.idSemana, H.HoraInicial;
+                A.idaula AS id,
+                SM.dia AS diasemana,
+                T.nome AS turma,
+                T.turno AS turno,
+                D.nome AS disciplina,
+                CONCAT(H.horainicial, ' - ', H.horafinal) AS horario
+            FROM aula A
+            JOIN turma T ON A.turma_idturma = T.idturma
+            JOIN horario H ON A.horario_idhorario = H.idhorario
+            JOIN semana SM ON A.semana_idsemana = SM.idsemana
+            JOIN disciplina D ON A.disciplina_iddisciplina = D.iddisciplina
+            WHERE T.nome = $1 AND T.turno = $2
+            ORDER BY SM.idsemana, H.horainicial;
             `,
             [turma, turno]
         );
 
         res.json(resultado.rows);
+        console.log("sucesso");
     } catch (e) {
         console.error("Erro ao buscar agenda:", e);
         res.status(500).json({
@@ -31,5 +32,4 @@ async function agenda(req, res) {
         });
     }
 }
-
 module.exports = agenda;

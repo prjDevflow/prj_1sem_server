@@ -3,10 +3,14 @@ const readline = require("readline");
 const db = require("../../config/db");
 
 async function addAula(req, res) {
+  const client = await db.connect(); // Inicia conexão com transação
   try {
     const { file } = req;
     if (!file || !file.buffer)
-      throw new Error("arquivo não enviado corretamente");
+      return res.status(400).json({ message: "Arquivo não enviado corretamente" });
+
+    await client.query("BEGIN"); // Início da transação
+    await client.query("DELETE FROM aula");
 
     const readableFile = new Readable();
     readableFile.push(file.buffer);
@@ -19,91 +23,76 @@ async function addAula(req, res) {
     let count = 0;
 
     for await (let line of registerLine) {
-      if (!line.trim()) continue; // segurança
+      if (!line.trim()) continue;
 
       const lineSplit = line.split(";");
-      if (lineSplit.length < 3) {
-        throw new Error("Formato de arquivo inválido");
+
+      if (lineSplit.length < 6) {
+        await client.query("ROLLBACK");
+        return res.status(400).json({ message: "Formato de arquivo inválido." });
       }
 
-      const turma = lineSplit[0].trim();
-      const disciplina = lineSplit[1].trim();
-      const professor = lineSplit[2].trim();
-      const horario = lineSplit[3].trim();
-      const sala = lineSplit[4].trim();
-      const semana = lineSplit[5].trim();
+      const [turma, horario, sala, semana, disciplina, professor] = lineSplit.map((x) => x.trim());
 
-      // BUSCAS PARA RELACIONAMENTO DE TABELAS
-      // -- turma --
-      const buscaTurma = await db.query(
-        "SELECT idTurma FROM Turma WHERE Nome = $1",
-        [turma]
-      );
-      if (buscaTurma.rows.length === 0) {
-        throw new Error(`Turma '${turma}' não encontrada`);
+      const buscaTurma = await client.query("SELECT idturma FROM turma WHERE nome = $1", [turma]);
+      if (buscaTurma.rowCount === 0) {
+        await client.query("ROLLBACK");
+        return res.status(404).json({ message: `Turma '${turma}' não encontrada` });
       }
       const idTurma = buscaTurma.rows[0].idturma;
-      // -- disciplina --
-      const buscaDisciplina = await db.query(
-        "SELECT idDisciplina FROM Disciplina WHERE Nome = $1",
-        [disciplina]
-      );
-      if (buscaDisciplina.rows.length === 0) {
-        throw new Error(`Disciplina '${disciplina}' não encontrada`);
+
+      const buscaDisciplina = await client.query("SELECT iddisciplina FROM disciplina WHERE nome = $1", [disciplina]);
+      if (buscaDisciplina.rowCount === 0) {
+        await client.query("ROLLBACK");
+        return res.status(404).json({ message: `Disciplina '${disciplina}' não encontrada` });
       }
       const idDisciplina = buscaDisciplina.rows[0].iddisciplina;
-      // -- professor --
-      const buscaProfessor = await db.query(
-        "SELECT idProfessor FROM Professor WHERE Nome = $1",
-        [professor]
-      );
-      if (buscaProfessor.rows.length === 0) {
-        throw new Error(`Professor '${professor}' não encontrado`);
+
+      const buscaProfessor = await client.query("SELECT idprofessor FROM professor WHERE nome = $1", [professor]);
+      if (buscaProfessor.rowCount === 0) {
+        await client.query("ROLLBACK");
+        return res.status(404).json({ message: `Professor '${professor}' não encontrado` });
       }
       const idProfessor = buscaProfessor.rows[0].idprofessor;
 
-          // -- Horario --
-    const buscaHorario = await db.query(
-      "SELECT idHorario FROM Horario WHERE HoraInicial = $1",
-      [Horario_idHorario]
-    );
-    if (buscaHorario.rows.length === 0) {
-      throw new Error(`Horario '${Horario}' não encontrado`);
-    }
-    const idHorario = buscaHorario.rows[0].idHorario;
+      const [horaInicial, horaFinal] = horario.split("-").map((h) => h.trim());
+      const buscaHorario = await client.query("SELECT idhorario FROM horario WHERE horainicial = $1 AND horafinal = $2", [horaInicial, horaFinal]);
+      if (buscaHorario.rowCount === 0) {
+        await client.query("ROLLBACK");
+        return res.status(404).json({ message: `Horário '${horario}' não encontrado` });
+      }
+      const idHorario = buscaHorario.rows[0].idhorario;
 
-    // -- Sala --
-    const buscaSala = await db.query(
-      "SELECT Numero FROM sala WHERE Numero = $1",
-      [Sala_Numero]
-    );
-    if (buscaSala.rows.length === 0) {
-      throw new Error(`Sala '${Sala}' não encontrado`);
-    }
-    const Numero = buscaHorario.rows[0].Numero;
+      const buscaSala = await client.query("SELECT numero FROM sala WHERE nome = $1", [sala]);
+      if (buscaSala.rowCount === 0) {
+        await client.query("ROLLBACK");
+        return res.status(404).json({ message: `Sala '${sala}' não encontrada` });
+      }
+      const numeroSala = buscaSala.rows[0].numero;
 
-    // -- Semana --
-    const buscaSemana = await db.query(
-      "SELECT dia FROM Semana WHERE dia = $1",
-      [Semana_idSemana]
-    );
-    if (buscaSemana.rows.length === 0) {
-      throw new Error(`dia '${Semana}' não encontrado`);
-    }
-    const idSemana = buscaHorario.rows[0].idSemana;
+      const buscaSemana = await client.query("SELECT idsemana FROM semana WHERE dia = $1", [semana]);
+      if (buscaSemana.rowCount === 0) {
+        await client.query("ROLLBACK");
+        return res.status(404).json({ message: `Semana/Dia '${semana}' não encontrado` });
+      }
+      const idSemana = buscaSemana.rows[0].idsemana;
 
-      await db.query(
-        "INSERT INTO Aula (Turma_idTurma,Disciplina_idDisciplina,Professor_idProfessor,Horario_idHorario,Sala_Numero,Semana_idSemana) VALUES ($1, $2, $3, $4, $5, $6)",
-       [idTurma, idDisciplina, idProfessor, Numero, idSemana, idHorario]
+      await client.query(
+        "INSERT INTO aula (turma_idturma, disciplina_iddisciplina, professor_idprofessor, horario_idhorario, sala_numero, semana_idsemana) VALUES ($1, $2, $3, $4, $5, $6)",
+        [idTurma, idDisciplina, idProfessor, idHorario, numeroSala, idSemana]
       );
 
       count++;
     }
 
-    return res.status(200).json({ message: `${count} aulas cadastradas` });
+    await client.query("COMMIT");
+    return res.status(200).json({ message: `${count} aulas cadastradas com sucesso.` });
   } catch (err) {
+    await client.query("ROLLBACK");
     console.error(err);
-    res.status(500).json({ message: err.message });
+    return res.status(500).json({ message: err.message });
+  } finally {
+    client.release(); // Libera o client de volta pro pool
   }
 }
 

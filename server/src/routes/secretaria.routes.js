@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const appRoute = Router();
+const adminRoute = Router();
 
 const secretariaBuscaTurno = require("../services/secretaria/secretariaBuscaTurno.services");
 const secretariaBuscaTurma = require("../services/secretaria/secretariaBuscaTurma.services");
@@ -8,13 +8,14 @@ const secretariaRemoveAula = require("../services/secretaria/secretariaRemoveAul
 const secretariaUpdateAula = require("../services/secretaria/secretariaUpdateAula");
 const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.services");
 
+// adminRoute.get("/buscaTurno", secretariaBuscaTurno);
+// adminRoute.get("/buscaTurma", secretariaBuscaTurma);
 
-appRoute.get("/secretariaBuscaTurno", secretariaBuscaTurno);
-appRoute.get("/secretariaBuscaTurma", secretariaBuscaTurma);
-appRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
-appRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
-appRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
-appRoute.post("/secretariaCriaAula", secretariaCriaAula);
+adminRoute.post("/busca-turno", secretariaBuscaTurno);
+adminRoute.post("/busca-turma", secretariaBuscaTurma);
+adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
+adminRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
+adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
+adminRoute.post("/secretariaCriaAula", secretariaCriaAula);
 
-
-module.exports = appRoute;
+module.exports = adminRoute;
