@@ -1,36 +1,41 @@
 const db = require("../../config/db");
-async function secretariaBuscaTurno(req, res) {
+async function secretariaBuscaTurma(req, res) {
   try {
     const {
       curso,
-      turno
+      turno,
+      dia
     } = req.body;
     console.log('Recebido curso:', curso);
     const result = await db.query(
       ` SELECT 
-    a.idAula,
-    c.Nome AS Curso,
-    t.Nome AS Turma,
-    t.Turno,
-    d.Nome AS Disciplina,
-    p.Nome AS Professor,
-    s.Nome AS Sala,
-    s.Andar,
-    sem.Dia AS DiaSemana,
-    h.HoraInicial,
-    h.HoraFinal
-FROM Aula a
-JOIN Turma t ON a.Turma_idTurma = t.idTurma
-JOIN Curso c ON t.Curso_idCurso = c.idCurso
-JOIN Disciplina d ON a.Disciplina_idDisciplina = d.idDisciplina
-JOIN Professor p ON a.Professor_idProfessor = p.idProfessor
-JOIN Sala s ON a.Sala_Numero = s.Numero
-JOIN Semana sem ON a.Semana_idSemana = sem.idSemana
-JOIN Horario h ON a.Horario_idHorario = h.idHorario
-WHERE c.Nome = $1
-  AND t.Turno = $2
+    A.idAula,
+    T.Nome AS NomeTurma,
+    C.Nome AS NomeCurso,
+    T.Turno,
+    H.HoraInicial,
+    H.HoraFinal,
+    S.Nome AS NomeSala,
+    S.Andar,
+    D.Nome AS NomeDisciplina,
+    P.Nome AS NomeProfessor,
+    Sem.Dia AS DiaSemana
+FROM Aula A
+JOIN Turma T ON A.Turma_idTurma = T.idTurma
+JOIN Curso C ON T.Curso_idCurso = C.idCurso
+JOIN Horario H ON A.Horario_idHorario = H.idHorario
+JOIN Sala S ON A.Sala_Numero = S.Numero
+JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
+JOIN Professor P ON A.Professor_idProfessor = P.idProfessor
+JOIN Semana Sem ON A.Semana_idSemana = Sem.idSemana
+WHERE 
+    C.Nome = $1 AND
+    T.Turno = $2 AND
+    Sem.Dia = $3
+ORDER BY H.HoraInicial;
+
 `,
-      [curso, turno]
+      [curso, turno, dia]
     );
     console.log("result: ", result)
     res.json(result.rows);
@@ -41,11 +46,13 @@ WHERE c.Nome = $1
 
     console.log(nomesTurmas);
 
-  } catch (e) {
+    console.log("result: ", result)
 
+  } catch (e) {
+    
     res.status(500).json({
       message: "Erro ao processar a requisição"
     });
   }
 }
-module.exports = secretariaBuscaTurno
+module.exports = secretariaBuscaTurma

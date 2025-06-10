@@ -16,7 +16,7 @@ async function secretariaBuscaTurno(req, res) {
     res.json(result.rows);
     //console.log("result: ", result)
   } catch (e) {
-    console.log(e)
+    
     res.status(500).json({ message: "Erro ao processar a requisição" });
   }
 }
