@@ -13,8 +13,8 @@ const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.s
 
 adminRoute.post("/busca-turno", secretariaBuscaTurno);
 adminRoute.post("/busca-turma", secretariaBuscaTurma);
-adminRoute.post("/secretariaBuscaDia", secretariaBuscaDia);
-adminRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
+adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
+adminRoute.delete("/remove-aula/:id", secretariaRemoveAula);
 adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
 adminRoute.post("/secretariaCriaAula", secretariaCriaAula);
 
