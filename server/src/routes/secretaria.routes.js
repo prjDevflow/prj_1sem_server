@@ -17,5 +17,6 @@ adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
 adminRoute.delete("/remove-aula/:id", secretariaRemoveAula);
 adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
 adminRoute.post("/secretariaCriaAula", secretariaCriaAula);
+adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
 
 module.exports = adminRoute;
