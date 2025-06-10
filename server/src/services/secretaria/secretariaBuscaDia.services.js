@@ -3,11 +3,6 @@ const db = require("../../config/db");
 async function secretariaBuscaDia(req, res) {
   try {
     const { curso, turma, turno, dia } = req.body;
-
-    if (!curso || !turma || !turno || !dia) {
-      return res.status(400).json({ message: "Informações inválidas" });
-    }
-
     const result = await db.query(
       `SELECT DISTINCT
       a.idaula,
