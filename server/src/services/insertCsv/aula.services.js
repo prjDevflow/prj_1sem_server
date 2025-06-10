@@ -31,12 +31,12 @@ async function addAula(req, res) {
         return res.status(400).json({ message: "Formato de arquivo inválido. Esperado: Turma;Horário;Sala;Semana;Disciplina;Professor" });
       }
     
-      const turma = lineSplit[0];
-      const horario = lineSplit[1];
-      const sala = lineSplit[2];
-      const semana = lineSplit[3];
-      const disciplina = lineSplit[4];
-      const professor = lineSplit[5];
+      const turma = lineSplit[0].trim();
+      const horario = lineSplit[1].trim();
+      const sala = lineSplit[2].trim();
+      const semana = lineSplit[3].trim();
+      const disciplina = lineSplit[4].trim();
+      const professor = lineSplit[5].trim();
     
       const buscaTurma = await client.query("SELECT idturma FROM turma WHERE nome = $1", [turma]);
       if (buscaTurma.rowCount === 0) {
