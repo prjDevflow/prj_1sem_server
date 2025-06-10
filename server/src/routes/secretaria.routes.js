@@ -14,8 +14,9 @@ const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.s
 adminRoute.post("/busca-turno", secretariaBuscaTurno);
 adminRoute.post("/busca-turma", secretariaBuscaTurma);
 adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
-adminRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
-adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
+
+adminRoute.delete("/remove-aula/:id", secretariaRemoveAula);
 adminRoute.post("/secretariaCriaAula", secretariaCriaAula);
+adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
 
 module.exports = adminRoute;

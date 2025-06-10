@@ -11,6 +11,8 @@ async function addTurma(req, res) {
       return res.status(400).json({ message: "Arquivo não enviado corretamente" });
     }
 
+    await client.query("TRUNCATE turma CASCADE;");
+
     const readableFile = new Readable();
     readableFile.push(file.buffer);
     readableFile.push(null);
@@ -18,11 +20,6 @@ async function addTurma(req, res) {
     const registerLine = readline.createInterface({
       input: readableFile,
     });
-
-    await client.query("BEGIN");
-
-    // Limpa as turmas existentes
-    await client.query("DELETE FROM turma");
 
     let count = 0;
 
@@ -32,7 +29,6 @@ async function addTurma(req, res) {
       const lineSplit = line.split(";");
 
       if (lineSplit.length < 3) {
-        await client.query("ROLLBACK");
         return res.status(400).json({
           message: "Formato de arquivo inválido. Esperado: Nome;Curso;Turno"
         });
@@ -48,8 +44,7 @@ async function addTurma(req, res) {
       );
 
       if (buscaCurso.rowCount === 0) {
-        await client.query("ROLLBACK");
-        return res.status(404).json({ message: `Curso '${nomeCurso}' não encontrado` });
+        return res.status(404).json({ message: `Curso '${nomeCurso}' não encontrado.` });
       }
 
       const idCurso = buscaCurso.rows[0].idcurso;
@@ -62,15 +57,13 @@ async function addTurma(req, res) {
       count++;
     }
 
-    await client.query("COMMIT");
-
     return res
       .status(200)
       .json({ message: `${count} turmas cadastradas com sucesso.` });
+
   } catch (err) {
-    await client.query("ROLLBACK");
     console.error(err);
-    return res.status(500).json({ message: err.message });
+    return res.status(500).json({ message: "Erro ao cadastrar turmas: " + err.message });
   } finally {
     client.release();
   }

@@ -11,6 +11,8 @@ async function addSala(req, res) {
       return res.status(400).json({ message: "Arquivo não enviado corretamente" });
     }
 
+    await client.query("TRUNCATE sala CASCADE;");
+
     const readableFile = new Readable();
     readableFile.push(file.buffer);
     readableFile.push(null);
@@ -19,18 +21,15 @@ async function addSala(req, res) {
       input: readableFile,
     });
 
-    await client.query("BEGIN");
-    await client.query("DELETE FROM sala");
-
     let count = 0;
 
     for await (let line of registerLine) {
       if (!line.trim()) continue;
 
       const lineSplit = line.split(";");
+
       if (lineSplit.length < 2) {
-        await client.query("ROLLBACK");
-        return res.status(400).json({ message: "Formato de arquivo inválido" });
+        return res.status(400).json({ message: "Formato de arquivo inválido. Esperado: Nome;Andar" });
       }
 
       const nome = lineSplit[0].trim();
@@ -44,13 +43,11 @@ async function addSala(req, res) {
       count++;
     }
 
-    await client.query("COMMIT");
-
     return res.status(200).json({ message: `${count} salas cadastradas com sucesso.` });
+
   } catch (err) {
-    await client.query("ROLLBACK");
     console.error(err);
-    return res.status(500).json({ message: err.message });
+    return res.status(500).json({ message: "Erro ao cadastrar salas: " + err.message });
   } finally {
     client.release();
   }

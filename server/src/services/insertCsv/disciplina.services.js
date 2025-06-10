@@ -11,6 +11,9 @@ async function addDisciplina(req, res) {
       return res.status(400).json({ message: "Arquivo não enviado corretamente" });
     }
 
+    // Limpa os dados existentes
+    await client.query("TRUNCATE disciplina CASCADE;");
+
     const readableFile = new Readable();
     readableFile.push(file.buffer);
     readableFile.push(null);
@@ -19,33 +22,24 @@ async function addDisciplina(req, res) {
       input: readableFile,
     });
 
-    await client.query("BEGIN");
-    await client.query("DELETE FROM disciplina");
-
     let count = 0;
 
     for await (let line of registerLine) {
-      if (!line.trim()) continue; // ignora linha em branco
+      if (!line.trim()) continue;
 
       const lineSplit = line.split(";");
 
-      if (lineSplit.length < 1) {
-        await client.query("ROLLBACK");
-        return res.status(400).json({ message: "Formato de arquivo inválido." });
-      }
+      if (lineSplit.length < 1) continue;
 
       const nome = lineSplit[0].trim();
 
-      await client.query("INSERT INTO Disciplina (Nome) VALUES ($1)", [nome]);
+      await client.query("INSERT INTO disciplina (nome) VALUES ($1)", [nome]);
 
       count++;
     }
 
-    await client.query("COMMIT");
-
     return res.status(200).json({ message: `${count} disciplinas cadastradas com sucesso.` });
   } catch (err) {
-    await client.query("ROLLBACK");
     console.error(err);
     return res.status(500).json({ message: "Erro ao cadastrar disciplinas: " + err.message });
   } finally {
