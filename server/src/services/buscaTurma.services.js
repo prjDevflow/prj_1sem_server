@@ -32,6 +32,7 @@ async function buscaTurma(req, res) {
 
     const json = result.rows[0].resultado;
     res.json(json);
+    console.log(json);
   } catch (e) {
     console.error(e);
     res.status(500).json({ message: "Erro ao processar a requisição" });
