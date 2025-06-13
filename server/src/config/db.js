@@ -1,11 +1,13 @@
 const { Pool } = require("pg");
+require("dotenv").config();
 
-const pool = new Pool({
-  host: "localhost",
-  user: "postgres", // Altere conforme o seu usuário
-  password: "123", // Altere conforme a sua senha
-  database: "ABP", // Nome do banco criado no pgAdmin
-  port: 5432, // Porta padrão do PostgreSQL
+let pool;
+
+pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 module.exports = pool;
