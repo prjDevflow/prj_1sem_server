@@ -1,0 +1,338 @@
+1 GEO;18:45:00-19:35:00;Lab. de Informática 101;Segunda-feira;Introdução à Ciência da Geoinformação;Prof. Dr. Daniel José de Andrade
+1 GEO;19:35:00-20:25:00;Lab. de Informática 101;Segunda-feira;Algoritmos e Lógica de Programação;Prof. Dr. Érico Luciano Pagotto
+1 GEO;20:25:00-21:25:00;Lab. de Informática 101;Segunda-feira;Algoritmos e Lógica de Programação;Prof. Dr. Érico Luciano Pagotto
+1 GEO;21:25:00-22:15:00;Lab. de Informática 101;Segunda-feira;Metodologia da Pesquisa Científico-Tecnológica;Prof. Dra. Vivian Hyodo
+1 GEO;22:15:00-23:05:00;Lab. de Informática 101;Segunda-feira;Metodologia da Pesquisa Científico-Tecnológica;Prof. Dra. Vivian Hyodo
+1 GEO;18:45:00-19:35:00;Lab. de Informática 101;Terça-feira;Desenho Técnico;Prof. Me. Celso de Oliveira
+1 GEO;19:35:00-20:25:00;Lab. de Informática 101;Terça-feira;Desenho Técnico;Prof. Me. Celso de Oliveira
+1 GEO;20:25:00-21:25:00;Lab. de Informática 101;Terça-feira;Desenho Técnico;Prof. Me. Celso de Oliveira
+1 GEO;21:25:00-22:15:00;Lab. de Informática 101;Terça-feira;Desenho Técnico;Prof. Me. Celso de Oliveira
+1 GEO;22:15:00-23:05:00;Lab. de Informática 101;Terça-feira;Fundamentos da Comunicação Empresarial;Prof. Esp. Mariana Timponi Rodrigues
+1 GEO;18:45:00-19:35:00;Lab. de Informática 101;Quarta-feira;Algoritmos e Lógica de Programação;Prof. Dr. Érico Luciano Pagotto
+1 GEO;19:35:00-20:25:00;Lab. de Informática 101;Quarta-feira;Algoritmos e Lógica de Programação;Prof. Dr. Érico Luciano Pagotto
+1 GEO;20:25:00-21:25:00;Lab. de Informática 101;Quarta-feira;Inglês I;Prof. Esp. Mariana Timponi Rodrigues
+1 GEO;21:25:00-22:15:00;Lab. de Informática 101;Quarta-feira;Inglês I;Prof. Esp. Mariana Timponi Rodrigues
+1 GEO;22:15:00-23:05:00;Lab. de Informática 101;Quarta-feira;Fundamentos da Comunicação Empresarial;Prof. Esp. Mariana Timponi Rodrigues
+1 GEO;18:45:00-19:35:00;Lab. de Informática 101;Quinta-feira;Introdução à Ciência da Geoinformação;Prof. Dr. Daniel José de Andrade
+1 GEO;19:35:00-20:25:00;Lab. de Informática 101;Quinta-feira;Introdução à Ciência da Geoinformação;Prof. Dr. Daniel José de Andrade
+1 GEO;20:25:00-21:25:00;Lab. de Informática 101;Quinta-feira;Introdução à Ciência da Geoinformação;Prof. Dr. Daniel José de Andrade
+1 GEO;21:25:00-22:15:00;Lab. de Informática 101;Quinta-feira;Fundamentos de Física;Prof. Dra. Karen Espinosa
+1 GEO;22:15:00-23:05:00;Lab. de Informática 101;Quinta-feira;Fundamentos de Física;Prof. Dra. Karen Espinosa
+1 GEO;18:45:00-19:35:00;Lab. de Informática 101;Sexta-feira;Cálculo;Prof. Dr. Érico Luciano Pagotto
+1 GEO;19:35:00-20:25:00;Lab. de Informática 101;Sexta-feira;Cálculo;Prof. Dr. Érico Luciano Pagotto
+1 GEO;20:25:00-21:25:00;Lab. de Informática 101;Sexta-feira;Cálculo;Prof. Dr. Érico Luciano Pagotto
+1 GEO;21:25:00-22:15:00;Lab. de Informática 101;Sexta-feira;Cálculo;Prof. Dr. Érico Luciano Pagotto
+1 GEO;22:15:00-23:05:00;Lab. de Informática 101;Sexta-feira;Cálculo;Prof. Dr. Érico Luciano Pagotto
+3 GEO;18:45:00-19:35:00;Lab. de Informática 101;Segunda-feira;Estatística;Prof. Dra. Rita de Cássia von Randow
+3 GEO;19:35:00-20:25:00;Lab. de Informática 101;Segunda-feira;Estatística;Prof. Dra. Rita de Cássia von Randow
+3 GEO;20:25:00-21:25:00;Lab. de Informática 101;Segunda-feira;Estatística;Prof. Dra. Rita de Cássia von Randow
+3 GEO;21:25:00-22:15:00;Lab. de Informática 101;Segunda-feira;Estatística;Prof. Dra. Rita de Cássia von Randow
+3 GEO;22:15:00-23:05:00;Lab. de Informática 105;Segunda-feira;Processamento Digital de Imagens;Prof. Msc. Jane Delane Verona
+3 GEO;18:45:00-19:35:00;Sala Maker 110;Terça-feira;Inglês III;Prof. Esp. Mariana Timponi Rodrigues
+3 GEO;19:35:00-20:25:00;Sala Maker 110;Terça-feira;Inglês III;Prof. Esp. Mariana Timponi Rodrigues
+3 GEO;20:25:00-21:25:00;Sala Maker 110;Terça-feira;Geodésia;Prof. Me. Adilson Rodolfo Neves
+3 GEO;21:25:00-22:15:00;Sala Maker 110;Terça-feira;Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+3 GEO;22:15:00-23:05:00;Sala Maker 110;Terça-feira;Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+3 GEO;18:45:00-19:35:00;Sala Maker 110;Quarta-feira;Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+3 GEO;19:35:00-20:25:00;Sala Maker 110;Quarta-feira;Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+3 GEO;20:25:00-21:25:00;Lab. de Informática 107;Quarta-feira;Processamento Digital de Imagens;Prof. Msc. Jane Delane Verona
+3 GEO;21:25:00-22:15:00;Lab. de Informática 107;Quarta-feira;Processamento Digital de Imagens;Prof. Msc. Jane Delane Verona
+3 GEO;22:15:00-23:05:00;Lab. de Informática 107;Quarta-feira;Processamento Digital de Imagens;Prof. Msc. Jane Delane Verona
+3 GEO;18:45:00-19:35:00;Lab. de Informática 107;Quinta-feira;Modelagem de Banco de Dados;Prof. Ma. Yara da Cruz Ferreira
+3 GEO;19:35:00-20:25:00;Lab. de Informática 107;Quinta-feira;Modelagem de Banco de Dados;Prof. Ma. Yara da Cruz Ferreira
+3 GEO;20:25:00-21:25:00;Lab. de Informática 107;Quinta-feira;Modelagem de Banco de Dados;Prof. Ma. Yara da Cruz Ferreira
+3 GEO;21:25:00-22:15:00;Lab. de Informática 107;Quinta-feira;Modelagem de Banco de Dados;Prof. Ma. Yara da Cruz Ferreira
+3 GEO;22:15:00-23:05:00;Sala Maker 110;Quinta-feira;Geodésia;Prof. Me. Adilson Rodolfo Neves
+3 GEO;18:45:00-19:35:00;Lab. de Informática 107;Sexta-feira;Linguagem de Programação II;Prof. Me. Kenji Taniguchi
+3 GEO;19:35:00-20:25:00;Lab. de Informática 107;Sexta-feira;Linguagem de Programação II;Prof. Me. Kenji Taniguchi
+3 GEO;20:25:00-21:25:00;Lab. de Informática 107;Sexta-feira;Linguagem de Programação II;Prof. Me. Kenji Taniguchi
+3 GEO;21:25:00-22:15:00;Lab. de Informática 107;Sexta-feira;Linguagem de Programação II;Prof. Me. Kenji Taniguchi
+3 GEO;22:15:00-23:05:00;Lab. de Informática 107;Sexta-feira;Linguagem de Programação II;Prof. Me. Kenji Taniguchi
+5 GEO;18:45:00-19:35:00;Lab. de Informática 107;Segunda-feira;Análise Ambiental;Prof. Msc. Jane Delane Verona
+5 GEO;19:35:00-20:25:00;Lab. de Informática 107;Segunda-feira;Análise Ambiental;Prof. Msc. Jane Delane Verona
+5 GEO;20:25:00-21:25:00;Lab. de Informática 107;Segunda-feira;Fundamentos da administração;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;21:25:00-22:15:00;Lab. de Informática 107;Segunda-feira;Legislação;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;22:15:00-23:05:00;Lab. de Informática 107;Segunda-feira;Legislação;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;18:45:00-19:35:00;Lab. de Informática 107;Terça-feira;WebGIS;Prof. Me. Kenji Taniguchi
+5 GEO;19:35:00-20:25:00;Lab. de Informática 107;Terça-feira;WebGIS;Prof. Me. Kenji Taniguchi
+5 GEO;20:25:00-21:25:00;Lab. de Informática 107;Terça-feira;WebGIS;Prof. Me. Kenji Taniguchi
+5 GEO;21:25:00-22:15:00;Lab. de Informática 107;Terça-feira;WebGIS;Prof. Me. Kenji Taniguchi
+5 GEO;22:15:00-23:05:00;Lab. de Informática 107;Terça-feira;WebGIS;Prof. Me. Kenji Taniguchi
+5 GEO;18:45:00-19:35:00;Lab. de Informática 107;Quarta-feira;Análise Ambiental;Prof. Msc. Jane Delane Verona
+5 GEO;19:35:00-20:25:00;Lab. de Informática 107;Quarta-feira;Análise Ambiental;Prof. Msc. Jane Delane Verona
+5 GEO;20:25:00-21:25:00;Lab. de Informática 101;Quarta-feira;Infra URB;Prof. Dr. Daniel José de Andrade
+5 GEO;21:25:00-22:15:00;Lab. de Informática 101;Quarta-feira;Infra URB;Prof. Dr. Daniel José de Andrade
+5 GEO;22:15:00-23:05:00;Lab. de Informática 101;Quarta-feira;Infra URB;Prof. Dr. Daniel José de Andrade
+5 GEO;18:45:00-19:35:00;Sala Maker 110;Quinta-feira;Análise Espacial e MT;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;19:35:00-20:25:00;Sala Maker 110;Quinta-feira;Análise Espacial e MT;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;20:25:00-21:25:00;Sala Maker 110;Quinta-feira;Análise Espacial e MT;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;21:25:00-22:15:00;Sala Maker 110;Quinta-feira;Análise Espacial e MT;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;22:15:00-23:05:00;Sala Maker 110;Quinta-feira;Fundamentos da administração;Prof. Esp. Matheus de Oliveira Lorena
+5 GEO;18:45:00-19:35:00;Lab. de Informática 101;Sexta-feira;Projetos 1;Prof. Dr. Nilton de Jesus
+5 GEO;19:35:00-20:25:00;Lab. de Informática 101;Sexta-feira;Projetos 1;Prof. Dr. Nilton de Jesus
+5 GEO;20:25:00-21:25:00;Lab. de Informática 101;Sexta-feira;Infra URB;Prof. Dr. Daniel José de Andrade
+5 GEO;21:25:00-22:15:00;Lab. de Informática 101;Sexta-feira;Inglês V;Prof. Msc. Risleide Lucia dos Santos
+5 GEO;22:15:00-23:05:00;Lab. de Informática 101;Sexta-feira;Inglês V;Prof. Msc. Risleide Lucia dos Santos
+6 GEO;18:45:00-19:35:00;Lab. de Desenho e Topografia 02;Segunda-feira;Posicionamento por Satélite;Prof. Esp. Matheus de Oliveira Lorena
+6 GEO;19:35:00-20:25:00;Lab. de Desenho e Topografia 02;Segunda-feira;Posicionamento por Satélite;Prof. Esp. Matheus de Oliveira Lorena
+6 GEO;20:25:00-21:25:00;Lab. de Desenho e Topografia 02;Segunda-feira;Fotogrametria Analógica e Digital;Prof. Me. Adilson Rodolfo Neves
+6 GEO;21:25:00-22:15:00;Lab. de Desenho e Topografia 02;Segunda-feira;Fotogrametria Analógica e Digital;Prof. Me. Adilson Rodolfo Neves
+6 GEO;22:15:00-23:05:00;Lab. de Desenho e Topografia 02;Segunda-feira;Fotogrametria Analógica e Digital;Prof. Me. Adilson Rodolfo Neves
+6 GEO;18:45:00-19:35:00;Lab. de Desenho e Topografia 02;Terça-feira;Cadastro Técnico Multifinalitário;Prof. Ma. Yara da Cruz Ferreira
+6 GEO;19:35:00-20:25:00;Lab. de Desenho e Topografia 02;Terça-feira;Cadastro Técnico Multifinalitário;Prof. Ma. Yara da Cruz Ferreira
+6 GEO;20:25:00-21:25:00;Lab. de Desenho e Topografia 02;Terça-feira;Geomarketing;Prof. Ma. Yara da Cruz Ferreira
+6 GEO;21:25:00-22:15:00;Lab. de Desenho e Topografia 02;Terça-feira;Geomarketing;Prof. Ma. Yara da Cruz Ferreira
+6 GEO;22:15:00-23:05:00;Lab. de Desenho e Topografia 02;Terça-feira;Geomarketing;Prof. Ma. Yara da Cruz Ferreira
+6 GEO;18:45:00-19:35:00;Lab. de Desenho e Topografia 02;Quarta-feira;Integração e Análise de Dados Territoriais;Prof. Dr. Nilton de Jesus
+6 GEO;19:35:00-20:25:00;Lab. de Desenho e Topografia 02;Quarta-feira;Integração e Análise de Dados Territoriais;Prof. Dr. Nilton de Jesus
+6 GEO;20:25:00-21:25:00;Lab. de Desenho e Topografia 02;Quarta-feira;Fotogrametria Analógica e Digital;Prof. Me. Adilson Rodolfo Neves
+6 GEO;21:25:00-22:15:00;Lab. de Desenho e Topografia 02;Quarta-feira;Inglês VI;Prof. Joanize Aparecida dos Santos Mohallem Paiva
+6 GEO;22:15:00-23:05:00;Lab. de Desenho e Topografia 02;Quarta-feira;Inglês VI;Prof. Joanize Aparecida dos Santos Mohallem Paiva
+6 GEO;18:45:00-19:35:00;Lab. de Desenho e Topografia 02;Quinta-feira;Projetos 2;Prof. Dra. Karen Espinosa
+6 GEO;19:35:00-20:25:00;Lab. de Desenho e Topografia 02;Quinta-feira;Projetos 2;Prof. Dra. Karen Espinosa
+6 GEO;20:25:00-21:25:00;Lab. de Desenho e Topografia 02;Quinta-feira;Georreferenciamento de Imóveis Rurais;Prof. Me. Adilson Rodolfo Neves
+6 GEO;21:25:00-22:15:00;Lab. de Desenho e Topografia 02;Quinta-feira;Georreferenciamento de Imóveis Rurais;Prof. Me. Adilson Rodolfo Neves
+6 GEO;22:15:00-23:05:00;Lab. de Desenho e Topografia 02;Quinta-feira;Geomarketing;Prof. Ma. Yara da Cruz Ferreira
+6 GEO;18:45:00-19:35:00;Lab. de Desenho e Topografia 02;Sexta-feira;Padrões de Distribuição de Informações em SIG;Prof. Dr. Daniel José de Andrade
+6 GEO;19:35:00-20:25:00;Lab. de Desenho e Topografia 02;Sexta-feira;Padrões de Distribuição de Informações em SIG;Prof. Dr. Daniel José de Andrade
+6 GEO;20:25:00-21:25:00;Lab. de Desenho e Topografia 02;Sexta-feira;Integração e Análise de Dados Territoriais;Prof. Dr. Nilton de Jesus
+6 GEO;21:25:00-22:15:00;Lab. de Desenho e Topografia 02;Sexta-feira;Integração e Análise de Dados Territoriais;Prof. Dr. Nilton de Jesus
+6 GEO;22:15:00-23:05:00;Lab. de Desenho e Topografia 02;Sexta-feira;Integração e Análise de Dados Territoriais;Prof. Dr. Nilton de Jesus
+1 MARH;18:45:00-19:35:00;Lab. de Análises Ambientais 04;Segunda-feira;Ciências Ambientais e das Águas;Prof. Me. Wellington Rios
+1 MARH;19:35:00-20:25:00;Lab. de Análises Ambientais 04;Segunda-feira;Ciências Ambientais e das Águas;Prof. Me. Wellington Rios
+1 MARH;20:25:00-21:25:00;Lab. de Análises Ambientais 04;Segunda-feira;Inglês I;Prof. Esp. Mariana Timponi Rodrigues
+1 MARH;21:25:00-22:15:00;Lab. de Análises Ambientais 04;Segunda-feira;Inglês I;Prof. Esp. Mariana Timponi Rodrigues
+1 MARH;22:15:00-23:05:00;Lab. de Análises Ambientais 04;Segunda-feira;Fundamentos da Comunicação Empresarial;Prof. Esp. Mariana Timponi Rodrigues
+1 MARH;18:45:00-19:35:00;Lab. de Análises Ambientais 04;Terça-feira;Química Geral;Prof. Dr. Jorge Tadao Matsushima
+1 MARH;19:35:00-20:25:00;Lab. de Análises Ambientais 04;Terça-feira;Química Geral;Prof. Dr. Jorge Tadao Matsushima
+1 MARH;20:25:00-21:25:00;Lab. de Análises Ambientais 04;Terça-feira;Fundamentos da Comunicação Empresarial;Prof. Esp. Mariana Timponi Rodrigues
+1 MARH;21:25:00-22:15:00;Lab. de Análises Ambientais 04;Terça-feira;Metodologia da Pesquisa Científico-Tecnológica;Prof. Dra. Vivian Hyodo
+1 MARH;22:15:00-23:05:00;Lab. de Análises Ambientais 04;Terça-feira;Metodologia da Pesquisa Científico-Tecnológica;Prof. Dra. Vivian Hyodo
+1 MARH;18:45:00-19:35:00;Lab. de Análises Ambientais 04;Quarta-feira;Química Geral;Prof. Dr. Jorge Tadao Matsushima
+1 MARH;19:35:00-20:25:00;Lab. de Análises Ambientais 04;Quarta-feira;Química Geral;Prof. Dr. Jorge Tadao Matsushima
+1 MARH;20:25:00-21:25:00;Lab. de Análises Ambientais 04;Quarta-feira;Sociologia Ambiental;Prof. Dr. Érico Luciano Pagotto
+1 MARH;21:25:00-22:15:00;Lab. de Análises Ambientais 04;Quarta-feira;Sociologia Ambiental;Prof. Dr. Érico Luciano Pagotto
+1 MARH;18:45:00-19:35:00;Lab. de Análises Ambientais 04;Quinta-feira;Biologia;Prof. Dra. Vivian Hyodo
+1 MARH;19:35:00-20:25:00;Lab. de Análises Ambientais 04;Quinta-feira;Matemática Aplicada;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+1 MARH;20:25:00-21:25:00;Lab. de Análises Ambientais 04;Quinta-feira;Matemática Aplicada;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+1 MARH;21:25:00-22:15:00;Lab. de Análises Ambientais 04;Quinta-feira;Matemática Aplicada;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+1 MARH;22:15:00-23:05:00;Lab. de Análises Ambientais 04;Quinta-feira;Matemática Aplicada;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+1 MARH;18:45:00-19:35:00;Lab. de Análises Ambientais 04;Sexta-feira;Biologia;Prof. Dra. Vivian Hyodo
+1 MARH;19:35:00-20:25:00;Lab. de Análises Ambientais 04;Sexta-feira;Biologia;Prof. Dra. Vivian Hyodo
+1 MARH;20:25:00-21:25:00;Lab. de Análises Ambientais 04;Sexta-feira;Biologia;Prof. Dra. Vivian Hyodo
+1 MARH;21:25:00-22:15:00;Lab. de Análises Ambientais 04;Sexta-feira;Geociência Ambiental;Prof. Me. Gerson Freitas Júnior
+1 MARH;22:15:00-23:05:00;Lab. de Análises Ambientais 04;Sexta-feira;Geociência Ambiental;Prof. Me. Gerson Freitas Júnior
+2 MARH;18:45:00-19:35:00;Lab. de Microbiologia Ambiental 03;Segunda-feira;Inglês II;Prof. Esp. Mariana Timponi Rodrigues
+2 MARH;19:35:00-20:25:00;Lab. de Microbiologia Ambiental 03;Segunda-feira;Inglês II;Prof. Esp. Mariana Timponi Rodrigues
+2 MARH;20:25:00-21:25:00;Lab. de Microbiologia Ambiental 03;Segunda-feira;Sensoriamento Remoto e Clima;Prof. Msc. Jane Delane Verona
+2 MARH;21:25:00-22:15:00;Lab. de Microbiologia Ambiental 03;Segunda-feira;Sensoriamento Remoto e Clima;Prof. Msc. Jane Delane Verona
+2 MARH;22:15:00-23:05:00;Lab. de Microbiologia Ambiental 03;Segunda-feira;Hidrologia e Recursos Hídricos;Prof. Dra. Rita de Cássia von Randow
+2 MARH;18:45:00-19:35:00;Lab. de Microbiologia Ambiental 03;Terça-feira;Cartografia, Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+2 MARH;19:35:00-20:25:00;Lab. de Microbiologia Ambiental 03;Terça-feira;Cartografia, Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+2 MARH;20:25:00-21:25:00;Lab. de Microbiologia Ambiental 03;Terça-feira;Físico Química Aplicada à Gestão Ambiental;Prof. Dr. Jorge Tadao Matsushima
+2 MARH;21:25:00-22:15:00;Lab. de Microbiologia Ambiental 03;Terça-feira;Físico Química Aplicada à Gestão Ambiental;Prof. Dr. Jorge Tadao Matsushima
+2 MARH;22:15:00-23:05:00;Lab. de Microbiologia Ambiental 03;Terça-feira;Físico Química Aplicada à Gestão Ambiental;Prof. Dr. Jorge Tadao Matsushima
+2 MARH;18:45:00-19:35:00;Lab. de Microbiologia Ambiental 03;Quarta-feira;Microbiologia Ambiental;Prof. Dra. Selma Candelária Genari
+2 MARH;19:35:00-20:25:00;Lab. de Microbiologia Ambiental 03;Quarta-feira;Microbiologia Ambiental;Prof. Dra. Selma Candelária Genari
+2 MARH;20:25:00-21:25:00;Lab. de Microbiologia Ambiental 03;Quarta-feira;Físico Química Aplicada à Gestão Ambiental;Prof. Dr. Jorge Tadao Matsushima
+2 MARH;21:25:00-22:15:00;Lab. de Microbiologia Ambiental 03;Quarta-feira;Cartografia, Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+2 MARH;22:15:00-23:05:00;Lab. de Microbiologia Ambiental 03;Quarta-feira;Cartografia, Topografia e Batimetria;Prof. Me. Adilson Rodolfo Neves
+2 MARH;19:35:00-20:25:00;Lab. de Microbiologia Ambiental 03;Quinta-feira;Ecologia;Prof. Dra. Vivian Hyodo
+2 MARH;20:25:00-21:25:00;Lab. de Microbiologia Ambiental 03;Quinta-feira;Ecologia;Prof. Dra. Vivian Hyodo
+2 MARH;21:25:00-22:15:00;Lab. de Microbiologia Ambiental 03;Quinta-feira;Climatologia e Meteorologia;Prof. Dra. Rita de Cássia von Randow
+2 MARH;22:15:00-23:05:00;Lab. de Microbiologia Ambiental 03;Quinta-feira;Climatologia e Meteorologia;Prof. Dra. Rita de Cássia von Randow
+2 MARH;18:45:00-19:35:00;Lab. de Microbiologia Ambiental 03;Sexta-feira;Hidrologia e Recursos Hídricos;Prof. Dra. Rita de Cássia von Randow
+2 MARH;19:35:00-20:25:00;Lab. de Microbiologia Ambiental 03;Sexta-feira;Hidrologia e Recursos Hídricos;Prof. Dra. Rita de Cássia von Randow
+2 MARH;20:25:00-21:25:00;Lab. de Microbiologia Ambiental 03;Sexta-feira;Hidrologia e Recursos Hídricos;Prof. Dra. Rita de Cássia von Randow
+2 MARH;21:25:00-22:15:00;Lab. de Microbiologia Ambiental 03;Sexta-feira;Ecologia;Prof. Dra. Vivian Hyodo
+2 MARH;22:15:00-23:05:00;Lab. de Microbiologia Ambiental 03;Sexta-feira;Ecologia;Prof. Dra. Vivian Hyodo
+3 MARH;18:45:00-19:35:00;Lab. de Química Ambiental 01;Segunda-feira;Hidráulica Fluvial;Prof. Me. Paulo José Maria Filho
+3 MARH;19:35:00-20:25:00;Lab. de Química Ambiental 01;Segunda-feira;Estatística;Prof. Dra. Nanci de Oliveira
+3 MARH;20:25:00-21:25:00;Lab. de Química Ambiental 01;Segunda-feira;Estatística;Prof. Dra. Nanci de Oliveira
+3 MARH;21:25:00-22:15:00;Lab. de Química Ambiental 01;Segunda-feira;Estatística;Prof. Dra. Nanci de Oliveira
+3 MARH;22:15:00-23:05:00;Lab. de Química Ambiental 01;Segunda-feira;Estatística;Prof. Dra. Nanci de Oliveira
+3 MARH;18:45:00-19:35:00;Lab. de Química Ambiental 01;Terça-feira;Gestão da Qualidade;Prof. Dr. Renato Mortin
+3 MARH;19:35:00-20:25:00;Lab. de Química Ambiental 01;Terça-feira;Gestão da Qualidade;Prof. Dr. Renato Mortin
+3 MARH;20:25:00-21:25:00;Lab. de Química Ambiental 01;Terça-feira;Limnologia;Prof. Dra. Vivian Hyodo
+3 MARH;21:25:00-22:15:00;Lab. de Química Ambiental 01;Terça-feira;Inglês III;Prof. Esp. Marcelo Augusto Sudo
+3 MARH;22:15:00-23:05:00;Lab. de Química Ambiental 01;Terça-feira;Inglês III;Prof. Esp. Marcelo Augusto Sudo
+3 MARH;18:45:00-19:35:00;Lab. de Química Ambiental 01;Quarta-feira;Saneamento Ambiental I;Prof. Dra. Vivian Hyodo
+3 MARH;19:35:00-20:25:00;Lab. de Química Ambiental 01;Quarta-feira;Saneamento Ambiental I;Prof. Dra. Vivian Hyodo
+3 MARH;20:25:00-21:25:00;Lab. de Química Ambiental 01;Quarta-feira;Limnologia;Prof. Dra. Vivian Hyodo
+3 MARH;21:25:00-22:15:00;Lab. de Química Ambiental 01;Quarta-feira;Limnologia;Prof. Dra. Vivian Hyodo
+3 MARH;22:15:00-23:05:00;Lab. de Química Ambiental 01;Quarta-feira;Limnologia;Prof. Dra. Vivian Hyodo
+3 MARH;18:45:00-19:35:00;Lab. de Química Ambiental 01;Quinta-feira;Hidráulica Fluvial;Prof. Me. Paulo José Maria Filho
+3 MARH;19:35:00-20:25:00;Lab. de Química Ambiental 01;Quinta-feira;Hidráulica Fluvial;Prof. Me. Paulo José Maria Filho
+3 MARH;20:25:00-21:25:00;Lab. de Química Ambiental 01;Quinta-feira;Hidráulica Fluvial;Prof. Me. Paulo José Maria Filho
+3 MARH;21:25:00-22:15:00;Lab. de Química Ambiental 01;Quinta-feira;Saneamento Ambiental I;Prof. Dra. Vivian Hyodo
+3 MARH;22:15:00-23:05:00;Lab. de Química Ambiental 01;Quinta-feira;Saneamento Ambiental I;Prof. Dra. Vivian Hyodo
+3 MARH;19:35:00-20:25:00;Lab. de Química Ambiental 01;Sexta-feira;Planejamento e Conservação Ambiental;Prof. Me. Gerson Freitas Júnior
+3 MARH;20:25:00-21:25:00;Lab. de Química Ambiental 01;Sexta-feira;Planejamento e Conservação Ambiental;Prof. Me. Gerson Freitas Júnior
+3 MARH;21:25:00-22:15:00;Lab. de Química Ambiental 01;Sexta-feira;IPDI;Prof. Dr. Daniel
+3 MARH;22:15:00-23:05:00;Lab. de Química Ambiental 01;Sexta-feira;IPDI;Prof. Dr. Daniel
+5 MARH;07:30:00-08:20:00;Lab. de Química Ambiental 01;Segunda-feira;Legislação Ambiental;Prof. Me. Kenji Taniguchi
+5 MARH;08:20:00-09:10:00;Lab. de Química Ambiental 01;Segunda-feira;Legislação Ambiental;Prof. Me. Kenji Taniguchi
+5 MARH;09:20:00-10:10:00;Lab. de Química Ambiental 01;Segunda-feira;Legislação Ambiental;Prof. Me. Kenji Taniguchi
+5 MARH;10:10:00-11:00:00;Lab. de Química Ambiental 01;Segunda-feira;Legislação Ambiental;Prof. Me. Kenji Taniguchi
+5 MARH;11:10:00-12:00:00;Lab. de Química Ambiental 01;Segunda-feira;Águas Subterrâneas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+5 MARH;12:00:00-12:50:00;Lab. de Química Ambiental 01;Segunda-feira;Águas Subterrâneas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+5 MARH;07:30:00-08:20:00;Lab. de Química Ambiental 01;Quarta-feira;Planejamento e Gestão Urbana;Prof. M. Sc. Mario Sérgio Soléo Scalambrino
+5 MARH;08:20:00-09:10:00;Lab. de Química Ambiental 01;Quarta-feira;Planejamento e Gestão Urbana;Prof. M. Sc. Mario Sérgio Soléo Scalambrino
+5 MARH;09:20:00-10:10:00;Lab. de Química Ambiental 01;Quarta-feira;Planejamento e Gestão Urbana;Prof. M. Sc. Mario Sérgio Soléo Scalambrino
+5 MARH;10:10:00-11:00:00;Lab. de Química Ambiental 01;Quarta-feira;Planejamento e Gestão Urbana;Prof. M. Sc. Mario Sérgio Soléo Scalambrino
+5 MARH;11:10:00-12:00:00;Lab. de Química Ambiental 01;Quarta-feira;Águas Subterrâneas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+5 MARH;12:00:00-12:50:00;Lab. de Química Ambiental 01;Quarta-feira;Águas Subterrâneas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+5 MARH;07:30:00-08:20:00;Lab. de Química Ambiental 01;Quinta-feira;Projetos Ambientais I;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;08:20:00-09:10:00;Lab. de Química Ambiental 01;Quinta-feira;Projetos Ambientais I;Prof. Dra. Vivian Hyodo
+5 MARH;09:20:00-10:10:00;Lab. de Química Ambiental 01;Quinta-feira;Controle e Monitoramento da Poluição Atmosférica e Sonora;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;10:10:00-11:00:00;Lab. de Química Ambiental 01;Quinta-feira;Controle e Monitoramento da Poluição Atmosférica e Sonora;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;11:10:00-12:00:00;Lab. de Química Ambiental 01;Quinta-feira;Ecotecnologia;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;12:00:00-12:50:00;Lab. de Química Ambiental 01;Quinta-feira;Ecotecnologia;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;07:30:00-08:20:00;Lab. de Química Ambiental 01;Sexta-feira;Gerenciamento de Resíduos;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;08:20:00-09:10:00;Lab. de Química Ambiental 01;Sexta-feira;Gerenciamento de Resíduos;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;09:20:00-10:10:00;Lab. de Química Ambiental 01;Sexta-feira;Ecotecnologia;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;10:10:00-11:00:00;Lab. de Química Ambiental 01;Sexta-feira;Ecotecnologia;Prof. M.Sc. Luiz Gustavo Galhardo Mendes
+5 MARH;11:10:00-12:00:00;Lab. de Química Ambiental 01;Sexta-feira;Sistemas de Gestão e Auditorias Ambientais;Prof. Me. Antonio Egydio São Thiago Graça
+5 MARH;12:00:00-12:50:00;Lab. de Química Ambiental 01;Sexta-feira;Sistemas de Gestão e Auditorias Ambientais;Prof. Me. Antonio Egydio São Thiago Graça
+6 MARH;09:20:00-10:10:00;Lab. de Análises Ambientais 04;Segunda-feira;Projetos Ambientais II;Prof. Me. Paulo José Maria Filho
+6 MARH;10:10:00-11:00:00;Lab. de Análises Ambientais 04;Segunda-feira;Projetos Ambientais II;Prof. Me. Paulo José Maria Filho
+6 MARH;11:10:00-12:00:00;Lab. de Análises Ambientais 04;Segunda-feira;Projetos Ambientais II;Prof. Me. Paulo José Maria Filho
+6 MARH;12:00:00-12:50:00;Lab. de Análises Ambientais 04;Segunda-feira;Projetos Ambientais II;Prof. Me. Paulo José Maria Filho
+6 MARH;07:30:00-08:20:00;Lab. de Análises Ambientais 04;Terça-feira;Revitalização de Rios e Recuperação de Áreas Degradadas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;08:20:00-09:10:00;Lab. de Análises Ambientais 04;Terça-feira;Revitalização de Rios e Recuperação de Áreas Degradadas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;09:20:00-10:10:00;Lab. de Análises Ambientais 04;Terça-feira;Revitalização de Rios e Recuperação de Áreas Degradadas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;10:10:00-11:00:00;Lab. de Análises Ambientais 04;Terça-feira;Revitalização de Rios e Recuperação de Áreas Degradadas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;11:10:00-12:00:00;Lab. de Análises Ambientais 04;Terça-feira;Planejamento Integrado de Bacias Hidrográficas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;12:00:00-12:50:00;Lab. de Análises Ambientais 04;Terça-feira;Planejamento Integrado de Bacias Hidrográficas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;09:20:00-10:10:00;Lab. de Análises Ambientais 04;Quarta-feira;Turismo;Prof. MSc. Fernanda da Silveira Bueno
+6 MARH;10:10:00-11:00:00;Lab. de Análises Ambientais 04;Quarta-feira;Turismo;Prof. MSc. Fernanda da Silveira Bueno
+6 MARH;11:10:00-12:00:00;Lab. de Análises Ambientais 04;Quarta-feira;Turismo;Prof. MSc. Fernanda da Silveira Bueno
+6 MARH;12:00:00-12:50:00;Lab. de Análises Ambientais 04;Quarta-feira;Turismo;Prof. MSc. Fernanda da Silveira Bueno
+6 MARH;07:30:00-08:20:00;Lab. de Análises Ambientais 04;Quinta-feira;Energia Alternativas;Prof. Dr. Renato Mortin
+6 MARH;08:20:00-09:10:00;Lab. de Análises Ambientais 04;Quinta-feira;Energia Alternativas;Prof. Dr. Renato Mortin
+6 MARH;09:20:00-10:10:00;Lab. de Análises Ambientais 04;Quinta-feira;Energia Alternativas;Prof. Dr. Renato Mortin
+6 MARH;10:10:00-11:00:00;Lab. de Análises Ambientais 04;Quinta-feira;Energia Alternativas;Prof. Dr. Renato Mortin
+6 MARH;11:10:00-12:00:00;Lab. de Análises Ambientais 04;Quinta-feira;Planejamento Integrado de Bacias Hidrográficas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+6 MARH;12:00:00-12:50:00;Lab. de Análises Ambientais 04;Quinta-feira;Planejamento Integrado de Bacias Hidrográficas;Prof. MSc. Luiz Sérgio Gonçalves Aguiar
+1 DSM;18:45:00-19:35:00;Lab. de Informática 207;Segunda-feira;Engenharia de Software I;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;19:35:00-20:25:00;Lab. de Informática 207;Segunda-feira;Engenharia de Software I;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;20:25:00-21:25:00;Lab. de Informática 207;Segunda-feira;Engenharia de Software I;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;21:25:00-22:15:00;Lab. de Informática 207;Segunda-feira;Engenharia de Software I;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;22:15:00-23:05:00;Lab. de Informática 207;Segunda-feira;Sistemas Operacionais e Redes de Comp.;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;18:45:00-19:35:00;Lab. de Informática 207;Terça-feira;Modelagem de Banco de Dados;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;19:35:00-20:25:00;Lab. de Informática 207;Terça-feira;Modelagem de Banco de Dados;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;20:25:00-21:25:00;Lab. de Informática 207;Terça-feira;Modelagem de Banco de Dados;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;21:25:00-22:15:00;Lab. de Informática 207;Terça-feira;Design Digital;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;22:15:00-23:05:00;Lab. de Informática 207;Terça-feira;Design Digital;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;18:45:00-19:35:00;Lab. de Informática 207;Quarta-feira;Algoritmos e Lógica de Programação;Prof. Dr. Arley Ferreira de Souza
+1 DSM;19:35:00-20:25:00;Lab. de Informática 207;Quarta-feira;Algoritmos e Lógica de Programação;Prof. Dr. Arley Ferreira de Souza
+1 DSM;20:25:00-21:25:00;Lab. de Informática 207;Quarta-feira;Algoritmos e Lógica de Programação;Prof. Dr. Arley Ferreira de Souza
+1 DSM;21:25:00-22:15:00;Lab. de Informática 207;Quarta-feira;Algoritmos e Lógica de Programação;Prof. Dr. Arley Ferreira de Souza
+1 DSM;18:45:00-19:35:00;Lab. de Informática 207;Quinta-feira;Sistemas Operacionais e Redes de Comp.;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;19:35:00-20:25:00;Lab. de Informática 207;Quinta-feira;Sistemas Operacionais e Redes de Comp.;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;20:25:00-21:25:00;Lab. de Informática 207;Quinta-feira;Sistemas Operacionais e Redes de Comp.;Prof. Me. Antonio Egydio São Thiago Graça
+1 DSM;21:25:00-22:15:00;Lab. de Informática 207;Quinta-feira;Design Digital;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;22:15:00-23:05:00;Lab. de Informática 207;Quinta-feira;Design Digital;Prof. Esp. Marcelo Augusto Sudo
+1 DSM;18:45:00-19:35:00;Lab. de Informática 207;Sexta-feira;Desenvolvimento Web I;Prof. Esp. Henrique Duarte Borges Louro
+1 DSM;19:35:00-20:25:00;Lab. de Informática 207;Sexta-feira;Desenvolvimento Web I;Prof. Esp. Henrique Duarte Borges Louro
+1 DSM;20:25:00-21:25:00;Lab. de Informática 207;Sexta-feira;Desenvolvimento Web I;Prof. Esp. Henrique Duarte Borges Louro
+1 DSM;21:25:00-22:15:00;Lab. de Informática 207;Sexta-feira;Desenvolvimento Web I;Prof. Esp. Henrique Duarte Borges Louro
+1 DSM;22:15:00-23:05:00;Lab. de Informática 207;Sexta-feira;Modelagem de Banco de Dados;Prof. Esp. Marcelo Augusto Sudo
+2 DSM;18:45:00-19:35:00;Lab. de Informática 209;Segunda-feira;Técnicas de Programação I;Prof. Esp. Henrique Duarte Borges Louro
+2 DSM;19:35:00-20:25:00;Lab. de Informática 209;Segunda-feira;Técnicas de Programação I;Prof. Esp. Henrique Duarte Borges Louro
+2 DSM;20:25:00-21:25:00;Lab. de Informática 209;Segunda-feira;Técnicas de Programação I;Prof. Esp. Henrique Duarte Borges Louro
+2 DSM;21:25:00-22:15:00;Lab. de Informática 209;Segunda-feira;Técnicas de Programação I;Prof. Esp. Henrique Duarte Borges Louro
+2 DSM;22:15:00-23:05:00;Lab. de Informática 209;Segunda-feira;Engenharia de Software II;Prof. Esp. André Olímpio
+2 DSM;18:45:00-19:35:00;Lab. de Informática 209;Terça-feira;Desenvolvimento Web II;Prof. Dr. Arley Ferreira de Souza
+2 DSM;19:35:00-20:25:00;Lab. de Informática 209;Terça-feira;Desenvolvimento Web II;Prof. Dr. Arley Ferreira de Souza
+2 DSM;20:25:00-21:25:00;Lab. de Informática 209;Terça-feira;Desenvolvimento Web II;Prof. Dr. Arley Ferreira de Souza
+2 DSM;21:25:00-22:15:00;Lab. de Informática 209;Terça-feira;Banco de Dados – Relacional;Prof. Esp. Lucineide Nunes Pimenta
+2 DSM;22:15:00-23:05:00;Lab. de Informática 209;Terça-feira;Banco de Dados – Relacional;Prof. Esp. Lucineide Nunes Pimenta
+2 DSM;18:45:00-19:35:00;Lab. de Informática 209;Quarta-feira;Matemática para Computação;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;19:35:00-20:25:00;Lab. de Informática 209;Quarta-feira;Matemática para Computação;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;20:25:00-21:25:00;Lab. de Informática 209;Quarta-feira;Matemática para Computação;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;21:25:00-22:15:00;Lab. de Informática 209;Quarta-feira;Matemática para Computação;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;22:15:00-23:05:00;Lab. de Informática 209;Quarta-feira;Desenvolvimento Web II;Prof. Dr. Arley Ferreira de Souza
+2 DSM;18:45:00-19:35:00;Lab. de Informática 209;Quinta-feira;Estrutura de Dados;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;19:35:00-20:25:00;Lab. de Informática 209;Quinta-feira;Estrutura de Dados;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;20:25:00-21:25:00;Lab. de Informática 209;Quinta-feira;Estrutura de Dados;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;21:25:00-22:15:00;Lab. de Informática 209;Quinta-feira;Estrutura de Dados;Prof. Dr. Fabrício Galende Marques de Carvalho
+2 DSM;18:45:00-19:35:00;Lab. de Informática 209;Sexta-feira;Engenharia de Software II;Prof. Esp. André Olímpio
+2 DSM;19:35:00-20:25:00;Lab. de Informática 209;Sexta-feira;Engenharia de Software II;Prof. Esp. André Olímpio
+2 DSM;20:25:00-21:25:00;Lab. de Informática 209;Sexta-feira;Engenharia de Software II;Prof. Esp. André Olímpio
+2 DSM;21:25:00-22:15:00;Lab. de Informática 209;Sexta-feira;Banco de Dados – Relacional;Prof. Esp. Lucineide Nunes Pimenta
+2 DSM;22:15:00-23:05:00;Lab. de Informática 209;Sexta-feira;Banco de Dados – Relacional;Prof. Esp. Lucineide Nunes Pimenta
+3 DSM;18:45:00-19:35:00;Lab. de Informática 105;Segunda-feira;Banco de Dados - Não Relacional;Prof. Esp. Lucineide Nunes Pimenta
+3 DSM;19:35:00-20:25:00;Lab. de Informática 105;Segunda-feira;Banco de Dados - Não Relacional;Prof. Esp. Lucineide Nunes Pimenta
+3 DSM;20:25:00-21:25:00;Lab. de Informática 105;Segunda-feira;Banco de Dados - Não Relacional;Prof. Esp. Lucineide Nunes Pimenta
+3 DSM;21:25:00-22:15:00;Lab. de Informática 105;Segunda-feira;Banco de Dados - Não Relacional;Prof. Esp. Lucineide Nunes Pimenta
+3 DSM;22:15:00-23:05:00;Lab. de Informática 105;Segunda-feira;Técnicas de Programação II;Prof. Esp. Henrique Duarte Borges Louro
+3 DSM;18:45:00-19:35:00;Lab. de Informática 105;Terça-feira;Gestão Ágil de Projetos de Software;Prof. Me. Ronaldo Emerick Moreira
+3 DSM;19:35:00-20:25:00;Lab. de Informática 105;Terça-feira;Gestão Ágil de Projetos de Software;Prof. Me. Ronaldo Emerick Moreira
+3 DSM;20:25:00-21:25:00;Lab. de Informática 105;Terça-feira;Gestão Ágil de Projetos de Software;Prof. Me. Ronaldo Emerick Moreira
+3 DSM;21:25:00-22:15:00;Lab. de Informática 105;Terça-feira;Interação Humano Computador;Prof. Ma. Adriana Antividad López Valverde
+3 DSM;22:15:00-23:05:00;Lab. de Informática 105;Terça-feira;Interação Humano Computador;Prof. Ma. Adriana Antividad López Valverde
+3 DSM;18:45:00-19:35:00;Lab. de Informática 105;Quarta-feira;Álgebra Linear;Prof. Dra. Rita de Cássia von Randow
+3 DSM;19:35:00-20:25:00;Lab. de Informática 105;Quarta-feira;Álgebra Linear;Prof. Dra. Rita de Cássia von Randow
+3 DSM;20:25:00-21:25:00;Lab. de Informática 105;Quarta-feira;Álgebra Linear;Prof. Dra. Rita de Cássia von Randow
+3 DSM;21:25:00-22:15:00;Lab. de Informática 105;Quarta-feira;Álgebra Linear;Prof. Dra. Rita de Cássia von Randow
+3 DSM;22:15:00-23:05:00;Lab. de Informática 105;Quarta-feira;Gestão Ágil de Projetos de Software;Prof. Me. Ronaldo Emerick Moreira
+3 DSM;18:45:00-19:35:00;Lab. de Informática 105;Quinta-feira;Técnicas de Programação II;Prof. Esp. Henrique Duarte Borges Louro
+3 DSM;19:35:00-20:25:00;Lab. de Informática 105;Quinta-feira;Técnicas de Programação II;Prof. Esp. Henrique Duarte Borges Louro
+3 DSM;20:25:00-21:25:00;Lab. de Informática 105;Quinta-feira;Técnicas de Programação II;Prof. Esp. Henrique Duarte Borges Louro
+3 DSM;21:25:00-22:15:00;Lab. de Informática 105;Quinta-feira;Inglês I;Prof. Esp. Maria Lucia de Oliveira
+3 DSM;22:15:00-23:05:00;Lab. de Informática 105;Quinta-feira;Inglês I;Prof. Esp. Maria Lucia de Oliveira
+3 DSM;18:45:00-19:35:00;Lab. de Informática 105;Sexta-feira;Desenvolvimento Web III;Prof. Esp. Neymar Siqueira Dellareti
+3 DSM;19:35:00-20:25:00;Lab. de Informática 105;Sexta-feira;Desenvolvimento Web III;Prof. Esp. Neymar Siqueira Dellareti
+3 DSM;20:25:00-21:25:00;Lab. de Informática 105;Sexta-feira;Desenvolvimento Web III;Prof. Esp. Neymar Siqueira Dellareti
+3 DSM;21:25:00-22:15:00;Lab. de Informática 105;Sexta-feira;Desenvolvimento Web III;Prof. Esp. Neymar Siqueira Dellareti
+4 DSM;18:45:00-19:35:00;Lab. de Informática 108;Segunda-feira;Programação para Dispositivos Móveis I;Prof. Esp. André Olímpio
+4 DSM;19:35:00-20:25:00;Lab. de Informática 108;Segunda-feira;Programação para Dispositivos Móveis I;Prof. Esp. André Olímpio
+4 DSM;20:25:00-21:25:00;Lab. de Informática 108;Segunda-feira;Programação para Dispositivos Móveis I;Prof. Esp. André Olímpio
+4 DSM;21:25:00-22:15:00;Lab. de Informática 108;Segunda-feira;Programação para Dispositivos Móveis I;Prof. Esp. André Olímpio
+4 DSM;22:15:00-23:05:00;Lab. de Informática 108;Segunda-feira;Integração e Entrega Contínua;Prof. Esp. Lucineide Nunes Pimenta
+4 DSM;18:45:00-19:35:00;Lab. de Informática 108;Terça-feira;Laboratório de Desenvolvimento Web;Prof. Esp. Neymar Siqueira Dellareti
+4 DSM;19:35:00-20:25:00;Lab. de Informática 108;Terça-feira;Laboratório de Desenvolvimento Web;Prof. Esp. Neymar Siqueira Dellareti
+4 DSM;20:25:00-21:25:00;Lab. de Informática 108;Terça-feira;Laboratório de Desenvolvimento Web;Prof. Esp. Neymar Siqueira Dellareti
+4 DSM;21:25:00-22:15:00;Lab. de Informática 108;Terça-feira;Laboratório de Desenvolvimento Web;Prof. Esp. Neymar Siqueira Dellareti
+4 DSM;18:45:00-19:35:00;Lab. de Informática 108;Quarta-feira;Internet das Coisas e Aplicações;Prof. Me. Rodrigo Monteiro de Barros Santana
+4 DSM;19:35:00-20:25:00;Lab. de Informática 108;Quarta-feira;Internet das Coisas e Aplicações;Prof. Me. Rodrigo Monteiro de Barros Santana
+4 DSM;20:25:00-21:25:00;Lab. de Informática 108;Quarta-feira;Internet das Coisas e Aplicações;Prof. Me. Rodrigo Monteiro de Barros Santana
+4 DSM;21:25:00-22:15:00;Lab. de Informática 108;Quarta-feira;Internet das Coisas e Aplicações;Prof. Me. Rodrigo Monteiro de Barros Santana
+4 DSM;22:15:00-23:05:00;Lab. de Informática 108;Quarta-feira;Estatística Aplicada;Prof. Dra. Rita de Cássia von Randow
+4 DSM;18:45:00-19:35:00;Lab. de Informática 108;Quinta-feira;Estatística Aplicada;Prof. Dra. Rita de Cássia von Randow
+4 DSM;19:35:00-20:25:00;Lab. de Informática 108;Quinta-feira;Estatística Aplicada;Prof. Dra. Rita de Cássia von Randow
+4 DSM;20:25:00-21:25:00;Lab. de Informática 108;Quinta-feira;Estatística Aplicada;Prof. Dra. Rita de Cássia von Randow
+4 DSM;21:25:00-22:15:00;Lab. de Informática 108;Quinta-feira;Experiência do Usuário;Prof. Esp. Lucineide Nunes Pimenta
+4 DSM;22:15:00-23:05:00;Lab. de Informática 108;Quinta-feira;Experiência do Usuário;Prof. Esp. Lucineide Nunes Pimenta
+4 DSM;18:45:00-19:35:00;Lab. de Informática 108;Sexta-feira;Integração e Entrega Contínua;Prof. Esp. Lucineide Nunes Pimenta
+4 DSM;19:35:00-20:25:00;Lab. de Informática 108;Sexta-feira;Integração e Entrega Contínua;Prof. Esp. Lucineide Nunes Pimenta
+4 DSM;20:25:00-21:25:00;Lab. de Informática 108;Sexta-feira;Integração e Entrega Contínua;Prof. Esp. Lucineide Nunes Pimenta
+4 DSM;21:25:00-22:15:00;Lab. de Informática 108;Sexta-feira;Inglês II;Prof. Esp. Maria Lucia de Oliveira
+4 DSM;22:15:00-23:05:00;Lab. de Informática 108;Sexta-feira;Inglês II;Prof. Esp. Maria Lucia de Oliveira
+5 DSM;18:45:00-19:35:00;Lab. de Informática 205;Segunda-feira;Segurança no Des. de Aplicações;Prof. Dr. Daniel José de Andrade
+5 DSM;19:35:00-20:25:00;Lab. de Informática 205;Segunda-feira;Segurança no Des. de Aplicações;Prof. Dr. Daniel José de Andrade
+5 DSM;20:25:00-21:25:00;Lab. de Informática 205;Segunda-feira;Segurança no Des. de Aplicações;Prof. Dr. Daniel José de Andrade
+5 DSM;21:25:00-22:15:00;Lab. de Informática 205;Segunda-feira;Segurança no Des. de Aplicações;Prof. Dr. Daniel José de Andrade
+5 DSM;22:15:00-23:05:00;Lab. de Informática 205;Segunda-feira;Programação para Dispositivos Móveis II;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+5 DSM;18:45:00-19:35:00;Lab. de Informática 205;Terça-feira;Aprendizagem de Máquina;Prof. Me. Kenji Taniguchi
+5 DSM;19:35:00-20:25:00;Lab. de Informática 205;Terça-feira;Aprendizagem de Máquina;Prof. Me. Kenji Taniguchi
+5 DSM;20:25:00-21:25:00;Lab. de Informática 205;Terça-feira;Aprendizagem de Máquina;Prof. Me. Kenji Taniguchi
+5 DSM;21:25:00-22:15:00;Lab. de Informática 205;Terça-feira;Lab. de Des. para Dispositivos Móveis;Prof. Dr. Fabrício Galende Marques de Carvalho
+5 DSM;22:15:00-23:05:00;Lab. de Informática 205;Terça-feira;Lab. de Des. para Dispositivos Móveis;Prof. Dr. Fabrício Galende Marques de Carvalho
+5 DSM;18:45:00-19:35:00;Lab. de Informática 205;Quarta-feira;Computação em Nuvem I;Prof. Me. Ronaldo Emerick Moreira
+5 DSM;19:35:00-20:25:00;Lab. de Informática 205;Quarta-feira;Computação em Nuvem I;Prof. Me. Ronaldo Emerick Moreira
+5 DSM;20:25:00-21:25:00;Lab. de Informática 205;Quarta-feira;Computação em Nuvem I;Prof. Me. Ronaldo Emerick Moreira
+5 DSM;21:25:00-22:15:00;Lab. de Informática 205;Quarta-feira;Computação em Nuvem I;Prof. Me. Ronaldo Emerick Moreira
+5 DSM;22:15:00-23:05:00;Lab. de Informática 205;Quarta-feira;Aprendizagem de Máquina;Prof. Me. Kenji Taniguchi
+5 DSM;18:45:00-19:35:00;Lab. de Informática 205;Quinta-feira;Lab. de Des. para Dispositivos Móveis;Prof. Dr. Fabrício Galende Marques de Carvalho
+5 DSM;19:35:00-20:25:00;Lab. de Informática 205;Quinta-feira;Lab. de Des. para Dispositivos Móveis;Prof. Dr. Fabrício Galende Marques de Carvalho
+5 DSM;20:25:00-21:25:00;Lab. de Informática 205;Quinta-feira;Programação para Dispositivos Móveis II;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+5 DSM;21:25:00-22:15:00;Lab. de Informática 205;Quinta-feira;Programação para Dispositivos Móveis II;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+5 DSM;22:15:00-23:05:00;Lab. de Informática 205;Quinta-feira;Programação para Dispositivos Móveis II;Prof. Dra. Sanzara Nhiaia J.C. Hassmann
+5 DSM;18:45:00-19:35:00;Lab. de Informática 205;Sexta-feira;Inglês III;Prof. Joanize Aparecida dos Santos Mohallem Paiva
+5 DSM;19:35:00-20:25:00;Lab. de Informática 205;Sexta-feira;Inglês III;Prof. Joanize Aparecida dos Santos Mohallem Paiva
+5 DSM;20:25:00-21:25:00;Lab. de Informática 205;Sexta-feira;Fundamentos da Redação Técnica;Prof. Me. Celso de Oliveira
+5 DSM;21:25:00-22:15:00;Lab. de Informática 205;Sexta-feira;Fundamentos da Redação Técnica;Prof. Me. Celso de Oliveira
+
+
