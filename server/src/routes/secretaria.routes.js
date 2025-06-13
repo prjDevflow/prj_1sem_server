@@ -17,7 +17,8 @@ adminRoute.post("/busca-turma", secretariaBuscaTurma);
 adminRoute.post("/busca-dia", secretariaBuscaDia);
 adminRoute.delete("/secretariaRemoveAula", secretariaRemoveAula);
 adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
-adminRoute.post("/cria-aula", secretariaCriaAula);
+adminRoute.post("/cria-aula", buscaGeral.criarAula);
+
 
 module.exports = adminRoute;
 

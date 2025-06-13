@@ -12,7 +12,7 @@ const pool = new Pool({
 // Função para buscar disciplinas
 exports.buscarDisciplinas = async (req, res) => {
   try {
-    const result = await pool.query('SELECT nome FROM Disciplina'); // Substitua 'disciplinas' pelo nome da sua tabela de disciplinas e 'nome' pelo nome da coluna
+    const result = await pool.query('SELECT idDisciplina, nome FROM Disciplina'); // Substitua 'disciplinas' pelo nome da sua tabela de disciplinas e 'nome' pelo nome da coluna
     res.status(200).json(result.rows);
   } catch (err) {
     console.error('Erro ao buscar disciplinas:', err);
@@ -23,7 +23,7 @@ exports.buscarDisciplinas = async (req, res) => {
 // Função para buscar professores
 exports.buscarProfessores = async (req, res) => {
   try {
-    const result = await pool.query('SELECT nome FROM Professor'); // Substitua 'professores' pelo nome da sua tabela de professores e 'nome' pelo nome da coluna
+    const result = await pool.query('SELECT idProfessor, nome FROM Professor'); 
     res.status(200).json(result.rows);
   } catch (err) {
     console.error('Erro ao buscar professores:', err);
@@ -34,7 +34,7 @@ exports.buscarProfessores = async (req, res) => {
 // Função para buscar salas
 exports.buscarSalas = async (req, res) => {
   try {
-    const result = await pool.query('SELECT numero FROM Sala'); // Substitua 'salas' pelo nome da sua tabela de salas e 'numero' pelo nome da coluna
+    const result = await pool.query('SELECT numero, nome FROM Sala'); 
     res.status(200).json(result.rows);
   } catch (err) {
     console.error('Erro ao buscar salas:', err);
@@ -45,7 +45,7 @@ exports.buscarSalas = async (req, res) => {
 // Função para buscar horários
 exports.buscarHorarios = async (req, res) => {
   try {
-    const result = await pool.query('SELECT horainicial, horafinal FROM Horario'); // Substitua 'horarios' pelo nome da sua tabela de horários e as colunas apropriadas
+    const result = await pool.query('SELECT idHorario, horainicial, horafinal FROM Horario'); 
     res.status(200).json(result.rows);
   } catch (err) {
     console.error('Erro ao buscar horários:', err);
@@ -56,7 +56,7 @@ exports.buscarHorarios = async (req, res) => {
 // Função para buscar turmas
 exports.buscarTurmas = async (req, res) => {
   try {
-    const result = await pool.query('SELECT nome FROM Turma'); // Substitua 'turmas' pelo nome da sua tabela de turmas e 'nome' pelo nome da coluna
+    const result = await pool.query('SELECT idTurma, nome FROM Turma'); 
     res.status(200).json(result.rows);
   } catch (err) {
     console.error('Erro ao buscar turmas:', err);
@@ -64,4 +64,40 @@ exports.buscarTurmas = async (req, res) => {
   }
 };
 
+
+
+// Função para criar uma nova aula
+exports.criarAula = async (req, res) => {
+  console.log("Dados recebidos:", req.body);
+  try {
+    const { Disciplina_idDisciplina, Professor_idProfessor, Sala_Numero, 
+            Horario_idHorario, Turma_idTurma, Semana_idSemana } = req.body;
+    
+    // Validação básica
+    if (!Disciplina_idDisciplina || !Professor_idProfessor || !Sala_Numero || 
+        !Horario_idHorario || !Turma_idTurma || !Semana_idSemana) {
+      return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+    }
+
+    // Inserir no banco
+    const result = await pool.query(
+      `INSERT INTO Aula (Disciplina_idDisciplina, Professor_idProfessor, Sala_Numero, 
+       Horario_idHorario, Turma_idTurma, Semana_idSemana) 
+       VALUES ($1, $2, $3, $4, $5, $6) RETURNING *`,
+      [Disciplina_idDisciplina, Professor_idProfessor, Sala_Numero, 
+       Horario_idHorario, Turma_idTurma, Semana_idSemana]
+    );
+
+    res.status(201).json({ 
+      message: 'Aula criada com sucesso!', 
+      aula: result.rows[0] 
+    });
+  } catch (err) {
+    console.error('Erro ao criar aula:', err);
+    res.status(500).json({ 
+      message: 'Erro interno do servidor ao criar aula.',
+      error: err.message 
+    });
+  }
+};
 
