@@ -7,16 +7,23 @@ const secretariaBuscaDia = require("../services/secretaria/secretariaBuscaDia.se
 const secretariaRemoveAula = require("../services/secretaria/secretariaRemoveAula");
 const secretariaUpdateAula = require("../services/secretaria/secretariaUpdateAula");
 const secretariaCriaAula = require("../services/secretaria/secretariaCriarAula.services");
+const buscaGeral = require("../services/secretaria/secretariaBuscaGeral.services");
 
 // adminRoute.get("/buscaTurno", secretariaBuscaTurno);
 // adminRoute.get("/buscaTurma", secretariaBuscaTurma);
 
 adminRoute.post("/busca-turno", secretariaBuscaTurno);
 adminRoute.post("/busca-turma", secretariaBuscaTurma);
-adminRoute.get("/secretariaBuscaDia", secretariaBuscaDia);
-adminRoute.delete("/remove-aula/:id", secretariaRemoveAula);
-adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
-adminRoute.post("/secretariaCriaAula", secretariaCriaAula);
-adminRoute.post("/secretariaUpdateAula", secretariaUpdateAula);
+adminRoute.post("/busca-dia", secretariaBuscaDia);
+adminRoute.delete("/remove-aula", secretariaRemoveAula);
+adminRoute.post("/update-aula", secretariaUpdateAula);
+adminRoute.post("/cria-aula", buscaGeral.criarAula);
+
+adminRoute.get("/busca-disciplinas", buscaGeral.buscarDisciplinas);
+adminRoute.get("/busca-professores", buscaGeral.buscarProfessores);
+adminRoute.get("/busca-salas", buscaGeral.buscarSalas);
+adminRoute.get("/busca-horarios", buscaGeral.buscarHorarios);
+adminRoute.get("/busca-turmas", buscaGeral.buscarTurmas);
+
 
 module.exports = adminRoute;
