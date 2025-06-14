@@ -2,7 +2,7 @@ const db = require("../config/db");
 
 async function mapa(req, res) {
   try {
-    const { salaNumero, diaSemana } = req.body;
+    const { salaNome, diaSemana } = req.body;
 
     const resultado = await db.query(
       `SELECT 
@@ -20,13 +20,14 @@ async function mapa(req, res) {
         JOIN Semana SM ON A.Semana_idSemana = SM.idSemana
         JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
         WHERE 
-            S.Nome = $1 AND SM.Dia = $2
+            S.nome = $1 AND SM.Dia = $2
         ORDER BY
             H.HoraInicial;`,
-      [salaNumero, diaSemana]
+      [salaNome, diaSemana]
     );
 
     res.json(resultado.rows);
+    console.log(resultado.rows);
   } catch (e) {
     console.error("Erro ao buscar reservas:", e);
     res.status(500).json({ message: "Erro ao processar requisição." });
