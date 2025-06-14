@@ -1,11 +1,11 @@
 const db = require("../config/db");
 
 async function mapa(req, res) {
-    try {
-        const { salaNumero, diaSemana } = req.body;
+  try {
+    const { salaNumero, diaSemana } = req.body;
 
-        const resultado = await db.query(
-            `SELECT 
+    const resultado = await db.query(
+      `SELECT 
             S.Numero AS numeroSala,
             SM.Dia AS diaSemana,
             T.idTurma AS turma,
@@ -20,17 +20,17 @@ async function mapa(req, res) {
         JOIN Semana SM ON A.Semana_idSemana = SM.idSemana
         JOIN Disciplina D ON A.Disciplina_idDisciplina = D.idDisciplina
         WHERE 
-            S.Numero = $1 AND SM.Dia = $2
+            S.Nome = $1 AND SM.Dia = $2
         ORDER BY
             H.HoraInicial;`,
-            [salaNumero, diaSemana]
-        );
+      [salaNumero, diaSemana]
+    );
 
-        res.json(resultado.rows);
-    } catch (e) {
-        console.error("Erro ao buscar reservas:", e);
-        res.status(500).json({ message: "Erro ao processar requisição." });
-    }
+    res.json(resultado.rows);
+  } catch (e) {
+    console.error("Erro ao buscar reservas:", e);
+    res.status(500).json({ message: "Erro ao processar requisição." });
+  }
 }
 
 module.exports = mapa;
