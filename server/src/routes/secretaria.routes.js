@@ -15,7 +15,7 @@ const buscaGeral = require("../services/secretaria/secretariaBuscaGeral.services
 adminRoute.post("/busca-turno", secretariaBuscaTurno);
 adminRoute.post("/busca-turma", secretariaBuscaTurma);
 adminRoute.post("/busca-dia", secretariaBuscaDia);
-adminRoute.delete("/remove-aula", secretariaRemoveAula);
+adminRoute.delete("/remove-aula/:id", secretariaRemoveAula);
 adminRoute.post("/update-aula", secretariaUpdateAula);
 adminRoute.post("/cria-aula", buscaGeral.criarAula);
 
@@ -24,6 +24,5 @@ adminRoute.get("/busca-professores", buscaGeral.buscarProfessores);
 adminRoute.get("/busca-salas", buscaGeral.buscarSalas);
 adminRoute.get("/busca-horarios", buscaGeral.buscarHorarios);
 adminRoute.get("/busca-turmas", buscaGeral.buscarTurmas);
-
 
 module.exports = adminRoute;
