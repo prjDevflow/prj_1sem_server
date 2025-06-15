@@ -2,7 +2,11 @@ const db = require("../../config/db");
 
 async function secretariaUpdateAula(req, res) {
   try {
-    const idAula = req.params;
+    const { id } = req.params; // extrai o id da URL
+    const idAula = parseInt(id);
+    if (isNaN(idAula)) {
+      return res.status(400).json({ message: "ID da aula inválido" });
+    }
 
     const {
       turma, // já é o ID
