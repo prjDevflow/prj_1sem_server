@@ -16,7 +16,7 @@ adminRoute.post("/busca-turno", secretariaBuscaTurno);
 adminRoute.post("/busca-turma", secretariaBuscaTurma);
 adminRoute.post("/busca-dia", secretariaBuscaDia);
 adminRoute.delete("/remove-aula/:id", secretariaRemoveAula);
-adminRoute.post("/update-aula/:id", secretariaUpdateAula);
+adminRoute.put("/update-aula/:id", secretariaUpdateAula);
 adminRoute.post("/cria-aula", buscaGeral.criarAula);
 
 adminRoute.get("/busca-disciplinas", buscaGeral.buscarDisciplinas);
