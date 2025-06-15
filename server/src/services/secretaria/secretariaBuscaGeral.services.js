@@ -1,66 +1,59 @@
-const { Pool } = require('pg');
+const pool = require("../../config/db");
 
-// Configuração da conexão com o banco de dados PostgreSQL
-const pool = new Pool({
-  host: "localhost",
-  user: "postgres", // Altere conforme o seu usuário
-  password: "123", // Altere conforme a sua senha
-  database: "ABP", // Nome do banco criado no pgAdmin
-  port: 5432, // Porta padrão do PostgreSQL
-});
+
 
 // Função para buscar disciplinas
 exports.buscarDisciplinas = async (req, res) => {
   try {
-    const result = await pool.query('SELECT idDisciplina, nome FROM Disciplina'); // Substitua 'disciplinas' pelo nome da sua tabela de disciplinas e 'nome' pelo nome da coluna
+    const result = await pool.query("SELECT idDisciplina, nome FROM Disciplina"); // Substitua 'disciplinas' pelo nome da sua tabela de disciplinas e 'nome' pelo nome da coluna
     res.status(200).json(result.rows);
   } catch (err) {
-    console.error('Erro ao buscar disciplinas:', err);
-    res.status(500).json({ message: 'Erro interno do servidor ao buscar disciplinas.' });
+    console.error("Erro ao buscar disciplinas:", err);
+    res.status(500).json({ message: "Erro interno do servidor ao buscar disciplinas." });
   }
 };
 
 // Função para buscar professores
 exports.buscarProfessores = async (req, res) => {
   try {
-    const result = await pool.query('SELECT idProfessor, nome FROM Professor'); 
+    const result = await pool.query("SELECT idProfessor, nome FROM Professor"); 
     res.status(200).json(result.rows);
   } catch (err) {
-    console.error('Erro ao buscar professores:', err);
-    res.status(500).json({ message: 'Erro interno do servidor ao buscar professores.' });
+    console.error("Erro ao buscar professores:", err);
+    res.status(500).json({ message: "Erro interno do servidor ao buscar professores." });
   }
 };
 
 // Função para buscar salas
 exports.buscarSalas = async (req, res) => {
   try {
-    const result = await pool.query('SELECT numero, nome FROM Sala'); 
+    const result = await pool.query("SELECT numero, nome FROM Sala"); 
     res.status(200).json(result.rows);
   } catch (err) {
-    console.error('Erro ao buscar salas:', err);
-    res.status(500).json({ message: 'Erro interno do servidor ao buscar salas.' });
+    console.error("Erro ao buscar salas:", err);
+    res.status(500).json({ message: "Erro interno do servidor ao buscar salas." });
   }
 };
 
 // Função para buscar horários
 exports.buscarHorarios = async (req, res) => {
   try {
-    const result = await pool.query('SELECT idHorario, horainicial, horafinal FROM Horario'); 
+    const result = await pool.query("SELECT idHorario, horainicial, horafinal FROM Horario"); 
     res.status(200).json(result.rows);
   } catch (err) {
-    console.error('Erro ao buscar horários:', err);
-    res.status(500).json({ message: 'Erro interno do servidor ao buscar horários.' });
+    console.error("Erro ao buscar horários:", err);
+    res.status(500).json({ message: "Erro interno do servidor ao buscar horários." });
   }
 };
 
 // Função para buscar turmas
 exports.buscarTurmas = async (req, res) => {
   try {
-    const result = await pool.query('SELECT idTurma, nome FROM Turma'); 
+    const result = await pool.query("SELECT idTurma, nome FROM Turma"); 
     res.status(200).json(result.rows);
   } catch (err) {
-    console.error('Erro ao buscar turmas:', err);
-    res.status(500).json({ message: 'Erro interno do servidor ao buscar turmas.' });
+    console.error("Erro ao buscar turmas:", err);
+    res.status(500).json({ message: "Erro interno do servidor ao buscar turmas." });
   }
 };
 
@@ -76,7 +69,7 @@ exports.criarAula = async (req, res) => {
     // Validação básica
     if (!Disciplina_idDisciplina || !Professor_idProfessor || !Sala_Numero || 
         !Horario_idHorario || !Turma_idTurma || !Semana_idSemana) {
-      return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+      return res.status(400).json({ message: "Todos os campos são obrigatórios." });
     }
 
     // Inserir no banco
@@ -89,15 +82,14 @@ exports.criarAula = async (req, res) => {
     );
 
     res.status(201).json({ 
-      message: 'Aula criada com sucesso!', 
+      message: "Aula criada com sucesso!", 
       aula: result.rows[0] 
     });
   } catch (err) {
-    console.error('Erro ao criar aula:', err);
+    console.error("Erro ao criar aula:", err);
     res.status(500).json({ 
-      message: 'Erro interno do servidor ao criar aula.',
+      message: "Erro interno do servidor ao criar aula.",
       error: err.message 
     });
   }
 };
-
