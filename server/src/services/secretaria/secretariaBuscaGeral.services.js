@@ -72,7 +72,64 @@ exports.criarAula = async (req, res) => {
       return res.status(400).json({ message: "Todos os campos são obrigatórios." });
     }
 
-    // Inserir no banco
+    // Verificação de conflito de horário para a mesma turma
+    const conflictCheck = await pool.query(
+      `SELECT * FROM Aula 
+       WHERE Horario_idHorario = $1 AND Semana_idSemana = $2 AND Turma_idTurma = $3`,
+      [Horario_idHorario, Semana_idSemana, Turma_idTurma]
+    );
+
+    if (conflictCheck.rows.length > 0) {
+      return res.status(409).json({ 
+        message: "Já existe uma aula cadastrada para esta turma neste horário e dia da semana.",
+        conflito: {
+          horario: Horario_idHorario,
+          diaSemana: Semana_idSemana,
+          turma: Turma_idTurma,
+          aulaExistente: conflictCheck.rows[0]
+        }
+      });
+    }
+
+    // Verificação adicional: conflito de professor no mesmo horário e dia (independente da turma)
+    const professorConflict = await pool.query(
+      `SELECT * FROM Aula 
+       WHERE Professor_idProfessor = $1 AND Horario_idHorario = $2 AND Semana_idSemana = $3`,
+      [Professor_idProfessor, Horario_idHorario, Semana_idSemana]
+    );
+
+    if (professorConflict.rows.length > 0) {
+      return res.status(409).json({ 
+        message: "Este professor já possui uma aula cadastrada neste horário e dia da semana.",
+        conflito: {
+          professor: Professor_idProfessor,
+          horario: Horario_idHorario,
+          diaSemana: Semana_idSemana,
+          aulaExistente: professorConflict.rows[0]
+        }
+      });
+    }
+
+    // Verificação adicional: conflito de sala no mesmo horário e dia (independente da turma)
+    const salaConflict = await pool.query(
+      `SELECT * FROM Aula 
+       WHERE Sala_Numero = $1 AND Horario_idHorario = $2 AND Semana_idSemana = $3`,
+      [Sala_Numero, Horario_idHorario, Semana_idSemana]
+    );
+
+    if (salaConflict.rows.length > 0) {
+      return res.status(409).json({ 
+        message: "Esta sala já está ocupada neste horário e dia da semana.",
+        conflito: {
+          sala: Sala_Numero,
+          horario: Horario_idHorario,
+          diaSemana: Semana_idSemana,
+          aulaExistente: salaConflict.rows[0]
+        }
+      });
+    }
+
+    // Se não há conflitos, inserir no banco
     const result = await pool.query(
       `INSERT INTO Aula (Disciplina_idDisciplina, Professor_idProfessor, Sala_Numero, 
        Horario_idHorario, Turma_idTurma, Semana_idSemana) 
@@ -93,3 +150,4 @@ exports.criarAula = async (req, res) => {
     });
   }
 };
+
