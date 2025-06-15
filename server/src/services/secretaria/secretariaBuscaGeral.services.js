@@ -82,12 +82,6 @@ exports.criarAula = async (req, res) => {
     if (conflictCheck.rows.length > 0) {
       return res.status(409).json({ 
         message: "Já existe uma aula cadastrada para esta turma neste horário e dia da semana.",
-        conflito: {
-          horario: Horario_idHorario,
-          diaSemana: Semana_idSemana,
-          turma: Turma_idTurma,
-          aulaExistente: conflictCheck.rows[0]
-        }
       });
     }
 
@@ -101,12 +95,6 @@ exports.criarAula = async (req, res) => {
     if (professorConflict.rows.length > 0) {
       return res.status(409).json({ 
         message: "Este professor já possui uma aula cadastrada neste horário e dia da semana.",
-        conflito: {
-          professor: Professor_idProfessor,
-          horario: Horario_idHorario,
-          diaSemana: Semana_idSemana,
-          aulaExistente: professorConflict.rows[0]
-        }
       });
     }
 
@@ -120,12 +108,6 @@ exports.criarAula = async (req, res) => {
     if (salaConflict.rows.length > 0) {
       return res.status(409).json({ 
         message: "Esta sala já está ocupada neste horário e dia da semana.",
-        conflito: {
-          sala: Sala_Numero,
-          horario: Horario_idHorario,
-          diaSemana: Semana_idSemana,
-          aulaExistente: salaConflict.rows[0]
-        }
       });
     }
 
