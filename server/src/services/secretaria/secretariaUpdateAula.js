@@ -29,7 +29,7 @@ async function secretariaUpdateAula(req, res) {
     return res.status(200).json({ message: "Aula atualizada com sucesso" });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Erro interno no servidor" });
+    res.status(500).json({ message: "Erro interno no servidor", erro: err });
   }
 }
 
