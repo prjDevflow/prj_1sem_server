@@ -2,6 +2,8 @@ const db = require("../../config/db");
 
 async function secretariaUpdateAula(req, res) {
   try {
+    const idAula = req.params;
+
     const {
       turma, // já é o ID
       disciplina,
